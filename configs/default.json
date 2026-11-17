@@ -1,1 +1,14 @@
-placeholder
+{
+  "seed": 20260630,
+  "n_samples": 5,
+  "tol_rel": 0.10,
+  "min_agree": 0.60,
+  "max_steps": 20,
+  "seeds": 40,
+  "noise": {
+    "numeric_rel_noise": 0.15,
+    "boolean_flip_prob": 0.20,
+    "integer_swap_range": 1,
+    "inj_molding_prior": 0.90
+  }
+}

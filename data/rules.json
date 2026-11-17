@@ -1,0 +1,860 @@
+{
+  "processes": [
+    "Injection_Molding",
+    "Thermoforming",
+    "Compression_Molding",
+    "Resin_Transfer_Molding",
+    "Vacuum_Assisted_RTM",
+    "Structural_Reaction_Injection_Molding",
+    "Sheet_Molding_Compound",
+    "Bulk_Molding_Compound",
+    "Hand_Lay_up",
+    "Blow_Molding",
+    "Pultrusion",
+    "Filament_Winding",
+    "Overmolding",
+    "Fused_Filament_Fabrication",
+    "Stereolithography",
+    "Selective_Laser_Sintering",
+    "Laminated_Object_Manufacturing"
+  ],
+  "features": {
+    "wall_thickness_mm": {
+      "type": "numeric",
+      "unit": "mm",
+      "range": [
+        0.2,
+        30.0
+      ]
+    },
+    "undercut_present": {
+      "type": "boolean",
+      "question": "Does this part have an undercut: a feature that would lock it inside a rigid one-piece mold, such as an internal lip, side hole, or reentrant snap feature? Surface recesses that release along the demolding direction do not count. Answer yes or no."
+    },
+    "draft_angle_deg": {
+      "type": "numeric",
+      "unit": "deg",
+      "range": [
+        0.0,
+        10.0
+      ]
+    },
+    "rib_count": {
+      "type": "integer",
+      "range": [
+        0,
+        50
+      ]
+    },
+    "projected_area_cm2": {
+      "type": "numeric",
+      "unit": "cm^2",
+      "range": [
+        1,
+        50000
+      ]
+    },
+    "hollow": {
+      "type": "boolean",
+      "question": "Is this part a CLOSED hollow body: an enclosed vessel, tank, duct, or container whose interior is sealed or nearly sealed (like a bottle or fuel tank)? Open trays, shells, panels with recesses, and open-backed housings are NOT closed hollow bodies. Answer yes or no."
+    },
+    "constant_cross_section": {
+      "type": "boolean",
+      "question": "Does this part have one constant cross-section along its whole length, like an extruded beam, channel, or tube of uniform profile? Answer yes or no."
+    },
+    "axisymmetric": {
+      "type": "boolean",
+      "question": "Is this part a body of revolution, rotationally symmetric about one axis like a cylinder, cone, or tank? Answer yes or no."
+    },
+    "max_dimension_mm": {
+      "type": "numeric",
+      "unit": "mm",
+      "range": [
+        10.0,
+        20000.0
+      ],
+      "question": "Estimate the largest overall dimension of the part (its longest bounding-box edge) in millimetres."
+    },
+    "production_volume": {
+      "type": "integer",
+      "range": [
+        0,
+        2
+      ],
+      "question": "Classify the production volume this part was made for: answer 0 for a one-off prototype, 1 for low-volume production, 2 for high-volume mass production."
+    },
+    "continuous_fiber_required": {
+      "type": "boolean",
+      "question": "Does this part structurally require continuous (unbroken, oriented) fiber reinforcement, as opposed to short chopped fiber or unreinforced plastic? Answer yes or no."
+    }
+  },
+  "rules": {
+    "Injection_Molding": {
+      "forbidden_if": [
+        {
+          "feature": "wall_thickness_mm",
+          "op": "gt",
+          "value": 8.0,
+          "cite": "Malloy 1994 p.151; Rosato 2000 ch.3",
+          "reason": "sink/void regime above ~8 mm"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 0.3,
+          "cite": "Kutz 2011 ch.11",
+          "reason": "below conventional IM fill capability"
+        },
+        {
+          "feature": "draft_angle_deg",
+          "op": "lt",
+          "value": 0.5,
+          "cite": "Malloy 1994 p.205",
+          "reason": "matched-tool ejection minimum draft"
+        },
+        {
+          "feature": "projected_area_cm2",
+          "op": "gt",
+          "value": 50000,
+          "cite": "Rosato & Rosato 2000 ch.4",
+          "reason": "~4000-ton clamp / platen ceiling"
+        },
+        {
+          "feature": "continuous_fiber_required",
+          "op": "eq",
+          "value": true,
+          "cite": "Mallick 2007 ch.2 (chopped strands 3.2-12.7 mm, pp.61, 78); Rosato & Rosato 2000 ch.6",
+          "reason": "melt injection carries only short/long chopped fiber; cannot place continuous reinforcement",
+          "verified": {
+            "date": "2026-08-04",
+            "method": "web-verified source + adversarial counterexample attack (survived all attempts)",
+            "n_attack_attempts": 7
+          }
+        },
+        {
+          "feature": "max_dimension_mm",
+          "op": "gt",
+          "value": 4000,
+          "cite": "[VERIFY: Rosato & Rosato 2000 ch.4; Haitian JU 8800t specs]",
+          "reason": "beyond the largest commercial platen/shot envelope (~3.5 m tie-bar daylight; 3.4 m hulls are molded)"
+        }
+      ]
+    },
+    "Thermoforming": {
+      "forbidden_if": [
+        {
+          "feature": "hollow",
+          "op": "eq",
+          "value": true,
+          "cite": "Throne 1996 ch.1 pp.4-6; Throne 2008 ch.1",
+          "reason": "single-face draping cannot close a cavity"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "gt",
+          "value": 8.0,
+          "cite": "Throne 1996 ch.4 pp.150-160",
+          "reason": "through-thickness heating / sag limit"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 0.2,
+          "cite": "Throne 2008 ch.1",
+          "reason": "below commercial sheet gauge"
+        },
+        {
+          "feature": "rib_count",
+          "op": "gt",
+          "value": 3,
+          "cite": "Throne 1996 ch.8",
+          "reason": "single-face draping cannot form transverse ribs"
+        },
+        {
+          "feature": "undercut_present",
+          "op": "eq",
+          "value": true,
+          "cite": "Throne 1996 ch.6",
+          "reason": "single-face tool cannot release undercuts without side-action"
+        },
+        {
+          "feature": "max_dimension_mm",
+          "op": "gt",
+          "value": 6000,
+          "cite": "[VERIFY: Throne 2008 ch.9; MAAC/Geiss large-format specs]",
+          "reason": "beyond the largest commercial sheet/oven envelope (~3.8 x 5.9 m formers; 5.8 m spa shells exist)"
+        }
+      ]
+    },
+    "Compression_Molding": {
+      "forbidden_if": [
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 0.8,
+          "cite": "Mallick 2008 p.376",
+          "reason": "charge cannot fill/knit below ~0.8 mm"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "gt",
+          "value": 30.0,
+          "cite": "Campbell 2004 p.367",
+          "reason": "exotherm voids; schema ceiling"
+        },
+        {
+          "feature": "projected_area_cm2",
+          "op": "gt",
+          "value": 30000,
+          "cite": "Campbell 2004 p.366",
+          "reason": "~4000-ton commercial press ceiling"
+        },
+        {
+          "feature": "hollow",
+          "op": "eq",
+          "value": true,
+          "cite": "Mallick 2008 p.376; Campbell 2004 p.367",
+          "reason": "matched-die closed cavity requires core"
+        },
+        {
+          "feature": "undercut_present",
+          "op": "eq",
+          "value": true,
+          "cite": "Strong 2008 p.331",
+          "reason": "matched steel dies cannot release undercuts"
+        },
+        {
+          "feature": "draft_angle_deg",
+          "op": "lt",
+          "value": 0.5,
+          "cite": "Strong 2008 p.331",
+          "reason": "matched-die release minimum"
+        },
+        {
+          "feature": "max_dimension_mm",
+          "op": "gt",
+          "value": 4000,
+          "cite": "[VERIFY: Campbell 2004 p.366]",
+          "reason": "press platen envelope ceiling"
+        }
+      ]
+    },
+    "Resin_Transfer_Molding": {
+      "forbidden_if": [
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 1.0,
+          "cite": "Potter 1997 p.47; Advani & Sozer 2010 sec.5.4",
+          "reason": "preform fill floor"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "gt",
+          "value": 25.0,
+          "cite": "Campbell 2004 p.158; Mallick 2007 p.383",
+          "reason": "exotherm in thick sections"
+        },
+        {
+          "feature": "draft_angle_deg",
+          "op": "lt",
+          "value": 0.5,
+          "cite": "Strong 2008 p.298",
+          "reason": "matched steel-tool release requirement"
+        },
+        {
+          "feature": "hollow",
+          "op": "eq",
+          "value": true,
+          "cite": "Potter 1997 ch.6; Campbell 2004 p.160",
+          "reason": "no closed cavity without core"
+        },
+        {
+          "feature": "projected_area_cm2",
+          "op": "gt",
+          "value": 100000,
+          "cite": "Mallick 2007 pp.381-384",
+          "reason": "practical RTM tool/clamp ceiling"
+        }
+      ]
+    },
+    "Vacuum_Assisted_RTM": {
+      "forbidden_if": [
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 1.5,
+          "cite": "Williams et al. 1996 Composites A 27(7); Campbell 2004 p.165",
+          "reason": "bag-side tolerance floor"
+        },
+        {
+          "feature": "undercut_present",
+          "op": "eq",
+          "value": true,
+          "cite": "Strong 2008 p.303; Campbell 2004 p.165",
+          "reason": "single rigid face cannot release undercuts"
+        },
+        {
+          "feature": "hollow",
+          "op": "eq",
+          "value": true,
+          "cite": "Campbell 2004 p.166",
+          "reason": "no closed cavity without mandrel"
+        },
+        {
+          "feature": "production_volume",
+          "op": "eq",
+          "value": 2,
+          "cite": "Strong 2008 ch.16 pp.417-436; CKN KPC A290 (VARTM cost effective for large structures only at low volume)",
+          "reason": "manual bagging + hours-scale infusion per part; mass production infeasible",
+          "verified": {
+            "date": "2026-08-04",
+            "method": "web-verified source + adversarial counterexample attack (survived all attempts)",
+            "n_attack_attempts": 7
+          }
+        }
+      ]
+    },
+    "Structural_Reaction_Injection_Molding": {
+      "forbidden_if": [
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 2.0,
+          "cite": "Macosko 1989 pp.205-207; Mallick 2007 p.385",
+          "reason": "gel-before-fill in thin cavities"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "gt",
+          "value": 15.0,
+          "cite": "Macosko 1989 p.210; Campbell 2004 p.169",
+          "reason": "runaway exotherm in thick sections"
+        },
+        {
+          "feature": "draft_angle_deg",
+          "op": "lt",
+          "value": 0.5,
+          "cite": "Strong 2008 p.312",
+          "reason": "high-rate matched-tool release"
+        },
+        {
+          "feature": "hollow",
+          "op": "eq",
+          "value": true,
+          "cite": "Campbell 2004 p.169",
+          "reason": "no closed cavity in a single shot"
+        },
+        {
+          "feature": "projected_area_cm2",
+          "op": "gt",
+          "value": 30000,
+          "cite": "Campbell 2004 p.168",
+          "reason": "SRIM press / flow-path ceiling"
+        },
+        {
+          "feature": "max_dimension_mm",
+          "op": "gt",
+          "value": 3500,
+          "cite": "French Oil SRIM press specs (12 x 10 ft / 3,658 mm bed, 1,000 t); Plastics Technology 2000 Silverado SRIM box (2,000 t Dieffenbacher press, 6.5 ft part)",
+          "reason": "press envelope consistent with the projected-area ceiling",
+          "verified": {
+            "date": "2026-08-04",
+            "method": "web-verified source + adversarial counterexample attack (survived all attempts)",
+            "n_attack_attempts": 6
+          }
+        }
+      ]
+    },
+    "Sheet_Molding_Compound": {
+      "forbidden_if": [
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 1.2,
+          "cite": "Mallick 2008 p.371",
+          "reason": "25-mm chopped-fiber flow limit"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "gt",
+          "value": 10.0,
+          "cite": "Orgeas & Dumont 2012 Composites A 43(4) p.630",
+          "reason": "exotherm / segregation"
+        },
+        {
+          "feature": "projected_area_cm2",
+          "op": "lt",
+          "value": 100,
+          "cite": "Strong 2008 p.334",
+          "reason": "SMC uneconomic below panel scale"
+        },
+        {
+          "feature": "projected_area_cm2",
+          "op": "gt",
+          "value": 35000,
+          "cite": "Campbell 2004 p.369",
+          "reason": "~4500-ton press ceiling"
+        },
+        {
+          "feature": "hollow",
+          "op": "eq",
+          "value": true,
+          "cite": "Strong 2008 p.334; Campbell 2004 p.369",
+          "reason": "matched-die closed cavity requires core"
+        },
+        {
+          "feature": "undercut_present",
+          "op": "eq",
+          "value": true,
+          "cite": "Strong 2008 p.334",
+          "reason": "matched steel dies cannot release undercuts"
+        },
+        {
+          "feature": "max_dimension_mm",
+          "op": "gt",
+          "value": 4000,
+          "cite": "Zhengxi YZ71-4000T specs (4,000 x 3,000 mm table); Taitian 5,000 t SMC press specs (4,200 x 2,800 mm table)",
+          "reason": "press platen ceiling",
+          "verified": {
+            "date": "2026-08-04",
+            "method": "web-verified source + adversarial counterexample attack (survived all attempts)",
+            "n_attack_attempts": 8
+          }
+        }
+      ]
+    },
+    "Bulk_Molding_Compound": {
+      "forbidden_if": [
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 0.6,
+          "cite": "Rosato 2004 p.420",
+          "reason": "viscosity / filler-loading floor"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "gt",
+          "value": 12.0,
+          "cite": "Mallick 2008 p.376",
+          "reason": "exotherm porosity"
+        },
+        {
+          "feature": "projected_area_cm2",
+          "op": "gt",
+          "value": 3000,
+          "cite": "Strong 2008 p.335",
+          "reason": "SMC preferred above panel scale"
+        },
+        {
+          "feature": "hollow",
+          "op": "eq",
+          "value": true,
+          "cite": "Rosato 2004 p.420; Mallick 2008 p.376",
+          "reason": "matched-die closed cavity requires core"
+        },
+        {
+          "feature": "continuous_fiber_required",
+          "op": "eq",
+          "value": true,
+          "cite": "Rosato 2004 ch.14; IDI Composites SMC/BMC overview (chopped glass 1/32 to 1/2 in)",
+          "reason": "bulk compound is chopped-fiber dough by definition; cannot deliver continuous reinforcement",
+          "verified": {
+            "date": "2026-08-04",
+            "method": "web-verified source + adversarial counterexample attack (survived all attempts)",
+            "n_attack_attempts": 7
+          }
+        },
+        {
+          "feature": "max_dimension_mm",
+          "op": "gt",
+          "value": 2000,
+          "cite": "[VERIFY: Rosato 2004 ch.11]",
+          "reason": "small-part envelope consistent with the 3000 cm^2 area ceiling"
+        }
+      ]
+    },
+    "Hand_Lay_up": {
+      "forbidden_if": [
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 1.5,
+          "cite": "Strong 2008 p.246; Gurit Guide 2020 p.27",
+          "reason": "manual consolidation scatter"
+        },
+        {
+          "feature": "undercut_present",
+          "op": "eq",
+          "value": true,
+          "cite": "Strong 2008 p.247; Campbell 2004 p.119",
+          "reason": "open mold cannot release undercuts"
+        },
+        {
+          "feature": "hollow",
+          "op": "eq",
+          "value": true,
+          "cite": "Campbell 2004 p.120; Mallick 2007 p.375",
+          "reason": "no closed cavity from a single open mold"
+        },
+        {
+          "feature": "rib_count",
+          "op": "gt",
+          "value": 2,
+          "cite": "Strong 2008 p.247",
+          "reason": "ribs require secondary moldings beyond simple stiffeners"
+        },
+        {
+          "feature": "production_volume",
+          "op": "eq",
+          "value": 2,
+          "cite": "Mallick 2007 sec.1.3.3; ASM Handbook Vol.21 2001 pp.450-456 (Open Molding: Hand Lay-Up and Spray-Up)",
+          "reason": "hours of serial manual labor per part; mass production infeasible",
+          "verified": {
+            "date": "2026-08-04",
+            "method": "web-verified source + adversarial counterexample attack (survived all attempts)",
+            "n_attack_attempts": 6
+          }
+        }
+      ]
+    },
+    "Blow_Molding": {
+      "forbidden_if": [
+        {
+          "feature": "hollow",
+          "op": "eq",
+          "value": false,
+          "cite": "Rosato 2003 ch.1; Lee 2006 ch.1; Strong 2006 ch.12",
+          "reason": "parison inflation is definitional (part must be hollow)"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "gt",
+          "value": 10.0,
+          "cite": "Rosato 2003 ch.3 pp.60-72; Lee 2006 ch.2",
+          "reason": "parison programming / single-side cooling"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 0.25,
+          "cite": "Lee 2006 ch.2 pp.20-23",
+          "reason": "blowout / pinhole regime"
+        },
+        {
+          "feature": "rib_count",
+          "op": "gt",
+          "value": 0,
+          "cite": "Lee 2006 ch.2; Rosato 2003 ch.2",
+          "reason": "parison inflation cannot form transverse ribs"
+        },
+        {
+          "feature": "undercut_present",
+          "op": "eq",
+          "value": true,
+          "cite": "Rosato 2003 ch.2",
+          "reason": "split-mold-half release cannot clear undercuts"
+        },
+        {
+          "feature": "continuous_fiber_required",
+          "op": "eq",
+          "value": true,
+          "cite": "Mallick 2007 ch.5; CompositesWorld 2020 Lanxess Tepex EBM (continuous fiber only as consolidated organosheet insert; parison neat or short-glass PA6)",
+          "reason": "an inflated parison cannot carry continuous fiber reinforcement",
+          "verified": {
+            "date": "2026-08-04",
+            "method": "web-verified source + adversarial counterexample attack (survived all attempts)",
+            "n_attack_attempts": 7
+          }
+        },
+        {
+          "feature": "max_dimension_mm",
+          "op": "gt",
+          "value": 4000,
+          "cite": "[VERIFY: Lee 2006 ch.2; accumulator-head kayak practice]",
+          "reason": "industrial accumulator-head envelope (~4 m canoes are serially blow-molded)"
+        }
+      ]
+    },
+    "Pultrusion": {
+      "forbidden_if": [
+        {
+          "feature": "constant_cross_section",
+          "op": "eq",
+          "value": false,
+          "cite": "Starr 2000 p.3",
+          "reason": "constant cross-section is the defining kinematic"
+        },
+        {
+          "feature": "undercut_present",
+          "op": "eq",
+          "value": true,
+          "cite": "Starr 2000 p.55; Campbell 2004 p.381",
+          "reason": "cannot exit die"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 1.5,
+          "cite": "Starr 2000 p.50",
+          "reason": "impregnation / die-pressure floor"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "gt",
+          "value": 25.0,
+          "cite": "Mallick 2008 p.395; Carlone 2006 Composites B 37(6)",
+          "reason": "exotherm cracking"
+        },
+        {
+          "feature": "rib_count",
+          "op": "gt",
+          "value": 0,
+          "cite": "Starr 2000 p.55",
+          "reason": "transverse ribs cannot exit a straight-pull die"
+        }
+      ]
+    },
+    "Filament_Winding": {
+      "forbidden_if": [
+        {
+          "feature": "axisymmetric",
+          "op": "eq",
+          "value": false,
+          "cite": "Peters 2011 p.14",
+          "reason": "surface-of-revolution kinematic"
+        },
+        {
+          "feature": "hollow",
+          "op": "eq",
+          "value": false,
+          "cite": "Peters 2011 p.14; Campbell 2004 p.388",
+          "reason": "mandrel-based shell requires a hollow form"
+        },
+        {
+          "feature": "undercut_present",
+          "op": "eq",
+          "value": true,
+          "cite": "Campbell 2004 p.390",
+          "reason": "blocks mandrel extraction"
+        },
+        {
+          "feature": "rib_count",
+          "op": "gt",
+          "value": 0,
+          "cite": "Mallick 2008 p.400",
+          "reason": "tow laydown cannot form transverse ribs"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 0.5,
+          "cite": "Peters 2011 p.240",
+          "reason": "two-layer balanced minimum"
+        }
+      ]
+    },
+    "Overmolding": {
+      "forbidden_if": [
+        {
+          "feature": "wall_thickness_mm",
+          "op": "gt",
+          "value": 6.0,
+          "cite": "Goodship & Love 2002 ch.4; Malloy 1994 p.151",
+          "reason": "thick skin over insulating substrate"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 0.3,
+          "cite": "Goodship & Love 2002 ch.3; Kutz 2011 ch.12",
+          "reason": "unreliable fill around cooler substrate"
+        },
+        {
+          "feature": "hollow",
+          "op": "eq",
+          "value": true,
+          "cite": "Goodship & Love 2002 ch.1; Rosato 2000 ch.22",
+          "reason": "substrate + skin topology, not a closed hollow"
+        },
+        {
+          "feature": "projected_area_cm2",
+          "op": "gt",
+          "value": 20000,
+          "cite": "Goodship & Love 2002 ch.2",
+          "reason": "two-shot / insert machine envelope"
+        },
+        {
+          "feature": "max_dimension_mm",
+          "op": "gt",
+          "value": 3000,
+          "cite": "Goodship & Love 2002 ch.2; Engel duo 5500 combi specs (55,000 kN, 2,530 mm tie-bar)",
+          "reason": "multi-component machine envelope (aligned with the injection-molding ceiling class)",
+          "verified": {
+            "date": "2026-08-04",
+            "method": "web-verified source + adversarial counterexample attack (survived all attempts)",
+            "n_attack_attempts": 6
+          }
+        }
+      ]
+    },
+    "Fused_Filament_Fabrication": {
+      "forbidden_if": [
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 0.8,
+          "cite": "Gibson 2021 ch.6 p.174; Stratasys FDM Guide 2022",
+          "reason": "2-perimeter minimum with 0.4 mm nozzle"
+        },
+        {
+          "feature": "projected_area_cm2",
+          "op": "gt",
+          "value": 10000,
+          "cite": "Wohlers 2023 ch.4",
+          "reason": "largest commercial FFF/BAAM envelopes"
+        },
+        {
+          "feature": "max_dimension_mm",
+          "op": "gt",
+          "value": 2200,
+          "cite": "[VERIFY: Tractus3D T3500 specifications]",
+          "reason": "largest filament-fed commercial envelope (~2.1 m); pellet-extrusion BAAM/LSAM is a distinct machine class"
+        },
+        {
+          "feature": "production_volume",
+          "op": "eq",
+          "value": 2,
+          "cite": "[VERIFY: Gibson 2021 ch.6]",
+          "reason": "hours-per-part deposition rate; serially infeasible at mass-production volume"
+        }
+      ]
+    },
+    "Stereolithography": {
+      "forbidden_if": [
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 0.4,
+          "cite": "Formlabs Design Guide 2023; Gibson 2021 ch.4 p.93",
+          "reason": "photopolymer minimum wall"
+        },
+        {
+          "feature": "projected_area_cm2",
+          "op": "gt",
+          "value": 15000,
+          "cite": "Wohlers 2023 ch.4",
+          "reason": "Mammoth-class SLA upper bound"
+        },
+        {
+          "feature": "continuous_fiber_required",
+          "op": "eq",
+          "value": true,
+          "cite": "Gibson et al. 2021 ch.4 (VPP feedstock is liquid photopolymer resin); Lu et al. 2022 CONFIB-VAT, Addit. Manuf. 60:103233 (continuous fiber VPP research-stage only)",
+          "reason": "vat photopolymer is neat resin; no continuous fiber reinforcement path",
+          "verified": {
+            "date": "2026-08-04",
+            "method": "web-verified source + adversarial counterexample attack (survived all attempts)",
+            "n_attack_attempts": 6
+          }
+        },
+        {
+          "feature": "max_dimension_mm",
+          "op": "gt",
+          "value": 2100,
+          "cite": "[VERIFY: Materialise Mammoth SLA specifications]",
+          "reason": "largest commercial vat envelope (~2.1 m)"
+        }
+      ]
+    },
+    "Selective_Laser_Sintering": {
+      "forbidden_if": [
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 0.7,
+          "cite": "EOS PA2200 datasheet 2021; Gibson 2021 ch.5 p.126",
+          "reason": "powder-fusion minimum wall"
+        },
+        {
+          "feature": "projected_area_cm2",
+          "op": "gt",
+          "value": 10000,
+          "cite": "Wohlers 2023 ch.4",
+          "reason": "commercial SLS bed ceilings"
+        },
+        {
+          "feature": "continuous_fiber_required",
+          "op": "eq",
+          "value": true,
+          "cite": "Gibson 2021 ch.5; Baranowski et al. 2023 Polymers 15:3406 (no commercial LS machine integrates continuous fibre)",
+          "reason": "powder-bed fusion cannot lay continuous fiber",
+          "verified": {
+            "date": "2026-08-04",
+            "method": "web-verified source + adversarial counterexample attack (survived all attempts)",
+            "n_attack_attempts": 6
+          }
+        },
+        {
+          "feature": "max_dimension_mm",
+          "op": "gt",
+          "value": 1000,
+          "cite": "[VERIFY: Farsoon HT1001P specifications]",
+          "reason": "largest commercial powder-bed envelope (1000 mm class)"
+        }
+      ]
+    },
+    "Laminated_Object_Manufacturing": {
+      "forbidden_if": [
+        {
+          "feature": "hollow",
+          "op": "eq",
+          "value": true,
+          "cite": "Gibson 2021 ch.9 pp.257-258; Chua et al. 2010 ch.4",
+          "reason": "decube extraction infeasible in a closed cavity"
+        },
+        {
+          "feature": "wall_thickness_mm",
+          "op": "lt",
+          "value": 1.0,
+          "cite": "Gibson 2021 ch.9 p.260",
+          "reason": "sheet delamination during decubing"
+        },
+        {
+          "feature": "projected_area_cm2",
+          "op": "gt",
+          "value": 5000,
+          "cite": "Wohlers 2023 ch.4; Helisys LOM-2030 upper bound",
+          "reason": "envelope ceiling"
+        },
+        {
+          "feature": "rib_count",
+          "op": "gt",
+          "value": 2,
+          "cite": "Gibson 2021 ch.9 p.260",
+          "reason": "stepped z-axis rib profiles brittle across laminae"
+        },
+        {
+          "feature": "max_dimension_mm",
+          "op": "gt",
+          "value": 820,
+          "cite": "[VERIFY: Helisys LOM-2030H specifications (813 mm long axis)]",
+          "reason": "laminating envelope ceiling"
+        },
+        {
+          "feature": "production_volume",
+          "op": "eq",
+          "value": 2,
+          "cite": "Gibson 2021 ch.9 pp.253-283 (limited industrial adoption); Xometry LOM guide (rapid prototyping, not production)",
+          "reason": "sheet-by-sheet lamination rate; mass production infeasible",
+          "verified": {
+            "date": "2026-08-04",
+            "method": "web-verified source + adversarial counterexample attack (survived all attempts)",
+            "n_attack_attempts": 6
+          }
+        }
+      ]
+    }
+  }
+}

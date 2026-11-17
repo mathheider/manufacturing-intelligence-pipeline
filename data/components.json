@@ -1,0 +1,305 @@
+[
+  {
+    "id": "steering_wheel",
+    "description": "steering wheel w/ airbag cover, metal insert + overmold",
+    "image": "steering_wheel.png",
+    "features": {
+      "wall_thickness_mm": 3.0,
+      "undercut_present": false,
+      "draft_angle_deg": 1.5,
+      "rib_count": 3,
+      "projected_area_cm2": 1200.0,
+      "hollow": false,
+      "constant_cross_section": false,
+      "axisymmetric": false,
+      "max_dimension_mm": 400.0,
+      "production_volume": 2,
+      "continuous_fiber_required": false
+    },
+    "expert_processes": [
+      "Injection_Molding"
+    ]
+  },
+  {
+    "id": "intake_manifold",
+    "description": "plastic intake manifold (curved runners, mounting flanges)",
+    "image": "intake_manifold.png",
+    "features": {
+      "wall_thickness_mm": 3.0,
+      "undercut_present": false,
+      "draft_angle_deg": 1.5,
+      "rib_count": 2,
+      "projected_area_cm2": 600.0,
+      "hollow": false,
+      "constant_cross_section": false,
+      "axisymmetric": false,
+      "max_dimension_mm": 500.0,
+      "production_volume": 2,
+      "continuous_fiber_required": false
+    },
+    "expert_processes": [
+      "Injection_Molding"
+    ]
+  },
+  {
+    "id": "washer_fluid_reservoir",
+    "description": "small hollow plastic reservoir with cap and hose barb",
+    "image": "washer_fluid_reservoir.png",
+    "features": {
+      "wall_thickness_mm": 2.0,
+      "undercut_present": false,
+      "draft_angle_deg": 1.0,
+      "rib_count": 0,
+      "projected_area_cm2": 300.0,
+      "hollow": true,
+      "constant_cross_section": false,
+      "axisymmetric": false,
+      "max_dimension_mm": 350.0,
+      "production_volume": 2,
+      "continuous_fiber_required": false
+    },
+    "expert_processes": [
+      "Blow_Molding"
+    ]
+  },
+  {
+    "id": "door_inner_panel",
+    "description": "interior door trim panel w/ storage, textured skin",
+    "image": "door_inner_panel.png",
+    "features": {
+      "wall_thickness_mm": 2.5,
+      "undercut_present": false,
+      "draft_angle_deg": 2.0,
+      "rib_count": 5,
+      "projected_area_cm2": 4000.0,
+      "hollow": false,
+      "constant_cross_section": false,
+      "axisymmetric": false,
+      "max_dimension_mm": 1100.0,
+      "production_volume": 2,
+      "continuous_fiber_required": false
+    },
+    "expert_processes": [
+      "Injection_Molding"
+    ]
+  },
+  {
+    "id": "pickup_bed",
+    "description": "pickup truck bed / bed liner, large deep draw",
+    "image": "pickup_bed.png",
+    "features": {
+      "wall_thickness_mm": 3.0,
+      "undercut_present": false,
+      "draft_angle_deg": 3.0,
+      "rib_count": 1,
+      "projected_area_cm2": 20000.0,
+      "hollow": false,
+      "constant_cross_section": false,
+      "axisymmetric": false,
+      "max_dimension_mm": 2400.0,
+      "production_volume": 1,
+      "continuous_fiber_required": false
+    },
+    "expert_processes": [
+      "Thermoforming",
+      "Resin_Transfer_Molding",
+      "Sheet_Molding_Compound"
+    ]
+  },
+  {
+    "id": "rear_spoiler",
+    "description": "rear deck spoiler, conformal to bodywork",
+    "image": "rear_spoiler.png",
+    "features": {
+      "wall_thickness_mm": 3.0,
+      "undercut_present": false,
+      "draft_angle_deg": 2.0,
+      "rib_count": 2,
+      "projected_area_cm2": 1500.0,
+      "hollow": false,
+      "constant_cross_section": false,
+      "axisymmetric": false,
+      "max_dimension_mm": 1400.0,
+      "production_volume": 1,
+      "continuous_fiber_required": false
+    },
+    "expert_processes": [
+      "Injection_Molding",
+      "Resin_Transfer_Molding",
+      "Compression_Molding"
+    ]
+  },
+  {
+    "id": "hood",
+    "description": "car hood - aerodynamic, bodywork-conformal outer panel",
+    "image": "hood.png",
+    "features": {
+      "wall_thickness_mm": 2.5,
+      "undercut_present": false,
+      "draft_angle_deg": 2.0,
+      "rib_count": 2,
+      "projected_area_cm2": 12000.0,
+      "hollow": false,
+      "constant_cross_section": false,
+      "axisymmetric": false,
+      "max_dimension_mm": 1500.0,
+      "production_volume": 1,
+      "continuous_fiber_required": false
+    },
+    "expert_processes": [
+      "Resin_Transfer_Molding",
+      "Compression_Molding",
+      "Sheet_Molding_Compound"
+    ]
+  },
+  {
+    "id": "cf_cylinder",
+    "description": "carbon-fiber axisymmetric hollow cylinder",
+    "image": "cf_cylinder.png",
+    "features": {
+      "wall_thickness_mm": 2.5,
+      "undercut_present": false,
+      "draft_angle_deg": 0.0,
+      "rib_count": 0,
+      "projected_area_cm2": 900.0,
+      "hollow": true,
+      "constant_cross_section": true,
+      "axisymmetric": true,
+      "max_dimension_mm": 1000.0,
+      "production_volume": 1,
+      "continuous_fiber_required": true
+    },
+    "expert_processes": [
+      "Pultrusion",
+      "Filament_Winding"
+    ]
+  },
+  {
+    "id": "leaf_spring",
+    "description": "FRP composite leaf spring, long ~constant cross section",
+    "image": "leaf_spring.png",
+    "features": {
+      "wall_thickness_mm": 12.0,
+      "undercut_present": false,
+      "draft_angle_deg": 1.0,
+      "rib_count": 0,
+      "projected_area_cm2": 1500.0,
+      "hollow": false,
+      "constant_cross_section": true,
+      "axisymmetric": false,
+      "max_dimension_mm": 1200.0,
+      "production_volume": 1,
+      "continuous_fiber_required": true
+    },
+    "expert_processes": [
+      "Resin_Transfer_Molding",
+      "Pultrusion"
+    ]
+  },
+  {
+    "id": "fuel_tank",
+    "description": "single-piece plastic automotive fuel tank (hollow)",
+    "image": "fuel_tank.png",
+    "features": {
+      "wall_thickness_mm": 4.0,
+      "undercut_present": false,
+      "draft_angle_deg": 1.5,
+      "rib_count": 0,
+      "projected_area_cm2": 3500.0,
+      "hollow": true,
+      "constant_cross_section": false,
+      "axisymmetric": false,
+      "max_dimension_mm": 1000.0,
+      "production_volume": 2,
+      "continuous_fiber_required": false
+    },
+    "expert_processes": [
+      "Blow_Molding"
+    ]
+  },
+  {
+    "id": "seat_frame",
+    "description": "car seat bucket w/ metal insert, plastic frame",
+    "image": "seat_frame.png",
+    "features": {
+      "wall_thickness_mm": 3.0,
+      "undercut_present": false,
+      "draft_angle_deg": 1.5,
+      "rib_count": 4,
+      "projected_area_cm2": 3000.0,
+      "hollow": false,
+      "constant_cross_section": false,
+      "axisymmetric": false,
+      "max_dimension_mm": 1200.0,
+      "production_volume": 2,
+      "continuous_fiber_required": false
+    },
+    "expert_processes": [
+      "Injection_Molding"
+    ]
+  },
+  {
+    "id": "headliner_trim",
+    "description": "roof headliner + pillar trim, thin large curved",
+    "image": "headliner_trim.png",
+    "features": {
+      "wall_thickness_mm": 2.0,
+      "undercut_present": false,
+      "draft_angle_deg": 3.0,
+      "rib_count": 0,
+      "projected_area_cm2": 15000.0,
+      "hollow": false,
+      "constant_cross_section": false,
+      "axisymmetric": false,
+      "max_dimension_mm": 1800.0,
+      "production_volume": 2,
+      "continuous_fiber_required": false
+    },
+    "expert_processes": [
+      "Thermoforming",
+      "Injection_Molding"
+    ]
+  },
+  {
+    "id": "dashboard",
+    "description": "dashboard / instrument cluster housing",
+    "image": "dashboard.png",
+    "features": {
+      "wall_thickness_mm": 3.0,
+      "undercut_present": false,
+      "draft_angle_deg": 2.0,
+      "rib_count": 3,
+      "projected_area_cm2": 6000.0,
+      "hollow": false,
+      "constant_cross_section": false,
+      "axisymmetric": false,
+      "max_dimension_mm": 1600.0,
+      "production_volume": 2,
+      "continuous_fiber_required": false
+    },
+    "expert_processes": [
+      "Injection_Molding"
+    ]
+  },
+  {
+    "id": "headlamp_assembly",
+    "description": "headlamp housing - lens, housing, trim",
+    "image": "headlamp_assembly.png",
+    "features": {
+      "wall_thickness_mm": 2.5,
+      "undercut_present": false,
+      "draft_angle_deg": 1.5,
+      "rib_count": 2,
+      "projected_area_cm2": 800.0,
+      "hollow": false,
+      "constant_cross_section": false,
+      "axisymmetric": false,
+      "max_dimension_mm": 500.0,
+      "production_volume": 2,
+      "continuous_fiber_required": false
+    },
+    "expert_processes": [
+      "Injection_Molding"
+    ]
+  }
+]

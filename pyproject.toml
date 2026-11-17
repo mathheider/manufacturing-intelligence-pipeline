@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mip"
+version = "1.0.0"
+description = "Manufacturing Intelligence Pipeline: VLM perception + validated symbolic rule engine for polymer-composite process selection."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Mathias Heider" }]
+# The offline benchmark, engine, and tests require ZERO third-party packages.
+dependencies = []
+
+[project.optional-dependencies]
+gemini = ["google-generativeai>=0.8", "Pillow>=10"]
+claude = ["anthropic>=0.40", "Pillow>=10"]
+dev = ["pytest>=8", "pyyaml>=6"]
+
+[project.scripts]
+mip = "mip.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -1,1 +1,1084 @@
-placeholder
+{
+  "rule": "QC-accepted; rank=min(w,h) desc; 5-per-process coverage pass (rare first); fill by rank; curated seeds join first when files exist (not yet present 2026-09-01)",
+  "n": 100,
+  "protected": 35,
+  "process_coverage": {
+    "Blow_Molding": 5,
+    "Bulk_Molding_Compound": 14,
+    "Compression_Molding": 21,
+    "Filament_Winding": 6,
+    "Fused_Filament_Fabrication": 9,
+    "Hand_Lay_up": 7,
+    "Injection_Molding": 58,
+    "Laminated_Object_Manufacturing": 5,
+    "Overmolding": 16,
+    "Pultrusion": 6,
+    "Resin_Transfer_Molding": 20,
+    "Selective_Laser_Sintering": 9,
+    "Sheet_Molding_Compound": 27,
+    "Stereolithography": 9,
+    "Structural_Reaction_Injection_Molding": 5,
+    "Thermoforming": 5,
+    "Vacuum_Assisted_RTM": 6
+  },
+  "category_counts": {
+    "air_intake_duct": 1,
+    "battery_tray": 1,
+    "boat_hull": 2,
+    "body_kit_fairing": 1,
+    "composite_tube": 6,
+    "coolant_reservoir": 4,
+    "dashboard": 6,
+    "door_trim_panel": 1,
+    "electrical_junction_box": 11,
+    "engine_cover": 1,
+    "fender": 4,
+    "gear_shift_knob": 13,
+    "headlamp_housing": 1,
+    "headlamp_reflector": 3,
+    "hood": 3,
+    "instrument_cluster": 1,
+    "load_floor": 5,
+    "monocoque_tub": 3,
+    "overmolded_tool_grip": 3,
+    "printed_bracket": 4,
+    "printed_prototype": 5,
+    "radiator_grille": 2,
+    "rear_spoiler": 3,
+    "seat_shell": 1,
+    "steering_wheel": 12,
+    "tailgate": 2,
+    "truck_aero_fairing": 1
+  },
+  "min_resolution_selected": 720,
+  "images": [
+    {
+      "path": "images_pool/load_floor/load_floor_001.jpg",
+      "category": "load_floor",
+      "expert_processes": [
+        "Compression_Molding",
+        "Sheet_Molding_Compound",
+        "Structural_Reaction_Injection_Molding",
+        "Thermoforming"
+      ],
+      "rank": 262,
+      "protected": true
+    },
+    {
+      "path": "images_pool/load_floor/load_floor_006.jpg",
+      "category": "load_floor",
+      "expert_processes": [
+        "Compression_Molding",
+        "Sheet_Molding_Compound",
+        "Structural_Reaction_Injection_Molding",
+        "Thermoforming"
+      ],
+      "rank": 263,
+      "protected": true
+    },
+    {
+      "path": "images_pool/load_floor/load_floor_064.jpg",
+      "category": "load_floor",
+      "expert_processes": [
+        "Compression_Molding",
+        "Sheet_Molding_Compound",
+        "Structural_Reaction_Injection_Molding",
+        "Thermoforming"
+      ],
+      "rank": 264,
+      "protected": true
+    },
+    {
+      "path": "images_pool/load_floor/load_floor_065.jpg",
+      "category": "load_floor",
+      "expert_processes": [
+        "Compression_Molding",
+        "Sheet_Molding_Compound",
+        "Structural_Reaction_Injection_Molding",
+        "Thermoforming"
+      ],
+      "rank": 265,
+      "protected": true
+    },
+    {
+      "path": "images_pool/load_floor/load_floor_066.jpg",
+      "category": "load_floor",
+      "expert_processes": [
+        "Compression_Molding",
+        "Sheet_Molding_Compound",
+        "Structural_Reaction_Injection_Molding",
+        "Thermoforming"
+      ],
+      "rank": 266,
+      "protected": true
+    },
+    {
+      "path": "images_pool/composite_tube/composite_tube_055.jpg",
+      "category": "composite_tube",
+      "expert_processes": [
+        "Filament_Winding",
+        "Pultrusion"
+      ],
+      "rank": 2,
+      "protected": true
+    },
+    {
+      "path": "images_pool/composite_tube/composite_tube_061.jpg",
+      "category": "composite_tube",
+      "expert_processes": [
+        "Filament_Winding",
+        "Pultrusion"
+      ],
+      "rank": 3,
+      "protected": true
+    },
+    {
+      "path": "images_pool/composite_tube/composite_tube_064.jpg",
+      "category": "composite_tube",
+      "expert_processes": [
+        "Filament_Winding",
+        "Pultrusion"
+      ],
+      "rank": 4,
+      "protected": true
+    },
+    {
+      "path": "images_pool/composite_tube/composite_tube_065.jpg",
+      "category": "composite_tube",
+      "expert_processes": [
+        "Filament_Winding",
+        "Pultrusion"
+      ],
+      "rank": 5,
+      "protected": true
+    },
+    {
+      "path": "images_pool/composite_tube/composite_tube_015.jpg",
+      "category": "composite_tube",
+      "expert_processes": [
+        "Filament_Winding",
+        "Pultrusion"
+      ],
+      "rank": 75,
+      "protected": true
+    },
+    {
+      "path": "images_pool/coolant_reservoir/coolant_reservoir_001.jpg",
+      "category": "coolant_reservoir",
+      "expert_processes": [
+        "Blow_Molding"
+      ],
+      "rank": 11,
+      "protected": true
+    },
+    {
+      "path": "images_pool/coolant_reservoir/coolant_reservoir_007.jpg",
+      "category": "coolant_reservoir",
+      "expert_processes": [
+        "Blow_Molding"
+      ],
+      "rank": 12,
+      "protected": true
+    },
+    {
+      "path": "images_pool/air_intake_duct/air_intake_duct_085.jpg",
+      "category": "air_intake_duct",
+      "expert_processes": [
+        "Blow_Molding"
+      ],
+      "rank": 93,
+      "protected": true
+    },
+    {
+      "path": "images_pool/coolant_reservoir/coolant_reservoir_008.jpg",
+      "category": "coolant_reservoir",
+      "expert_processes": [
+        "Blow_Molding"
+      ],
+      "rank": 183,
+      "protected": true
+    },
+    {
+      "path": "images_pool/coolant_reservoir/coolant_reservoir_016.jpg",
+      "category": "coolant_reservoir",
+      "expert_processes": [
+        "Blow_Molding"
+      ],
+      "rank": 184,
+      "protected": true
+    },
+    {
+      "path": "images_pool/printed_prototype/printed_prototype_023.jpg",
+      "category": "printed_prototype",
+      "expert_processes": [
+        "Fused_Filament_Fabrication",
+        "Laminated_Object_Manufacturing",
+        "Selective_Laser_Sintering",
+        "Stereolithography"
+      ],
+      "rank": 0,
+      "protected": true
+    },
+    {
+      "path": "images_pool/printed_prototype/printed_prototype_034.jpg",
+      "category": "printed_prototype",
+      "expert_processes": [
+        "Fused_Filament_Fabrication",
+        "Laminated_Object_Manufacturing",
+        "Selective_Laser_Sintering",
+        "Stereolithography"
+      ],
+      "rank": 1,
+      "protected": true
+    },
+    {
+      "path": "images_pool/printed_prototype/printed_prototype_008.jpg",
+      "category": "printed_prototype",
+      "expert_processes": [
+        "Fused_Filament_Fabrication",
+        "Laminated_Object_Manufacturing",
+        "Selective_Laser_Sintering",
+        "Stereolithography"
+      ],
+      "rank": 50,
+      "protected": true
+    },
+    {
+      "path": "images_pool/printed_prototype/printed_prototype_020.jpg",
+      "category": "printed_prototype",
+      "expert_processes": [
+        "Fused_Filament_Fabrication",
+        "Laminated_Object_Manufacturing",
+        "Selective_Laser_Sintering",
+        "Stereolithography"
+      ],
+      "rank": 78,
+      "protected": true
+    },
+    {
+      "path": "images_pool/printed_prototype/printed_prototype_028.jpg",
+      "category": "printed_prototype",
+      "expert_processes": [
+        "Fused_Filament_Fabrication",
+        "Laminated_Object_Manufacturing",
+        "Selective_Laser_Sintering",
+        "Stereolithography"
+      ],
+      "rank": 91,
+      "protected": true
+    },
+    {
+      "path": "images_pool/boat_hull/boat_hull_012.jpg",
+      "category": "boat_hull",
+      "expert_processes": [
+        "Hand_Lay_up",
+        "Resin_Transfer_Molding",
+        "Vacuum_Assisted_RTM"
+      ],
+      "rank": 9,
+      "protected": true
+    },
+    {
+      "path": "images_pool/boat_hull/boat_hull_038.jpg",
+      "category": "boat_hull",
+      "expert_processes": [
+        "Hand_Lay_up",
+        "Resin_Transfer_Molding",
+        "Vacuum_Assisted_RTM"
+      ],
+      "rank": 10,
+      "protected": true
+    },
+    {
+      "path": "images_pool/monocoque_tub/monocoque_tub_008.jpg",
+      "category": "monocoque_tub",
+      "expert_processes": [
+        "Hand_Lay_up",
+        "Resin_Transfer_Molding",
+        "Vacuum_Assisted_RTM"
+      ],
+      "rank": 43,
+      "protected": true
+    },
+    {
+      "path": "images_pool/monocoque_tub/monocoque_tub_029.jpg",
+      "category": "monocoque_tub",
+      "expert_processes": [
+        "Hand_Lay_up",
+        "Resin_Transfer_Molding",
+        "Vacuum_Assisted_RTM"
+      ],
+      "rank": 44,
+      "protected": true
+    },
+    {
+      "path": "images_pool/monocoque_tub/monocoque_tub_032.jpg",
+      "category": "monocoque_tub",
+      "expert_processes": [
+        "Hand_Lay_up",
+        "Resin_Transfer_Molding",
+        "Vacuum_Assisted_RTM"
+      ],
+      "rank": 45,
+      "protected": true
+    },
+    {
+      "path": "images_pool/gear_shift_knob/gear_shift_knob_016.jpg",
+      "category": "gear_shift_knob",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 34,
+      "protected": true
+    },
+    {
+      "path": "images_pool/gear_shift_knob/gear_shift_knob_024.jpg",
+      "category": "gear_shift_knob",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 35,
+      "protected": true
+    },
+    {
+      "path": "images_pool/gear_shift_knob/gear_shift_knob_029.jpg",
+      "category": "gear_shift_knob",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 36,
+      "protected": true
+    },
+    {
+      "path": "images_pool/gear_shift_knob/gear_shift_knob_043.jpg",
+      "category": "gear_shift_knob",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 37,
+      "protected": true
+    },
+    {
+      "path": "images_pool/gear_shift_knob/gear_shift_knob_059.jpg",
+      "category": "gear_shift_knob",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 38,
+      "protected": true
+    },
+    {
+      "path": "images_pool/headlamp_reflector/headlamp_reflector_006.jpg",
+      "category": "headlamp_reflector",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding"
+      ],
+      "rank": 6,
+      "protected": true
+    },
+    {
+      "path": "images_pool/headlamp_reflector/headlamp_reflector_008.jpg",
+      "category": "headlamp_reflector",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding"
+      ],
+      "rank": 7,
+      "protected": true
+    },
+    {
+      "path": "images_pool/electrical_junction_box/electrical_junction_box_001.jpg",
+      "category": "electrical_junction_box",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 19,
+      "protected": true
+    },
+    {
+      "path": "images_pool/electrical_junction_box/electrical_junction_box_010.jpg",
+      "category": "electrical_junction_box",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 20,
+      "protected": true
+    },
+    {
+      "path": "images_pool/electrical_junction_box/electrical_junction_box_016.jpg",
+      "category": "electrical_junction_box",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 21,
+      "protected": true
+    },
+    {
+      "path": "images_pool/printed_bracket/printed_bracket_027.jpg",
+      "category": "printed_bracket",
+      "expert_processes": [
+        "Fused_Filament_Fabrication",
+        "Selective_Laser_Sintering",
+        "Stereolithography"
+      ],
+      "rank": 8,
+      "protected": false
+    },
+    {
+      "path": "images_pool/dashboard/dashboard_046.jpg",
+      "category": "dashboard",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 13,
+      "protected": false
+    },
+    {
+      "path": "images_pool/dashboard/dashboard_047.jpg",
+      "category": "dashboard",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 14,
+      "protected": false
+    },
+    {
+      "path": "images_pool/dashboard/dashboard_050.jpg",
+      "category": "dashboard",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 15,
+      "protected": false
+    },
+    {
+      "path": "images_pool/dashboard/dashboard_109.jpg",
+      "category": "dashboard",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 16,
+      "protected": false
+    },
+    {
+      "path": "images_pool/dashboard/dashboard_116.jpg",
+      "category": "dashboard",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 17,
+      "protected": false
+    },
+    {
+      "path": "images_pool/door_trim_panel/door_trim_panel_018.jpg",
+      "category": "door_trim_panel",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 18,
+      "protected": false
+    },
+    {
+      "path": "images_pool/electrical_junction_box/electrical_junction_box_017.jpg",
+      "category": "electrical_junction_box",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 22,
+      "protected": false
+    },
+    {
+      "path": "images_pool/electrical_junction_box/electrical_junction_box_043.jpg",
+      "category": "electrical_junction_box",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 23,
+      "protected": false
+    },
+    {
+      "path": "images_pool/electrical_junction_box/electrical_junction_box_069.jpg",
+      "category": "electrical_junction_box",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 24,
+      "protected": false
+    },
+    {
+      "path": "images_pool/electrical_junction_box/electrical_junction_box_099.jpg",
+      "category": "electrical_junction_box",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 25,
+      "protected": false
+    },
+    {
+      "path": "images_pool/electrical_junction_box/electrical_junction_box_102.jpg",
+      "category": "electrical_junction_box",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 26,
+      "protected": false
+    },
+    {
+      "path": "images_pool/electrical_junction_box/electrical_junction_box_113.jpg",
+      "category": "electrical_junction_box",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 27,
+      "protected": false
+    },
+    {
+      "path": "images_pool/electrical_junction_box/electrical_junction_box_119.jpg",
+      "category": "electrical_junction_box",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 28,
+      "protected": false
+    },
+    {
+      "path": "images_pool/engine_cover/engine_cover_130.jpg",
+      "category": "engine_cover",
+      "expert_processes": [
+        "Compression_Molding",
+        "Injection_Molding"
+      ],
+      "rank": 29,
+      "protected": false
+    },
+    {
+      "path": "images_pool/fender/fender_004.jpg",
+      "category": "fender",
+      "expert_processes": [
+        "Compression_Molding",
+        "Resin_Transfer_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 30,
+      "protected": false
+    },
+    {
+      "path": "images_pool/fender/fender_070.jpg",
+      "category": "fender",
+      "expert_processes": [
+        "Compression_Molding",
+        "Resin_Transfer_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 31,
+      "protected": false
+    },
+    {
+      "path": "images_pool/fender/fender_144.jpg",
+      "category": "fender",
+      "expert_processes": [
+        "Compression_Molding",
+        "Resin_Transfer_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 32,
+      "protected": false
+    },
+    {
+      "path": "images_pool/fender/fender_174.jpg",
+      "category": "fender",
+      "expert_processes": [
+        "Compression_Molding",
+        "Resin_Transfer_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 33,
+      "protected": false
+    },
+    {
+      "path": "images_pool/gear_shift_knob/gear_shift_knob_062.jpg",
+      "category": "gear_shift_knob",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 39,
+      "protected": false
+    },
+    {
+      "path": "images_pool/gear_shift_knob/gear_shift_knob_064.jpg",
+      "category": "gear_shift_knob",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 40,
+      "protected": false
+    },
+    {
+      "path": "images_pool/gear_shift_knob/gear_shift_knob_070.jpg",
+      "category": "gear_shift_knob",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 41,
+      "protected": false
+    },
+    {
+      "path": "images_pool/hood/hood_022.jpg",
+      "category": "hood",
+      "expert_processes": [
+        "Compression_Molding",
+        "Resin_Transfer_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 42,
+      "protected": false
+    },
+    {
+      "path": "images_pool/overmolded_tool_grip/overmolded_tool_grip_000.jpg",
+      "category": "overmolded_tool_grip",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 46,
+      "protected": false
+    },
+    {
+      "path": "images_pool/overmolded_tool_grip/overmolded_tool_grip_043.jpg",
+      "category": "overmolded_tool_grip",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 47,
+      "protected": false
+    },
+    {
+      "path": "images_pool/printed_bracket/printed_bracket_055.jpg",
+      "category": "printed_bracket",
+      "expert_processes": [
+        "Fused_Filament_Fabrication",
+        "Selective_Laser_Sintering",
+        "Stereolithography"
+      ],
+      "rank": 48,
+      "protected": false
+    },
+    {
+      "path": "images_pool/printed_bracket/printed_bracket_075.jpg",
+      "category": "printed_bracket",
+      "expert_processes": [
+        "Fused_Filament_Fabrication",
+        "Selective_Laser_Sintering",
+        "Stereolithography"
+      ],
+      "rank": 49,
+      "protected": false
+    },
+    {
+      "path": "images_pool/radiator_grille/radiator_grille_016.jpg",
+      "category": "radiator_grille",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 51,
+      "protected": false
+    },
+    {
+      "path": "images_pool/rear_spoiler/rear_spoiler_003.jpg",
+      "category": "rear_spoiler",
+      "expert_processes": [
+        "Compression_Molding",
+        "Injection_Molding",
+        "Resin_Transfer_Molding"
+      ],
+      "rank": 52,
+      "protected": false
+    },
+    {
+      "path": "images_pool/rear_spoiler/rear_spoiler_026.jpg",
+      "category": "rear_spoiler",
+      "expert_processes": [
+        "Compression_Molding",
+        "Injection_Molding",
+        "Resin_Transfer_Molding"
+      ],
+      "rank": 53,
+      "protected": false
+    },
+    {
+      "path": "images_pool/seat_shell/seat_shell_054.jpg",
+      "category": "seat_shell",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 54,
+      "protected": false
+    },
+    {
+      "path": "images_pool/steering_wheel/steering_wheel_012.jpg",
+      "category": "steering_wheel",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 55,
+      "protected": false
+    },
+    {
+      "path": "images_pool/steering_wheel/steering_wheel_032.jpg",
+      "category": "steering_wheel",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 56,
+      "protected": false
+    },
+    {
+      "path": "images_pool/steering_wheel/steering_wheel_038.jpg",
+      "category": "steering_wheel",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 57,
+      "protected": false
+    },
+    {
+      "path": "images_pool/steering_wheel/steering_wheel_045.jpg",
+      "category": "steering_wheel",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 58,
+      "protected": false
+    },
+    {
+      "path": "images_pool/steering_wheel/steering_wheel_047.jpg",
+      "category": "steering_wheel",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 59,
+      "protected": false
+    },
+    {
+      "path": "images_pool/steering_wheel/steering_wheel_064.jpg",
+      "category": "steering_wheel",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 60,
+      "protected": false
+    },
+    {
+      "path": "images_pool/steering_wheel/steering_wheel_076.jpg",
+      "category": "steering_wheel",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 61,
+      "protected": false
+    },
+    {
+      "path": "images_pool/tailgate/tailgate_023.jpg",
+      "category": "tailgate",
+      "expert_processes": [
+        "Compression_Molding",
+        "Resin_Transfer_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 62,
+      "protected": false
+    },
+    {
+      "path": "images_pool/truck_aero_fairing/truck_aero_fairing_073.jpg",
+      "category": "truck_aero_fairing",
+      "expert_processes": [
+        "Compression_Molding",
+        "Hand_Lay_up",
+        "Resin_Transfer_Molding",
+        "Sheet_Molding_Compound",
+        "Vacuum_Assisted_RTM"
+      ],
+      "rank": 63,
+      "protected": false
+    },
+    {
+      "path": "images_pool/steering_wheel/steering_wheel_089.jpg",
+      "category": "steering_wheel",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 64,
+      "protected": false
+    },
+    {
+      "path": "images_pool/headlamp_housing/headlamp_housing_015.jpg",
+      "category": "headlamp_housing",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 65,
+      "protected": false
+    },
+    {
+      "path": "images_pool/electrical_junction_box/electrical_junction_box_000.jpg",
+      "category": "electrical_junction_box",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 66,
+      "protected": false
+    },
+    {
+      "path": "images_pool/steering_wheel/steering_wheel_027.jpg",
+      "category": "steering_wheel",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 67,
+      "protected": false
+    },
+    {
+      "path": "images_pool/steering_wheel/steering_wheel_075.jpg",
+      "category": "steering_wheel",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 68,
+      "protected": false
+    },
+    {
+      "path": "images_pool/rear_spoiler/rear_spoiler_037.jpg",
+      "category": "rear_spoiler",
+      "expert_processes": [
+        "Compression_Molding",
+        "Injection_Molding",
+        "Resin_Transfer_Molding"
+      ],
+      "rank": 69,
+      "protected": false
+    },
+    {
+      "path": "images_pool/gear_shift_knob/gear_shift_knob_074.jpg",
+      "category": "gear_shift_knob",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 70,
+      "protected": false
+    },
+    {
+      "path": "images_pool/steering_wheel/steering_wheel_031.jpg",
+      "category": "steering_wheel",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 71,
+      "protected": false
+    },
+    {
+      "path": "images_pool/hood/hood_051.jpg",
+      "category": "hood",
+      "expert_processes": [
+        "Compression_Molding",
+        "Resin_Transfer_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 72,
+      "protected": false
+    },
+    {
+      "path": "images_pool/hood/hood_006.jpg",
+      "category": "hood",
+      "expert_processes": [
+        "Compression_Molding",
+        "Resin_Transfer_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 73,
+      "protected": false
+    },
+    {
+      "path": "images_pool/steering_wheel/steering_wheel_068.jpg",
+      "category": "steering_wheel",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 74,
+      "protected": false
+    },
+    {
+      "path": "images_pool/overmolded_tool_grip/overmolded_tool_grip_025.jpg",
+      "category": "overmolded_tool_grip",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 76,
+      "protected": false
+    },
+    {
+      "path": "images_pool/printed_bracket/printed_bracket_011.jpg",
+      "category": "printed_bracket",
+      "expert_processes": [
+        "Fused_Filament_Fabrication",
+        "Selective_Laser_Sintering",
+        "Stereolithography"
+      ],
+      "rank": 77,
+      "protected": false
+    },
+    {
+      "path": "images_pool/battery_tray/battery_tray_025.jpg",
+      "category": "battery_tray",
+      "expert_processes": [
+        "Compression_Molding",
+        "Resin_Transfer_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 79,
+      "protected": false
+    },
+    {
+      "path": "images_pool/tailgate/tailgate_068.jpg",
+      "category": "tailgate",
+      "expert_processes": [
+        "Compression_Molding",
+        "Resin_Transfer_Molding",
+        "Sheet_Molding_Compound"
+      ],
+      "rank": 80,
+      "protected": false
+    },
+    {
+      "path": "images_pool/gear_shift_knob/gear_shift_knob_086.jpg",
+      "category": "gear_shift_knob",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 81,
+      "protected": false
+    },
+    {
+      "path": "images_pool/dashboard/dashboard_055.jpg",
+      "category": "dashboard",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 82,
+      "protected": false
+    },
+    {
+      "path": "images_pool/gear_shift_knob/gear_shift_knob_104.jpg",
+      "category": "gear_shift_knob",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 83,
+      "protected": false
+    },
+    {
+      "path": "images_pool/composite_tube/composite_tube_021.jpg",
+      "category": "composite_tube",
+      "expert_processes": [
+        "Filament_Winding",
+        "Pultrusion"
+      ],
+      "rank": 84,
+      "protected": false
+    },
+    {
+      "path": "images_pool/gear_shift_knob/gear_shift_knob_102.jpg",
+      "category": "gear_shift_knob",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 85,
+      "protected": false
+    },
+    {
+      "path": "images_pool/gear_shift_knob/gear_shift_knob_105.jpg",
+      "category": "gear_shift_knob",
+      "expert_processes": [
+        "Injection_Molding",
+        "Overmolding"
+      ],
+      "rank": 86,
+      "protected": false
+    },
+    {
+      "path": "images_pool/body_kit_fairing/body_kit_fairing_048.jpg",
+      "category": "body_kit_fairing",
+      "expert_processes": [
+        "Compression_Molding",
+        "Hand_Lay_up",
+        "Resin_Transfer_Molding"
+      ],
+      "rank": 87,
+      "protected": false
+    },
+    {
+      "path": "images_pool/headlamp_reflector/headlamp_reflector_121.jpg",
+      "category": "headlamp_reflector",
+      "expert_processes": [
+        "Bulk_Molding_Compound",
+        "Injection_Molding"
+      ],
+      "rank": 88,
+      "protected": false
+    },
+    {
+      "path": "images_pool/instrument_cluster/instrument_cluster_029.jpg",
+      "category": "instrument_cluster",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 89,
+      "protected": false
+    },
+    {
+      "path": "images_pool/radiator_grille/radiator_grille_021.jpg",
+      "category": "radiator_grille",
+      "expert_processes": [
+        "Injection_Molding"
+      ],
+      "rank": 90,
+      "protected": false
+    }
+  ]
+}

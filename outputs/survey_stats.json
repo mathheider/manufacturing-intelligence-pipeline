@@ -1,0 +1,1836 @@
+{
+  "source": {
+    "csv": "data/survey/Car_Part_Manufacturing_Techniques_2026-08-04_1626.csv",
+    "csv_sha256": "46921de4e38faf3e660b219bc1fedda620e79d1bd97cf5a49d2679599b917667",
+    "exported": "2026-08-04 16:26 (Qualtrics row-level export)",
+    "supersedes": "data/survey/dashboard_export_2026-08-04.pdf",
+    "generator": "scripts/survey_stats.py",
+    "pdf_cross_check": {
+      "date": "2026-08-04",
+      "result": "MATCH on all 42 parts, zero disagreements",
+      "method": "per part-set block: dashboard table cells where readable, bar-chart vector geometry (bar widths quantized to integer axis units, legend-color series match) where tables were truncated; response badges matched per-question n",
+      "truncated_table_parts_recovered_from_chart": [
+        "Q1: Spring Hanger / Shackle Bracket, Pivot Pin / Bushing Assembly, Axle Seat / Spring Perch",
+        "Q5: Door Storage Pocket, Door Handle/Lock Bezel Opening, Window Switch Panel Recess",
+        "Q6: Wheel Wells, Side Step Board",
+        "Q7/Q8: see dashboard; all recovered cells matched"
+      ]
+    },
+    "note": "Rater identifiers are replaced by rater_01..rater_13 in this public copy. The row-level survey export is not published because it carries respondent metadata."
+  },
+  "instrument": {
+    "title": "Car Part Manufacturing Techniques",
+    "structure": "8 part-set pages, 42 parts total; per part the rater multi-selects manufacturing processes (instruction: 'up to three')",
+    "option_set_varies_by_part_set": true,
+    "merged_option": "Compression Molding/Thermoforming is a single instrument option; it cannot be split between the two benchmark processes",
+    "survey_only_options": [
+      "Adhesive_Bonding",
+      "NA_none_of_the_listed"
+    ]
+  },
+  "responses": {
+    "n_total": 13,
+    "n_complete": 4,
+    "n_partial_with_answers": 1,
+    "per_rater": [
+      {
+        "response_id": "rater_03",
+        "finished": true,
+        "progress_pct": 100,
+        "duration_s": 3009,
+        "n_parts_answered": 39
+      },
+      {
+        "response_id": "rater_10",
+        "finished": true,
+        "progress_pct": 100,
+        "duration_s": 1180,
+        "n_parts_answered": 38
+      },
+      {
+        "response_id": "rater_01",
+        "finished": true,
+        "progress_pct": 100,
+        "duration_s": 1108,
+        "n_parts_answered": 38
+      },
+      {
+        "response_id": "rater_08",
+        "finished": true,
+        "progress_pct": 100,
+        "duration_s": 2500,
+        "n_parts_answered": 41
+      },
+      {
+        "response_id": "rater_04",
+        "finished": false,
+        "progress_pct": 6,
+        "duration_s": 43,
+        "n_parts_answered": 0
+      },
+      {
+        "response_id": "rater_12",
+        "finished": false,
+        "progress_pct": 6,
+        "duration_s": 172,
+        "n_parts_answered": 0
+      },
+      {
+        "response_id": "rater_07",
+        "finished": false,
+        "progress_pct": 6,
+        "duration_s": 7,
+        "n_parts_answered": 0
+      },
+      {
+        "response_id": "rater_05",
+        "finished": false,
+        "progress_pct": 53,
+        "duration_s": 4921,
+        "n_parts_answered": 0
+      },
+      {
+        "response_id": "rater_11",
+        "finished": false,
+        "progress_pct": 6,
+        "duration_s": 6,
+        "n_parts_answered": 0
+      },
+      {
+        "response_id": "rater_06",
+        "finished": false,
+        "progress_pct": 6,
+        "duration_s": 9930,
+        "n_parts_answered": 0
+      },
+      {
+        "response_id": "rater_02",
+        "finished": false,
+        "progress_pct": 6,
+        "duration_s": 1669,
+        "n_parts_answered": 0
+      },
+      {
+        "response_id": "rater_13",
+        "finished": false,
+        "progress_pct": 18,
+        "duration_s": 83762,
+        "n_parts_answered": 7
+      },
+      {
+        "response_id": "rater_09",
+        "finished": false,
+        "progress_pct": 6,
+        "duration_s": 6,
+        "n_parts_answered": 0
+      }
+    ]
+  },
+  "exclusion_rules": [
+    "No response is dropped: partial responses contribute every part they answered (the instrument has no attention checks).",
+    "Empty cells are non-answers, not negative picks.",
+    "Picks beyond the 'up to three' instruction are kept as recorded and logged under instruction_deviations."
+  ],
+  "instruction_deviations": [
+    {
+      "unit": "Q1:Central Axle / Tube",
+      "rater": "rater_03",
+      "n_picked": 5
+    },
+    {
+      "unit": "Q1:Leaf Spring Assembly",
+      "rater": "rater_03",
+      "n_picked": 5
+    },
+    {
+      "unit": "Q1:Spring Clamp Plate",
+      "rater": "rater_03",
+      "n_picked": 9
+    },
+    {
+      "unit": "Q1:Spring Hanger / Shackle Bracket",
+      "rater": "rater_03",
+      "n_picked": 8
+    },
+    {
+      "unit": "Q1:Axle Seat / Spring Perch",
+      "rater": "rater_03",
+      "n_picked": 8
+    },
+    {
+      "unit": "Q2:Reservoir Body",
+      "rater": "rater_03",
+      "n_picked": 7
+    },
+    {
+      "unit": "Q2:Cap Base",
+      "rater": "rater_03",
+      "n_picked": 6
+    },
+    {
+      "unit": "Q2:Hinged Top Lid with Spout",
+      "rater": "rater_03",
+      "n_picked": 5
+    },
+    {
+      "unit": "Q2:Locking Lever",
+      "rater": "rater_03",
+      "n_picked": 4
+    },
+    {
+      "unit": "Q2:Hinge Pin",
+      "rater": "rater_03",
+      "n_picked": 4
+    },
+    {
+      "unit": "Q3:Exhaust Manifold",
+      "rater": "rater_03",
+      "n_picked": 4
+    },
+    {
+      "unit": "Q4:Steering Wheel Rim",
+      "rater": "rater_03",
+      "n_picked": 6
+    },
+    {
+      "unit": "Q4:Steering Wheel Spokes and Hub Structure",
+      "rater": "rater_03",
+      "n_picked": 6
+    },
+    {
+      "unit": "Q4:Airbag Cover",
+      "rater": "rater_03",
+      "n_picked": 9
+    },
+    {
+      "unit": "Q5:Door Trim Panel",
+      "rater": "rater_03",
+      "n_picked": 7
+    },
+    {
+      "unit": "Q5:Integrated Armrest and Door Pull",
+      "rater": "rater_03",
+      "n_picked": 8
+    },
+    {
+      "unit": "Q5:Door Storage Pocket",
+      "rater": "rater_03",
+      "n_picked": 7
+    },
+    {
+      "unit": "Q6:Truck Cabin Structure",
+      "rater": "rater_03",
+      "n_picked": 8
+    },
+    {
+      "unit": "Q6:Truck Bed",
+      "rater": "rater_03",
+      "n_picked": 8
+    },
+    {
+      "unit": "Q6:Side Step Board",
+      "rater": "rater_03",
+      "n_picked": 8
+    },
+    {
+      "unit": "Q7:Rear Bumper Fascia",
+      "rater": "rater_03",
+      "n_picked": 8
+    },
+    {
+      "unit": "Q7:Upper Rear Body Panel",
+      "rater": "rater_03",
+      "n_picked": 8
+    },
+    {
+      "unit": "Q8:Hood",
+      "rater": "rater_03",
+      "n_picked": 8
+    },
+    {
+      "unit": "Q8:Front Fender",
+      "rater": "rater_03",
+      "n_picked": 8
+    }
+  ],
+  "per_question_n": {
+    "Q1": 5,
+    "Q2": 4,
+    "Q3": 2,
+    "Q4": 4,
+    "Q5": 4,
+    "Q6": 4,
+    "Q7": 4,
+    "Q8": 4
+  },
+  "n_scored_instances": 163,
+  "n_parts": 42,
+  "n_raters": 5,
+  "expert_totals": {
+    "Adhesive_Bonding": 5,
+    "Blow_Molding": 4,
+    "Bulk_Molding_Compound": 21,
+    "Compression_Molding_or_Thermoforming": 57,
+    "Filament_Winding": 5,
+    "Fused_Filament_Fabrication": 6,
+    "Hand_Lay_up": 17,
+    "Injection_Molding": 103,
+    "Laminated_Object_Manufacturing": 9,
+    "NA_none_of_the_listed": 5,
+    "Overmolding": 4,
+    "Pultrusion": 9,
+    "Resin_Transfer_Molding": 56,
+    "Selective_Laser_Sintering": 13,
+    "Sheet_Molding_Compound": 46,
+    "Stereolithography": 11,
+    "Structural_Reaction_Injection_Molding": 24,
+    "Vacuum_Assisted_RTM": 32
+  },
+  "imbalance": {
+    "top_process": "Injection_Molding",
+    "top_picks": 103,
+    "runner_up": "Compression_Molding_or_Thermoforming",
+    "runner_up_picks": 57,
+    "ratio": 1.81,
+    "note": "replaces the unreproducible 217 vs 57 / '3.8-fold' claim"
+  },
+  "expert_top5": [
+    {
+      "process": "Injection_Molding",
+      "picks": 103
+    },
+    {
+      "process": "Compression_Molding_or_Thermoforming",
+      "picks": 57
+    },
+    {
+      "process": "Resin_Transfer_Molding",
+      "picks": 56
+    },
+    {
+      "process": "Sheet_Molding_Compound",
+      "picks": 46
+    },
+    {
+      "process": "Vacuum_Assisted_RTM",
+      "picks": 32
+    }
+  ],
+  "agreement": {
+    "alpha": 0.2203,
+    "observed_disagreement": 0.6378,
+    "expected_disagreement": 0.818,
+    "n_pairable_units": 40,
+    "n_pairable_observations": 161,
+    "distance": "1 - MASI (Jaccard x monotonicity), Passonneau 2006",
+    "multi_select_handling": "Labels are SETS (multi-select, no rank order), so a primary-pick reduction is not defensible; alpha is computed over set-valued labels with MASI distance. Units = parts, observers = raters; units with one rater are unpairable and excluded from alpha only.",
+    "leave_one_rater_out": {
+      "rater_01": 0.1252,
+      "rater_03": 0.3692,
+      "rater_08": 0.2252,
+      "rater_10": 0.1278,
+      "rater_13": 0.2538
+    }
+  },
+  "parts": [
+    {
+      "unit": "Q1:Central Axle / Tube",
+      "question_group": "Q1",
+      "part_set": "leaf spring assembly",
+      "part": "Central Axle / Tube",
+      "n_raters": 5,
+      "completeness": "OK",
+      "pick_counts": {
+        "Blow_Molding": 1,
+        "Bulk_Molding_Compound": 1,
+        "Compression_Molding_or_Thermoforming": 1,
+        "Filament_Winding": 4,
+        "Injection_Molding": 1,
+        "Pultrusion": 5,
+        "Resin_Transfer_Molding": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Blow_Molding",
+          "Filament_Winding",
+          "Injection_Molding",
+          "Pultrusion",
+          "Resin_Transfer_Molding"
+        ],
+        "rater_10": [
+          "Filament_Winding",
+          "Pultrusion"
+        ],
+        "rater_01": [
+          "Filament_Winding",
+          "Pultrusion"
+        ],
+        "rater_08": [
+          "Filament_Winding",
+          "Pultrusion"
+        ],
+        "rater_13": [
+          "Bulk_Molding_Compound",
+          "Compression_Molding_or_Thermoforming",
+          "Pultrusion"
+        ]
+      }
+    },
+    {
+      "unit": "Q1:Leaf Spring Assembly",
+      "question_group": "Q1",
+      "part_set": "leaf spring assembly",
+      "part": "Leaf Spring Assembly",
+      "n_raters": 5,
+      "completeness": "OK",
+      "pick_counts": {
+        "Compression_Molding_or_Thermoforming": 1,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 1,
+        "Pultrusion": 1,
+        "Resin_Transfer_Molding": 3,
+        "Sheet_Molding_Compound": 2,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 2
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Sheet_Molding_Compound"
+        ],
+        "rater_01": [
+          "Sheet_Molding_Compound"
+        ],
+        "rater_08": [
+          "Compression_Molding_or_Thermoforming",
+          "Pultrusion",
+          "Resin_Transfer_Molding"
+        ],
+        "rater_13": [
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ]
+      }
+    },
+    {
+      "unit": "Q1:U-bolt",
+      "question_group": "Q1",
+      "part_set": "leaf spring assembly",
+      "part": "U-bolt",
+      "n_raters": 5,
+      "completeness": "OK",
+      "pick_counts": {
+        "Compression_Molding_or_Thermoforming": 1,
+        "Injection_Molding": 3,
+        "NA_none_of_the_listed": 2,
+        "Pultrusion": 1,
+        "Resin_Transfer_Molding": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Injection_Molding"
+        ],
+        "rater_10": [
+          "NA_none_of_the_listed"
+        ],
+        "rater_01": [
+          "NA_none_of_the_listed"
+        ],
+        "rater_08": [
+          "Injection_Molding",
+          "Pultrusion"
+        ],
+        "rater_13": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding",
+          "Resin_Transfer_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q1:Spring Clamp Plate",
+      "question_group": "Q1",
+      "part_set": "leaf spring assembly",
+      "part": "Spring Clamp Plate",
+      "n_raters": 5,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Compression_Molding_or_Thermoforming": 5,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 2,
+        "Laminated_Object_Manufacturing": 1,
+        "Pultrusion": 1,
+        "Resin_Transfer_Molding": 4,
+        "Sheet_Molding_Compound": 1,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 4
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Compression_Molding_or_Thermoforming",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Pultrusion",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_08": [
+          "Compression_Molding_or_Thermoforming",
+          "Laminated_Object_Manufacturing",
+          "Resin_Transfer_Molding"
+        ],
+        "rater_13": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ]
+      }
+    },
+    {
+      "unit": "Q1:Spring Hanger / Shackle Bracket",
+      "question_group": "Q1",
+      "part_set": "leaf spring assembly",
+      "part": "Spring Hanger / Shackle Bracket",
+      "n_raters": 5,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Compression_Molding_or_Thermoforming": 4,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 2,
+        "Resin_Transfer_Molding": 4,
+        "Sheet_Molding_Compound": 1,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 4
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Compression_Molding_or_Thermoforming",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_08": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_13": [
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q1:Pivot Pin / Bushing Assembly",
+      "question_group": "Q1",
+      "part_set": "leaf spring assembly",
+      "part": "Pivot Pin / Bushing Assembly",
+      "n_raters": 5,
+      "completeness": "OK",
+      "pick_counts": {
+        "Injection_Molding": 3,
+        "NA_none_of_the_listed": 2,
+        "Pultrusion": 1,
+        "Structural_Reaction_Injection_Molding": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Injection_Molding",
+          "Structural_Reaction_Injection_Molding"
+        ],
+        "rater_10": [
+          "NA_none_of_the_listed"
+        ],
+        "rater_01": [
+          "NA_none_of_the_listed"
+        ],
+        "rater_08": [
+          "Injection_Molding",
+          "Pultrusion"
+        ],
+        "rater_13": [
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q1:Axle Seat / Spring Perch",
+      "question_group": "Q1",
+      "part_set": "leaf spring assembly",
+      "part": "Axle Seat / Spring Perch",
+      "n_raters": 5,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Compression_Molding_or_Thermoforming": 3,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 2,
+        "Resin_Transfer_Molding": 4,
+        "Sheet_Molding_Compound": 1,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 4
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Compression_Molding_or_Thermoforming",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_08": [
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_13": [
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q2:Reservoir Body",
+      "question_group": "Q2",
+      "part_set": "fluid reservoir",
+      "part": "Reservoir Body",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Blow_Molding": 2,
+        "Bulk_Molding_Compound": 1,
+        "Fused_Filament_Fabrication": 1,
+        "Injection_Molding": 4,
+        "Laminated_Object_Manufacturing": 1,
+        "Selective_Laser_Sintering": 1,
+        "Stereolithography": 1,
+        "Structural_Reaction_Injection_Molding": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Blow_Molding",
+          "Fused_Filament_Fabrication",
+          "Injection_Molding",
+          "Laminated_Object_Manufacturing",
+          "Selective_Laser_Sintering",
+          "Stereolithography",
+          "Structural_Reaction_Injection_Molding"
+        ],
+        "rater_10": [
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Blow_Molding",
+          "Bulk_Molding_Compound",
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q2:Cap Base",
+      "question_group": "Q2",
+      "part_set": "fluid reservoir",
+      "part": "Cap Base",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Fused_Filament_Fabrication": 1,
+        "Injection_Molding": 4,
+        "Laminated_Object_Manufacturing": 1,
+        "Selective_Laser_Sintering": 1,
+        "Stereolithography": 1,
+        "Structural_Reaction_Injection_Molding": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Fused_Filament_Fabrication",
+          "Injection_Molding",
+          "Laminated_Object_Manufacturing",
+          "Selective_Laser_Sintering",
+          "Stereolithography",
+          "Structural_Reaction_Injection_Molding"
+        ],
+        "rater_10": [
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q2:Hinged Top Lid with Spout",
+      "question_group": "Q2",
+      "part_set": "fluid reservoir",
+      "part": "Hinged Top Lid with Spout",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Injection_Molding": 4,
+        "Laminated_Object_Manufacturing": 1,
+        "Selective_Laser_Sintering": 1,
+        "Stereolithography": 1,
+        "Structural_Reaction_Injection_Molding": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Injection_Molding",
+          "Laminated_Object_Manufacturing",
+          "Selective_Laser_Sintering",
+          "Stereolithography",
+          "Structural_Reaction_Injection_Molding"
+        ],
+        "rater_10": [
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q2:Locking Lever",
+      "question_group": "Q2",
+      "part_set": "fluid reservoir",
+      "part": "Locking Lever",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Injection_Molding": 4,
+        "Laminated_Object_Manufacturing": 1,
+        "Selective_Laser_Sintering": 1,
+        "Stereolithography": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Injection_Molding",
+          "Laminated_Object_Manufacturing",
+          "Selective_Laser_Sintering",
+          "Stereolithography"
+        ],
+        "rater_10": [
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q2:Hinge Pin",
+      "question_group": "Q2",
+      "part_set": "fluid reservoir",
+      "part": "Hinge Pin",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Injection_Molding": 3,
+        "Laminated_Object_Manufacturing": 1,
+        "NA_none_of_the_listed": 1,
+        "Selective_Laser_Sintering": 1,
+        "Stereolithography": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Injection_Molding",
+          "Laminated_Object_Manufacturing",
+          "Selective_Laser_Sintering",
+          "Stereolithography"
+        ],
+        "rater_10": [
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "NA_none_of_the_listed"
+        ],
+        "rater_08": [
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q3:Exhaust Manifold",
+      "question_group": "Q3",
+      "part_set": "exhaust",
+      "part": "Exhaust Manifold",
+      "n_raters": 2,
+      "completeness": "OK",
+      "pick_counts": {
+        "Fused_Filament_Fabrication": 1,
+        "Injection_Molding": 1,
+        "Laminated_Object_Manufacturing": 1,
+        "Overmolding": 1,
+        "Selective_Laser_Sintering": 1,
+        "Stereolithography": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Fused_Filament_Fabrication",
+          "Laminated_Object_Manufacturing",
+          "Selective_Laser_Sintering",
+          "Stereolithography"
+        ],
+        "rater_08": [
+          "Injection_Molding",
+          "Overmolding"
+        ]
+      }
+    },
+    {
+      "unit": "Q4:Steering Wheel Rim",
+      "question_group": "Q4",
+      "part_set": "steering wheel",
+      "part": "Steering Wheel Rim",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Blow_Molding": 1,
+        "Compression_Molding_or_Thermoforming": 2,
+        "Filament_Winding": 1,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 3,
+        "Overmolding": 1,
+        "Resin_Transfer_Molding": 2,
+        "Structural_Reaction_Injection_Molding": 2
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Blow_Molding",
+          "Filament_Winding",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Structural_Reaction_Injection_Molding"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Overmolding",
+          "Resin_Transfer_Molding",
+          "Structural_Reaction_Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q4:Steering Wheel Spokes and Hub Structure",
+      "question_group": "Q4",
+      "part_set": "steering wheel",
+      "part": "Steering Wheel Spokes and Hub Structure",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Compression_Molding_or_Thermoforming": 2,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 1,
+        "Laminated_Object_Manufacturing": 1,
+        "Overmolding": 1,
+        "Resin_Transfer_Molding": 4,
+        "Selective_Laser_Sintering": 1,
+        "Stereolithography": 1,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 2
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Laminated_Object_Manufacturing",
+          "Resin_Transfer_Molding",
+          "Selective_Laser_Sintering",
+          "Stereolithography"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_08": [
+          "Overmolding",
+          "Resin_Transfer_Molding",
+          "Structural_Reaction_Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q4:Airbag Cover",
+      "question_group": "Q4",
+      "part_set": "steering wheel",
+      "part": "Airbag Cover",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Compression_Molding_or_Thermoforming": 2,
+        "Fused_Filament_Fabrication": 1,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 4,
+        "Laminated_Object_Manufacturing": 1,
+        "Resin_Transfer_Molding": 1,
+        "Selective_Laser_Sintering": 2,
+        "Stereolithography": 1,
+        "Structural_Reaction_Injection_Molding": 2,
+        "Vacuum_Assisted_RTM": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Fused_Filament_Fabrication",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Laminated_Object_Manufacturing",
+          "Resin_Transfer_Molding",
+          "Selective_Laser_Sintering",
+          "Stereolithography",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Injection_Molding",
+          "Selective_Laser_Sintering",
+          "Structural_Reaction_Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q4:Spoke Decorative Trim",
+      "question_group": "Q4",
+      "part_set": "steering wheel",
+      "part": "Spoke Decorative Trim",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Injection_Molding": 4,
+        "Selective_Laser_Sintering": 2,
+        "Sheet_Molding_Compound": 1,
+        "Stereolithography": 1,
+        "Structural_Reaction_Injection_Molding": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Injection_Molding",
+          "Sheet_Molding_Compound"
+        ],
+        "rater_10": [
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Injection_Molding",
+          "Selective_Laser_Sintering",
+          "Stereolithography"
+        ],
+        "rater_08": [
+          "Injection_Molding",
+          "Selective_Laser_Sintering",
+          "Structural_Reaction_Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q5:Door Trim Panel",
+      "question_group": "Q5",
+      "part_set": "door",
+      "part": "Door Trim Panel",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Compression_Molding_or_Thermoforming": 3,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 3,
+        "Resin_Transfer_Molding": 2,
+        "Sheet_Molding_Compound": 4,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Compression_Molding_or_Thermoforming",
+          "Hand_Lay_up",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding",
+          "Sheet_Molding_Compound"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding",
+          "Sheet_Molding_Compound"
+        ],
+        "rater_08": [
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound"
+        ]
+      }
+    },
+    {
+      "unit": "Q5:Window Glass",
+      "question_group": "Q5",
+      "part_set": "door",
+      "part": "Window Glass",
+      "n_raters": 1,
+      "completeness": "OK",
+      "pick_counts": {
+        "Adhesive_Bonding": 1
+      },
+      "picks_by_rater": {
+        "rater_08": [
+          "Adhesive_Bonding"
+        ]
+      }
+    },
+    {
+      "unit": "Q5:Integrated Armrest and Door Pull",
+      "question_group": "Q5",
+      "part_set": "door",
+      "part": "Integrated Armrest and Door Pull",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Adhesive_Bonding": 1,
+        "Bulk_Molding_Compound": 1,
+        "Compression_Molding_or_Thermoforming": 3,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 4,
+        "Resin_Transfer_Molding": 1,
+        "Sheet_Molding_Compound": 2,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Compression_Molding_or_Thermoforming",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Adhesive_Bonding",
+          "Injection_Molding",
+          "Sheet_Molding_Compound"
+        ]
+      }
+    },
+    {
+      "unit": "Q5:Speaker Grille",
+      "question_group": "Q5",
+      "part_set": "door",
+      "part": "Speaker Grille",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Fused_Filament_Fabrication": 1,
+        "Injection_Molding": 4,
+        "Selective_Laser_Sintering": 1,
+        "Sheet_Molding_Compound": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Fused_Filament_Fabrication",
+          "Injection_Molding",
+          "Selective_Laser_Sintering"
+        ],
+        "rater_10": [
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Injection_Molding",
+          "Sheet_Molding_Compound"
+        ]
+      }
+    },
+    {
+      "unit": "Q5:Door Storage Pocket",
+      "question_group": "Q5",
+      "part_set": "door",
+      "part": "Door Storage Pocket",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 4,
+        "Resin_Transfer_Molding": 1,
+        "Sheet_Molding_Compound": 2,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Injection_Molding",
+          "Sheet_Molding_Compound"
+        ]
+      }
+    },
+    {
+      "unit": "Q5:Door Handle/Lock Bezel Opening",
+      "question_group": "Q5",
+      "part_set": "door",
+      "part": "Door Handle/Lock Bezel Opening",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Compression_Molding_or_Thermoforming": 2,
+        "Injection_Molding": 3,
+        "Resin_Transfer_Molding": 1,
+        "Sheet_Molding_Compound": 1,
+        "Vacuum_Assisted_RTM": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_01": [
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Injection_Molding",
+          "Sheet_Molding_Compound"
+        ]
+      }
+    },
+    {
+      "unit": "Q5:Window Switch Panel Recess",
+      "question_group": "Q5",
+      "part_set": "door",
+      "part": "Window Switch Panel Recess",
+      "n_raters": 3,
+      "completeness": "OK",
+      "pick_counts": {
+        "Compression_Molding_or_Thermoforming": 1,
+        "Injection_Molding": 3,
+        "Sheet_Molding_Compound": 1
+      },
+      "picks_by_rater": {
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Injection_Molding",
+          "Sheet_Molding_Compound"
+        ]
+      }
+    },
+    {
+      "unit": "Q6:Truck Cabin Structure",
+      "question_group": "Q6",
+      "part_set": "truck exterior",
+      "part": "Truck Cabin Structure",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Compression_Molding_or_Thermoforming": 4,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 1,
+        "Resin_Transfer_Molding": 4,
+        "Sheet_Molding_Compound": 1,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Compression_Molding_or_Thermoforming",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding"
+        ],
+        "rater_08": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q6:Truck Bed",
+      "question_group": "Q6",
+      "part_set": "truck exterior",
+      "part": "Truck Bed",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Compression_Molding_or_Thermoforming": 3,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 1,
+        "Resin_Transfer_Molding": 2,
+        "Sheet_Molding_Compound": 4,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Compression_Molding_or_Thermoforming",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Sheet_Molding_Compound"
+        ],
+        "rater_01": [
+          "Sheet_Molding_Compound"
+        ],
+        "rater_08": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound"
+        ]
+      }
+    },
+    {
+      "unit": "Q6:Rear Wheel",
+      "question_group": "Q6",
+      "part_set": "truck exterior",
+      "part": "Rear Wheel",
+      "n_raters": 2,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Compression_Molding_or_Thermoforming": 1,
+        "Injection_Molding": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Bulk_Molding_Compound"
+        ]
+      }
+    },
+    {
+      "unit": "Q6:Side Mirrors",
+      "question_group": "Q6",
+      "part_set": "truck exterior",
+      "part": "Side Mirrors",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Injection_Molding": 4
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Injection_Molding"
+        ],
+        "rater_10": [
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q6:Door Handles",
+      "question_group": "Q6",
+      "part_set": "truck exterior",
+      "part": "Door Handles",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Injection_Molding": 4
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Injection_Molding"
+        ],
+        "rater_10": [
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q6:Roof Rails",
+      "question_group": "Q6",
+      "part_set": "truck exterior",
+      "part": "Roof Rails",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Adhesive_Bonding": 2,
+        "Injection_Molding": 2,
+        "Resin_Transfer_Molding": 2
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Injection_Molding"
+        ],
+        "rater_10": [
+          "Adhesive_Bonding",
+          "Resin_Transfer_Molding"
+        ],
+        "rater_01": [
+          "Adhesive_Bonding",
+          "Resin_Transfer_Molding"
+        ],
+        "rater_08": [
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q6:Wheel Wells",
+      "question_group": "Q6",
+      "part_set": "truck exterior",
+      "part": "Wheel Wells",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Compression_Molding_or_Thermoforming": 1,
+        "Injection_Molding": 1,
+        "Resin_Transfer_Molding": 2,
+        "Sheet_Molding_Compound": 2,
+        "Vacuum_Assisted_RTM": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Resin_Transfer_Molding"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_08": [
+          "Bulk_Molding_Compound",
+          "Sheet_Molding_Compound"
+        ]
+      }
+    },
+    {
+      "unit": "Q6:Side Step Board",
+      "question_group": "Q6",
+      "part_set": "truck exterior",
+      "part": "Side Step Board",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 2,
+        "Compression_Molding_or_Thermoforming": 1,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 1,
+        "Resin_Transfer_Molding": 2,
+        "Sheet_Molding_Compound": 4,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 2
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Compression_Molding_or_Thermoforming",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Sheet_Molding_Compound"
+        ],
+        "rater_01": [
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_08": [
+          "Bulk_Molding_Compound",
+          "Sheet_Molding_Compound"
+        ]
+      }
+    },
+    {
+      "unit": "Q7:Rear Bumper Fascia",
+      "question_group": "Q7",
+      "part_set": "rear body",
+      "part": "Rear Bumper Fascia",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 2,
+        "Compression_Molding_or_Thermoforming": 3,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 2,
+        "Resin_Transfer_Molding": 1,
+        "Sheet_Molding_Compound": 4,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Compression_Molding_or_Thermoforming",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Sheet_Molding_Compound"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Sheet_Molding_Compound"
+        ],
+        "rater_08": [
+          "Bulk_Molding_Compound",
+          "Injection_Molding",
+          "Sheet_Molding_Compound"
+        ]
+      }
+    },
+    {
+      "unit": "Q7:Upper Rear Body Panel",
+      "question_group": "Q7",
+      "part_set": "rear body",
+      "part": "Upper Rear Body Panel",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Compression_Molding_or_Thermoforming": 4,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 1,
+        "Resin_Transfer_Molding": 4,
+        "Sheet_Molding_Compound": 4,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Compression_Molding_or_Thermoforming",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound"
+        ],
+        "rater_08": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound"
+        ]
+      }
+    },
+    {
+      "unit": "Q7:Parking Sensor Module",
+      "question_group": "Q7",
+      "part_set": "rear body",
+      "part": "Parking Sensor Module",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Injection_Molding": 4,
+        "Overmolding": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Injection_Molding"
+        ],
+        "rater_10": [
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Injection_Molding",
+          "Overmolding"
+        ]
+      }
+    },
+    {
+      "unit": "Q7:Roof Fin/Antenna",
+      "question_group": "Q7",
+      "part_set": "rear body",
+      "part": "Roof Fin/Antenna",
+      "n_raters": 3,
+      "completeness": "OK",
+      "pick_counts": {
+        "Compression_Molding_or_Thermoforming": 1,
+        "Fused_Filament_Fabrication": 1,
+        "Injection_Molding": 3,
+        "Selective_Laser_Sintering": 1,
+        "Stereolithography": 2
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Compression_Molding_or_Thermoforming",
+          "Injection_Molding"
+        ],
+        "rater_10": [
+          "Fused_Filament_Fabrication",
+          "Injection_Molding",
+          "Stereolithography"
+        ],
+        "rater_01": [
+          "Injection_Molding",
+          "Selective_Laser_Sintering",
+          "Stereolithography"
+        ]
+      }
+    },
+    {
+      "unit": "Q8:Hood",
+      "question_group": "Q8",
+      "part_set": "front body",
+      "part": "Hood",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Compression_Molding_or_Thermoforming": 4,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 1,
+        "Resin_Transfer_Molding": 4,
+        "Sheet_Molding_Compound": 4,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Compression_Molding_or_Thermoforming",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound"
+        ],
+        "rater_08": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound"
+        ]
+      }
+    },
+    {
+      "unit": "Q8:Front Grille",
+      "question_group": "Q8",
+      "part_set": "front body",
+      "part": "Front Grille",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Injection_Molding": 3,
+        "Sheet_Molding_Compound": 2
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Injection_Molding"
+        ],
+        "rater_10": [
+          "Sheet_Molding_Compound"
+        ],
+        "rater_01": [
+          "Injection_Molding",
+          "Sheet_Molding_Compound"
+        ],
+        "rater_08": [
+          "Bulk_Molding_Compound",
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q8:Windshield",
+      "question_group": "Q8",
+      "part_set": "front body",
+      "part": "Windshield",
+      "n_raters": 1,
+      "completeness": "OK",
+      "pick_counts": {
+        "Adhesive_Bonding": 1
+      },
+      "picks_by_rater": {
+        "rater_08": [
+          "Adhesive_Bonding"
+        ]
+      }
+    },
+    {
+      "unit": "Q8:Windshield Wiper Assembly",
+      "question_group": "Q8",
+      "part_set": "front body",
+      "part": "Windshield Wiper Assembly",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Compression_Molding_or_Thermoforming": 1,
+        "Injection_Molding": 2,
+        "Resin_Transfer_Molding": 2,
+        "Vacuum_Assisted_RTM": 2
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Injection_Molding"
+        ],
+        "rater_10": [
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_08": [
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q8:Side View Mirror",
+      "question_group": "Q8",
+      "part_set": "front body",
+      "part": "Side View Mirror",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Injection_Molding": 4
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Injection_Molding"
+        ],
+        "rater_10": [
+          "Injection_Molding"
+        ],
+        "rater_01": [
+          "Injection_Molding"
+        ],
+        "rater_08": [
+          "Injection_Molding"
+        ]
+      }
+    },
+    {
+      "unit": "Q8:Front Fender",
+      "question_group": "Q8",
+      "part_set": "front body",
+      "part": "Front Fender",
+      "n_raters": 4,
+      "completeness": "OK",
+      "pick_counts": {
+        "Bulk_Molding_Compound": 1,
+        "Compression_Molding_or_Thermoforming": 4,
+        "Hand_Lay_up": 1,
+        "Injection_Molding": 1,
+        "Resin_Transfer_Molding": 4,
+        "Sheet_Molding_Compound": 4,
+        "Structural_Reaction_Injection_Molding": 1,
+        "Vacuum_Assisted_RTM": 1
+      },
+      "picks_by_rater": {
+        "rater_03": [
+          "Bulk_Molding_Compound",
+          "Compression_Molding_or_Thermoforming",
+          "Hand_Lay_up",
+          "Injection_Molding",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound",
+          "Structural_Reaction_Injection_Molding",
+          "Vacuum_Assisted_RTM"
+        ],
+        "rater_10": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound"
+        ],
+        "rater_01": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound"
+        ],
+        "rater_08": [
+          "Compression_Molding_or_Thermoforming",
+          "Resin_Transfer_Molding",
+          "Sheet_Molding_Compound"
+        ]
+      }
+    }
+  ],
+  "krippendorff_alpha": 0.2203
+}

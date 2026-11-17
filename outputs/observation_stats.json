@@ -1,0 +1,53 @@
+{
+  "source": {
+    "run": "outputs/benchmark_real.json (gemini-2.5-flash-lite, 150 stratified real photos)",
+    "cache": "outputs/vlm_cache/bench-gemini-2.5-flash-lite (*_direct-__process___00_bench-v1.json, local-only)",
+    "generator": "scripts/observation_stats.py",
+    "replaces": "the unreproducible '217 vs 57 over 280 images' claim: no artifact of that experiment exists, and 217 exceeds the survey's arithmetic maximum of 210"
+  },
+  "populations_note": "Model picks cover the 150-photo stratified benchmark pool; expert picks cover the 42 survey parts. Different image populations: the figure compares pick SHARES per process and says so on its face; it is not a per-part paired comparison.",
+  "model": {
+    "n_images": 150,
+    "totals": {
+      "Blow_Molding": 4,
+      "Compression_Molding_or_Thermoforming": 2,
+      "Filament_Winding": 1,
+      "Fused_Filament_Fabrication": 8,
+      "Hand_Lay_up": 4,
+      "Injection_Molding": 107,
+      "Pultrusion": 5,
+      "Resin_Transfer_Molding": 9,
+      "Sheet_Molding_Compound": 10
+    },
+    "top_process": "Injection_Molding",
+    "top_share": 0.713,
+    "top5": [
+      "Injection_Molding",
+      "Sheet_Molding_Compound",
+      "Resin_Transfer_Molding",
+      "Fused_Filament_Fabrication",
+      "Pultrusion"
+    ]
+  },
+  "experts": {
+    "n_picks": 427,
+    "top_process": "Injection_Molding",
+    "top_share": 0.241,
+    "top5": [
+      "Injection_Molding",
+      "Compression_Molding_or_Thermoforming",
+      "Resin_Transfer_Molding",
+      "Sheet_Molding_Compound",
+      "Vacuum_Assisted_RTM"
+    ]
+  },
+  "top5_overlap": {
+    "processes": [
+      "Injection_Molding",
+      "Resin_Transfer_Molding",
+      "Sheet_Molding_Compound"
+    ],
+    "count": 3,
+    "replaces": "the 'top five overlap experts on only one process' claim"
+  }
+}

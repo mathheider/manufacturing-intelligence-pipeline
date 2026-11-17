@@ -1,0 +1,195 @@
+{
+  "backend": "mock",
+  "dataset": "seed",
+  "dataset_size": 14,
+  "trials": 2,
+  "direct_topk": 5,
+  "shortlist_k": 3,
+  "rules_path": "data/rules.json",
+  "n_clauses": 92,
+  "config": {
+    "seed": 20260630,
+    "n_samples": 5,
+    "tol_rel": 0.1,
+    "min_agree": 0.6,
+    "max_steps": 20,
+    "max_reprobe": 1,
+    "seeds": 2,
+    "noise": {
+      "numeric_rel_noise": 0.15,
+      "boolean_flip_prob": 0.2,
+      "integer_swap_range": 1,
+      "inj_molding_prior": 0.9
+    }
+  },
+  "all_components": {
+    "Direct": {
+      "precision": 0.571,
+      "recall": 0.488,
+      "f1": 0.512,
+      "f1_ci95": [
+        0.333,
+        0.679
+      ],
+      "avg_probes": 1.0,
+      "avg_false_elims": 1.071,
+      "containment": 0.429,
+      "avg_set_size": 1.0,
+      "survivor_reduction": 16.0,
+      "shortlist_f1": 0.512,
+      "n_instances": 28
+    },
+    "RuleSet": {
+      "precision": 0.234,
+      "recall": 1.0,
+      "f1": 0.36,
+      "f1_ci95": [
+        0.312,
+        0.439
+      ],
+      "avg_probes": 0.0,
+      "avg_false_elims": 0.0,
+      "containment": 1.0,
+      "avg_set_size": 7.857,
+      "survivor_reduction": 9.143,
+      "shortlist_f1": 0.324,
+      "n_instances": 28
+    },
+    "Greedy": {
+      "precision": 0.17,
+      "recall": 0.679,
+      "f1": 0.261,
+      "f1_ci95": [
+        0.163,
+        0.326
+      ],
+      "avg_probes": 11.0,
+      "avg_false_elims": 0.5,
+      "containment": 0.643,
+      "avg_set_size": 6.643,
+      "survivor_reduction": 10.357,
+      "shortlist_f1": 0.205,
+      "n_instances": 28
+    },
+    "Hybrid": {
+      "precision": 0.205,
+      "recall": 0.839,
+      "f1": 0.305,
+      "f1_ci95": [
+        0.227,
+        0.376
+      ],
+      "avg_probes": 9.036,
+      "avg_false_elims": 0.179,
+      "containment": 0.821,
+      "avg_set_size": 8.25,
+      "survivor_reduction": 8.75,
+      "shortlist_f1": 0.302,
+      "n_instances": 28
+    },
+    "Direct@k": {
+      "precision": 0.15,
+      "recall": 0.565,
+      "f1": 0.23,
+      "f1_ci95": [
+        0.167,
+        0.281
+      ],
+      "avg_probes": 1.0,
+      "avg_false_elims": 0.893,
+      "containment": 0.429,
+      "avg_set_size": 5.0,
+      "survivor_reduction": 12.0,
+      "shortlist_f1": 0.307,
+      "n_instances": 28
+    }
+  },
+  "hard_subset": {
+    "Direct": {
+      "precision": 0.25,
+      "recall": 0.104,
+      "f1": 0.146,
+      "f1_ci95": [
+        0.042,
+        0.26
+      ],
+      "avg_probes": 1.0,
+      "avg_false_elims": 1.875,
+      "containment": 0.0,
+      "avg_set_size": 1.0,
+      "survivor_reduction": 16.0,
+      "shortlist_f1": 0.146,
+      "n_instances": 16
+    },
+    "RuleSet": {
+      "precision": 0.323,
+      "recall": 1.0,
+      "f1": 0.476,
+      "f1_ci95": [
+        0.423,
+        0.544
+      ],
+      "avg_probes": 0.0,
+      "avg_false_elims": 0.0,
+      "containment": 1.0,
+      "avg_set_size": 7.125,
+      "survivor_reduction": 9.875,
+      "shortlist_f1": 0.442,
+      "n_instances": 16
+    },
+    "Greedy": {
+      "precision": 0.177,
+      "recall": 0.5,
+      "f1": 0.26,
+      "f1_ci95": [
+        0.143,
+        0.381
+      ],
+      "avg_probes": 11.0,
+      "avg_false_elims": 0.812,
+      "containment": 0.438,
+      "avg_set_size": 5.938,
+      "survivor_reduction": 11.062,
+      "shortlist_f1": 0.171,
+      "n_instances": 16
+    },
+    "Hybrid": {
+      "precision": 0.277,
+      "recall": 0.781,
+      "f1": 0.392,
+      "f1_ci95": [
+        0.287,
+        0.495
+      ],
+      "avg_probes": 8.938,
+      "avg_false_elims": 0.25,
+      "containment": 0.75,
+      "avg_set_size": 6.812,
+      "survivor_reduction": 10.188,
+      "shortlist_f1": 0.373,
+      "n_instances": 16
+    },
+    "Direct@k": {
+      "precision": 0.113,
+      "recall": 0.24,
+      "f1": 0.152,
+      "f1_ci95": [
+        0.083,
+        0.221
+      ],
+      "avg_probes": 1.0,
+      "avg_false_elims": 1.562,
+      "containment": 0.0,
+      "avg_set_size": 5.0,
+      "survivor_reduction": 12.0,
+      "shortlist_f1": 0.163,
+      "n_instances": 16
+    }
+  },
+  "diagnostic_gaps": {
+    "architecture_value_all": -0.207,
+    "architecture_value_hard": 0.246,
+    "perception_cost_all": 0.055,
+    "perception_cost_hard": 0.084
+  }
+}

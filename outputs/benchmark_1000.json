@@ -1,0 +1,193 @@
+{
+  "backend": "mock",
+  "dataset": "seed",
+  "dataset_size": 1000,
+  "trials": 3,
+  "direct_topk": 8,
+  "shortlist_k": 3,
+  "config": {
+    "seed": 20260630,
+    "n_samples": 5,
+    "tol_rel": 0.1,
+    "min_agree": 0.6,
+    "max_steps": 20,
+    "max_reprobe": 1,
+    "seeds": 3,
+    "noise": {
+      "numeric_rel_noise": 0.15,
+      "boolean_flip_prob": 0.2,
+      "integer_swap_range": 1,
+      "inj_molding_prior": 0.9
+    }
+  },
+  "all_components": {
+    "Direct": {
+      "precision": 0.521,
+      "recall": 0.444,
+      "f1": 0.466,
+      "f1_ci95": [
+        0.45,
+        0.482
+      ],
+      "avg_probes": 1.0,
+      "avg_false_elims": 1.122,
+      "containment": 0.389,
+      "avg_set_size": 1.0,
+      "survivor_reduction": 16.0,
+      "shortlist_f1": 0.466,
+      "n_instances": 3000
+    },
+    "RuleSet": {
+      "precision": 0.253,
+      "recall": 1.0,
+      "f1": 0.375,
+      "f1_ci95": [
+        0.368,
+        0.382
+      ],
+      "avg_probes": 0.0,
+      "avg_false_elims": 0.0,
+      "containment": 1.0,
+      "avg_set_size": 7.842,
+      "survivor_reduction": 9.158,
+      "shortlist_f1": 0.351,
+      "n_instances": 3000
+    },
+    "Greedy": {
+      "precision": 0.181,
+      "recall": 0.66,
+      "f1": 0.259,
+      "f1_ci95": [
+        0.251,
+        0.267
+      ],
+      "avg_probes": 11.0,
+      "avg_false_elims": 0.561,
+      "containment": 0.594,
+      "avg_set_size": 6.437,
+      "survivor_reduction": 10.563,
+      "shortlist_f1": 0.26,
+      "n_instances": 3000
+    },
+    "Hybrid": {
+      "precision": 0.199,
+      "recall": 0.87,
+      "f1": 0.297,
+      "f1_ci95": [
+        0.29,
+        0.304
+      ],
+      "avg_probes": 9.301,
+      "avg_false_elims": 0.203,
+      "containment": 0.841,
+      "avg_set_size": 8.525,
+      "survivor_reduction": 8.475,
+      "shortlist_f1": 0.271,
+      "n_instances": 3000
+    },
+    "Direct@k": {
+      "precision": 0.129,
+      "recall": 0.713,
+      "f1": 0.212,
+      "f1_ci95": [
+        0.208,
+        0.216
+      ],
+      "avg_probes": 1.0,
+      "avg_false_elims": 0.609,
+      "containment": 0.571,
+      "avg_set_size": 8.0,
+      "survivor_reduction": 9.0,
+      "shortlist_f1": 0.319,
+      "n_instances": 3000
+    }
+  },
+  "hard_subset": {
+    "Direct": {
+      "precision": 0.232,
+      "recall": 0.097,
+      "f1": 0.136,
+      "f1_ci95": [
+        0.124,
+        0.147
+      ],
+      "avg_probes": 1.0,
+      "avg_false_elims": 1.894,
+      "containment": 0.001,
+      "avg_set_size": 1.0,
+      "survivor_reduction": 16.0,
+      "shortlist_f1": 0.136,
+      "n_instances": 1713
+    },
+    "RuleSet": {
+      "precision": 0.361,
+      "recall": 1.0,
+      "f1": 0.51,
+      "f1_ci95": [
+        0.503,
+        0.518
+      ],
+      "avg_probes": 0.0,
+      "avg_false_elims": 0.0,
+      "containment": 1.0,
+      "avg_set_size": 6.573,
+      "survivor_reduction": 10.427,
+      "shortlist_f1": 0.461,
+      "n_instances": 1713
+    },
+    "Greedy": {
+      "precision": 0.225,
+      "recall": 0.556,
+      "f1": 0.299,
+      "f1_ci95": [
+        0.288,
+        0.311
+      ],
+      "avg_probes": 11.0,
+      "avg_false_elims": 0.831,
+      "containment": 0.441,
+      "avg_set_size": 5.381,
+      "survivor_reduction": 11.619,
+      "shortlist_f1": 0.27,
+      "n_instances": 1713
+    },
+    "Hybrid": {
+      "precision": 0.271,
+      "recall": 0.814,
+      "f1": 0.385,
+      "f1_ci95": [
+        0.375,
+        0.395
+      ],
+      "avg_probes": 9.457,
+      "avg_false_elims": 0.313,
+      "containment": 0.763,
+      "avg_set_size": 7.179,
+      "survivor_reduction": 9.821,
+      "shortlist_f1": 0.358,
+      "n_instances": 1713
+    },
+    "Direct@k": {
+      "precision": 0.133,
+      "recall": 0.497,
+      "f1": 0.205,
+      "f1_ci95": [
+        0.198,
+        0.212
+      ],
+      "avg_probes": 1.0,
+      "avg_false_elims": 1.066,
+      "containment": 0.249,
+      "avg_set_size": 8.0,
+      "survivor_reduction": 9.0,
+      "shortlist_f1": 0.183,
+      "n_instances": 1713
+    }
+  },
+  "diagnostic_gaps": {
+    "architecture_value_all": -0.169,
+    "architecture_value_hard": 0.249,
+    "perception_cost_all": 0.078,
+    "perception_cost_hard": 0.125
+  }
+}

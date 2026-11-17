@@ -1,0 +1,228 @@
+{
+  "_meta": {
+    "source": "outputs/records_real_v2.jsonl (Sep 1 cache-only replay); accuracies asserted equal to metrics_v3.json per_family",
+    "metric": "top-1 family accuracy: rank-1 process's family is among the expert set's families",
+    "rows_overlap": "a part whose expert set spans two families counts in both rows",
+    "bootstrap": {
+      "resamples": 4000,
+      "seed": 20261013,
+      "unit": "parts within each family"
+    },
+    "spearman": "rank agreement across the six families (descriptive; n=6)",
+    "deck": "Update_Oct13_2026.pptx slide 8"
+  },
+  "families": {
+    "Thermoplastic melt": {
+      "n": 456,
+      "Direct": {
+        "top1_family_acc": 0.962719,
+        "ci95": [
+          0.945175,
+          0.97807
+        ]
+      },
+      "Direct@k": {
+        "top1_family_acc": 0.973684,
+        "ci95": [
+          0.958333,
+          0.986842
+        ]
+      },
+      "Greedy": {
+        "top1_family_acc": 0.322368,
+        "ci95": [
+          0.280702,
+          0.366228
+        ]
+      },
+      "Hybrid": {
+        "top1_family_acc": 0.307018,
+        "ci95": [
+          0.265351,
+          0.348684
+        ]
+      }
+    },
+    "Compression": {
+      "n": 198,
+      "Direct": {
+        "top1_family_acc": 0.732323,
+        "ci95": [
+          0.666667,
+          0.792929
+        ]
+      },
+      "Direct@k": {
+        "top1_family_acc": 0.69697,
+        "ci95": [
+          0.631313,
+          0.762626
+        ]
+      },
+      "Greedy": {
+        "top1_family_acc": 0.449495,
+        "ci95": [
+          0.378788,
+          0.520202
+        ]
+      },
+      "Hybrid": {
+        "top1_family_acc": 0.287879,
+        "ci95": [
+          0.227273,
+          0.348485
+        ]
+      }
+    },
+    "Liquid composite molding": {
+      "n": 152,
+      "Direct": {
+        "top1_family_acc": 0.657895,
+        "ci95": [
+          0.585526,
+          0.730263
+        ]
+      },
+      "Direct@k": {
+        "top1_family_acc": 0.611842,
+        "ci95": [
+          0.532895,
+          0.690789
+        ]
+      },
+      "Greedy": {
+        "top1_family_acc": 0.348684,
+        "ci95": [
+          0.276316,
+          0.427632
+        ]
+      },
+      "Hybrid": {
+        "top1_family_acc": 0.203947,
+        "ci95": [
+          0.144737,
+          0.269737
+        ]
+      }
+    },
+    "Open-mold composite": {
+      "n": 36,
+      "Direct": {
+        "top1_family_acc": 0.888889,
+        "ci95": [
+          0.777778,
+          0.972222
+        ]
+      },
+      "Direct@k": {
+        "top1_family_acc": 0.888889,
+        "ci95": [
+          0.777778,
+          0.972222
+        ]
+      },
+      "Greedy": {
+        "top1_family_acc": 0.333333,
+        "ci95": [
+          0.194444,
+          0.472222
+        ]
+      },
+      "Hybrid": {
+        "top1_family_acc": 0.027778,
+        "ci95": [
+          0.0,
+          0.083333
+        ]
+      }
+    },
+    "Continuous profile": {
+      "n": 19,
+      "Direct": {
+        "top1_family_acc": 0.473684,
+        "ci95": [
+          0.263158,
+          0.684211
+        ]
+      },
+      "Direct@k": {
+        "top1_family_acc": 0.315789,
+        "ci95": [
+          0.105263,
+          0.526316
+        ]
+      },
+      "Greedy": {
+        "top1_family_acc": 0.210526,
+        "ci95": [
+          0.052632,
+          0.421053
+        ]
+      },
+      "Hybrid": {
+        "top1_family_acc": 0.263158,
+        "ci95": [
+          0.052632,
+          0.473684
+        ]
+      }
+    },
+    "Additive": {
+      "n": 55,
+      "Direct": {
+        "top1_family_acc": 0.690909,
+        "ci95": [
+          0.563636,
+          0.818182
+        ]
+      },
+      "Direct@k": {
+        "top1_family_acc": 0.654545,
+        "ci95": [
+          0.527273,
+          0.781818
+        ]
+      },
+      "Greedy": {
+        "top1_family_acc": 0.218182,
+        "ci95": [
+          0.109091,
+          0.327273
+        ]
+      },
+      "Hybrid": {
+        "top1_family_acc": 0.454545,
+        "ci95": [
+          0.327273,
+          0.581818
+        ]
+      }
+    }
+  },
+  "spearman_across_families": {
+    "Direct": {
+      "Direct": 1.0,
+      "Direct@k": 1.0,
+      "Greedy": 0.3143,
+      "Hybrid": 0.1429
+    },
+    "Direct@k": {
+      "Direct": 1.0,
+      "Direct@k": 1.0,
+      "Greedy": 0.3143,
+      "Hybrid": 0.1429
+    },
+    "Greedy": {
+      "Direct": 0.3143,
+      "Direct@k": 0.3143,
+      "Greedy": 1.0,
+      "Hybrid": -0.3143
+    },
+    "Hybrid": {
+      "Direct": 0.1429,
+      "Direct@k": 0.1429,
+      "Greedy": -0.3143,
+      "Hybrid": 1.0
+    }
+  }
+}

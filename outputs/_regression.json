@@ -1,0 +1,163 @@
+{
+  "backend": "mock",
+  "dataset": "seed",
+  "dataset_size": 14,
+  "trials": 5,
+  "direct_topk": 0,
+  "shortlist_k": 3,
+  "rules_path": "data/rules.json",
+  "n_clauses": 92,
+  "config": {
+    "seed": 20260630,
+    "n_samples": 5,
+    "tol_rel": 0.1,
+    "min_agree": 0.6,
+    "max_steps": 20,
+    "max_reprobe": 1,
+    "seeds": 5,
+    "noise": {
+      "numeric_rel_noise": 0.15,
+      "boolean_flip_prob": 0.2,
+      "integer_swap_range": 1,
+      "inj_molding_prior": 0.9
+    }
+  },
+  "all_components": {
+    "Direct": {
+      "precision": 0.557,
+      "recall": 0.474,
+      "f1": 0.498,
+      "f1_ci95": [
+        0.381,
+        0.612
+      ],
+      "avg_probes": 1.0,
+      "avg_false_elims": 1.086,
+      "containment": 0.414,
+      "avg_set_size": 1.0,
+      "survivor_reduction": 16.0,
+      "shortlist_f1": 0.498,
+      "n_instances": 70
+    },
+    "RuleSet": {
+      "precision": 0.234,
+      "recall": 1.0,
+      "f1": 0.36,
+      "f1_ci95": [
+        0.326,
+        0.402
+      ],
+      "avg_probes": 0.0,
+      "avg_false_elims": 0.0,
+      "containment": 1.0,
+      "avg_set_size": 7.857,
+      "survivor_reduction": 9.143,
+      "shortlist_f1": 0.324,
+      "n_instances": 70
+    },
+    "Greedy": {
+      "precision": 0.173,
+      "recall": 0.631,
+      "f1": 0.252,
+      "f1_ci95": [
+        0.203,
+        0.312
+      ],
+      "avg_probes": 11.0,
+      "avg_false_elims": 0.571,
+      "containment": 0.571,
+      "avg_set_size": 6.271,
+      "survivor_reduction": 10.729,
+      "shortlist_f1": 0.213,
+      "n_instances": 70
+    },
+    "Hybrid": {
+      "precision": 0.206,
+      "recall": 0.855,
+      "f1": 0.304,
+      "f1_ci95": [
+        0.25,
+        0.353
+      ],
+      "avg_probes": 9.2,
+      "avg_false_elims": 0.186,
+      "containment": 0.829,
+      "avg_set_size": 8.457,
+      "survivor_reduction": 8.543,
+      "shortlist_f1": 0.292,
+      "n_instances": 70
+    }
+  },
+  "hard_subset": {
+    "Direct": {
+      "precision": 0.25,
+      "recall": 0.104,
+      "f1": 0.146,
+      "f1_ci95": [
+        0.075,
+        0.225
+      ],
+      "avg_probes": 1.0,
+      "avg_false_elims": 1.875,
+      "containment": 0.0,
+      "avg_set_size": 1.0,
+      "survivor_reduction": 16.0,
+      "shortlist_f1": 0.146,
+      "n_instances": 40
+    },
+    "RuleSet": {
+      "precision": 0.323,
+      "recall": 1.0,
+      "f1": 0.476,
+      "f1_ci95": [
+        0.443,
+        0.52
+      ],
+      "avg_probes": 0.0,
+      "avg_false_elims": 0.0,
+      "containment": 1.0,
+      "avg_set_size": 7.125,
+      "survivor_reduction": 9.875,
+      "shortlist_f1": 0.442,
+      "n_instances": 40
+    },
+    "Greedy": {
+      "precision": 0.216,
+      "recall": 0.554,
+      "f1": 0.298,
+      "f1_ci95": [
+        0.244,
+        0.373
+      ],
+      "avg_probes": 11.0,
+      "avg_false_elims": 0.8,
+      "containment": 0.45,
+      "avg_set_size": 5.425,
+      "survivor_reduction": 11.575,
+      "shortlist_f1": 0.261,
+      "n_instances": 40
+    },
+    "Hybrid": {
+      "precision": 0.284,
+      "recall": 0.821,
+      "f1": 0.399,
+      "f1_ci95": [
+        0.326,
+        0.477
+      ],
+      "avg_probes": 9.275,
+      "avg_false_elims": 0.25,
+      "containment": 0.775,
+      "avg_set_size": 7.225,
+      "survivor_reduction": 9.775,
+      "shortlist_f1": 0.374,
+      "n_instances": 40
+    }
+  },
+  "diagnostic_gaps": {
+    "architecture_value_all": -0.194,
+    "architecture_value_hard": 0.253,
+    "perception_cost_all": 0.056,
+    "perception_cost_hard": 0.077
+  }
+}

@@ -1,0 +1,7220 @@
+{
+ "summary": {
+  "n_rules": 564,
+  "fire_on_dev": 289,
+  "validated": 142,
+  "auc_bar": 0.55,
+  "min_fire": 5,
+  "tau": 0.3,
+  "validated_by_group": {
+   "V2": [
+    35,
+    92
+   ],
+   "G2": [
+    65,
+    118
+   ],
+   "G5": [
+    14,
+    25
+   ],
+   "G3": [
+    28,
+    60
+   ],
+   "G4": [
+    0,
+    269
+   ]
+  },
+  "contradicted (auc<0.45)": 28
+ },
+ "features": {
+  "wall_thickness_mm": {
+   "has_reads": true,
+   "best_process": "Fused_Filament_Fabrication",
+   "best_auc": 0.237,
+   "per_process_auc": {
+    "Blow_Molding": 0.402,
+    "Bulk_Molding_Compound": 0.406,
+    "Compression_Molding": 0.408,
+    "Filament_Winding": 0.288,
+    "Fused_Filament_Fabrication": 0.237,
+    "Hand_Lay_up": 0.605,
+    "Injection_Molding": 0.678,
+    "Laminated_Object_Manufacturing": 0.318,
+    "Overmolding": 0.452,
+    "Pultrusion": 0.3,
+    "Resin_Transfer_Molding": 0.439,
+    "Selective_Laser_Sintering": 0.237,
+    "Sheet_Molding_Compound": 0.378,
+    "Stereolithography": 0.237,
+    "Structural_Reaction_Injection_Molding": 0.602,
+    "Thermoforming": 0.567,
+    "Vacuum_Assisted_RTM": 0.605
+   }
+  },
+  "undercut_present": {
+   "has_reads": true,
+   "best_process": "Filament_Winding",
+   "best_auc": 0.226,
+   "per_process_auc": {
+    "Blow_Molding": 0.587,
+    "Bulk_Molding_Compound": 0.475,
+    "Compression_Molding": 0.364,
+    "Filament_Winding": 0.226,
+    "Fused_Filament_Fabrication": 0.622,
+    "Hand_Lay_up": 0.57,
+    "Injection_Molding": 0.531,
+    "Laminated_Object_Manufacturing": 0.556,
+    "Overmolding": 0.652,
+    "Pultrusion": 0.259,
+    "Resin_Transfer_Molding": 0.369,
+    "Selective_Laser_Sintering": 0.622,
+    "Sheet_Molding_Compound": 0.373,
+    "Stereolithography": 0.622,
+    "Structural_Reaction_Injection_Molding": 0.557,
+    "Thermoforming": 0.623,
+    "Vacuum_Assisted_RTM": 0.57
+   }
+  },
+  "draft_angle_deg": {
+   "has_reads": true,
+   "best_process": "Bulk_Molding_Compound",
+   "best_auc": 0.281,
+   "per_process_auc": {
+    "Blow_Molding": 0.601,
+    "Bulk_Molding_Compound": 0.281,
+    "Compression_Molding": 0.491,
+    "Filament_Winding": 0.332,
+    "Fused_Filament_Fabrication": 0.418,
+    "Hand_Lay_up": 0.338,
+    "Injection_Molding": 0.554,
+    "Laminated_Object_Manufacturing": 0.477,
+    "Overmolding": 0.655,
+    "Pultrusion": 0.427,
+    "Resin_Transfer_Molding": 0.475,
+    "Selective_Laser_Sintering": 0.418,
+    "Sheet_Molding_Compound": 0.462,
+    "Stereolithography": 0.418,
+    "Structural_Reaction_Injection_Molding": 0.58,
+    "Thermoforming": 0.541,
+    "Vacuum_Assisted_RTM": 0.338
+   }
+  },
+  "rib_count": {
+   "has_reads": true,
+   "best_process": "Structural_Reaction_Injection_Molding",
+   "best_auc": 0.319,
+   "per_process_auc": {
+    "Blow_Molding": 0.626,
+    "Bulk_Molding_Compound": 0.587,
+    "Compression_Molding": 0.434,
+    "Filament_Winding": 0.386,
+    "Fused_Filament_Fabrication": 0.542,
+    "Hand_Lay_up": 0.326,
+    "Injection_Molding": 0.547,
+    "Laminated_Object_Manufacturing": 0.484,
+    "Overmolding": 0.497,
+    "Pultrusion": 0.35,
+    "Resin_Transfer_Molding": 0.407,
+    "Selective_Laser_Sintering": 0.542,
+    "Sheet_Molding_Compound": 0.449,
+    "Stereolithography": 0.542,
+    "Structural_Reaction_Injection_Molding": 0.319,
+    "Thermoforming": 0.411,
+    "Vacuum_Assisted_RTM": 0.326
+   }
+  },
+  "projected_area_cm2": {
+   "has_reads": true,
+   "best_process": "Overmolding",
+   "best_auc": 0.159,
+   "per_process_auc": {
+    "Blow_Molding": 0.467,
+    "Bulk_Molding_Compound": 0.373,
+    "Compression_Molding": 0.679,
+    "Filament_Winding": 0.314,
+    "Fused_Filament_Fabrication": 0.247,
+    "Hand_Lay_up": 0.567,
+    "Injection_Molding": 0.564,
+    "Laminated_Object_Manufacturing": 0.305,
+    "Overmolding": 0.159,
+    "Pultrusion": 0.314,
+    "Resin_Transfer_Molding": 0.67,
+    "Selective_Laser_Sintering": 0.247,
+    "Sheet_Molding_Compound": 0.511,
+    "Stereolithography": 0.247,
+    "Structural_Reaction_Injection_Molding": 0.539,
+    "Thermoforming": 0.536,
+    "Vacuum_Assisted_RTM": 0.567
+   }
+  },
+  "hollow": {
+   "has_reads": true,
+   "best_process": "Blow_Molding",
+   "best_auc": 0.751,
+   "per_process_auc": {
+    "Blow_Molding": 0.751,
+    "Bulk_Molding_Compound": 0.715,
+    "Compression_Molding": 0.54,
+    "Filament_Winding": 0.591,
+    "Fused_Filament_Fabrication": 0.33,
+    "Hand_Lay_up": 0.442,
+    "Injection_Molding": 0.573,
+    "Laminated_Object_Manufacturing": 0.312,
+    "Overmolding": 0.333,
+    "Pultrusion": 0.548,
+    "Resin_Transfer_Molding": 0.504,
+    "Selective_Laser_Sintering": 0.33,
+    "Sheet_Molding_Compound": 0.461,
+    "Stereolithography": 0.33,
+    "Structural_Reaction_Injection_Molding": 0.272,
+    "Thermoforming": 0.356,
+    "Vacuum_Assisted_RTM": 0.442
+   }
+  },
+  "constant_cross_section": {
+   "has_reads": true,
+   "best_process": "Filament_Winding",
+   "best_auc": 0.662,
+   "per_process_auc": {
+    "Blow_Molding": 0.507,
+    "Bulk_Molding_Compound": 0.568,
+    "Compression_Molding": 0.47,
+    "Filament_Winding": 0.662,
+    "Fused_Filament_Fabrication": 0.523,
+    "Hand_Lay_up": 0.494,
+    "Injection_Molding": 0.491,
+    "Laminated_Object_Manufacturing": 0.498,
+    "Overmolding": 0.474,
+    "Pultrusion": 0.603,
+    "Resin_Transfer_Molding": 0.475,
+    "Selective_Laser_Sintering": 0.523,
+    "Sheet_Molding_Compound": 0.522,
+    "Stereolithography": 0.523,
+    "Structural_Reaction_Injection_Molding": 0.476,
+    "Thermoforming": 0.533,
+    "Vacuum_Assisted_RTM": 0.494
+   }
+  },
+  "axisymmetric": {
+   "has_reads": true,
+   "best_process": "Overmolding",
+   "best_auc": 0.635,
+   "per_process_auc": {
+    "Blow_Molding": 0.583,
+    "Bulk_Molding_Compound": 0.606,
+    "Compression_Molding": 0.413,
+    "Filament_Winding": 0.584,
+    "Fused_Filament_Fabrication": 0.521,
+    "Hand_Lay_up": 0.437,
+    "Injection_Molding": 0.519,
+    "Laminated_Object_Manufacturing": 0.563,
+    "Overmolding": 0.635,
+    "Pultrusion": 0.569,
+    "Resin_Transfer_Molding": 0.411,
+    "Selective_Laser_Sintering": 0.521,
+    "Sheet_Molding_Compound": 0.472,
+    "Stereolithography": 0.521,
+    "Structural_Reaction_Injection_Molding": 0.478,
+    "Thermoforming": 0.456,
+    "Vacuum_Assisted_RTM": 0.437
+   }
+  },
+  "max_dimension_mm": {
+   "has_reads": true,
+   "best_process": "Overmolding",
+   "best_auc": 0.151,
+   "per_process_auc": {
+    "Blow_Molding": 0.476,
+    "Bulk_Molding_Compound": 0.377,
+    "Compression_Molding": 0.757,
+    "Filament_Winding": 0.533,
+    "Fused_Filament_Fabrication": 0.152,
+    "Hand_Lay_up": 0.602,
+    "Injection_Molding": 0.509,
+    "Laminated_Object_Manufacturing": 0.243,
+    "Overmolding": 0.151,
+    "Pultrusion": 0.532,
+    "Resin_Transfer_Molding": 0.779,
+    "Selective_Laser_Sintering": 0.152,
+    "Sheet_Molding_Compound": 0.585,
+    "Stereolithography": 0.152,
+    "Structural_Reaction_Injection_Molding": 0.409,
+    "Thermoforming": 0.423,
+    "Vacuum_Assisted_RTM": 0.602
+   }
+  },
+  "production_volume": {
+   "has_reads": true,
+   "best_process": "Fused_Filament_Fabrication",
+   "best_auc": 0.123,
+   "per_process_auc": {
+    "Blow_Molding": 0.498,
+    "Bulk_Molding_Compound": 0.554,
+    "Compression_Molding": 0.553,
+    "Filament_Winding": 0.415,
+    "Fused_Filament_Fabrication": 0.123,
+    "Hand_Lay_up": 0.244,
+    "Injection_Molding": 0.669,
+    "Laminated_Object_Manufacturing": 0.149,
+    "Overmolding": 0.61,
+    "Pultrusion": 0.393,
+    "Resin_Transfer_Molding": 0.452,
+    "Selective_Laser_Sintering": 0.123,
+    "Sheet_Molding_Compound": 0.574,
+    "Stereolithography": 0.123,
+    "Structural_Reaction_Injection_Molding": 0.649,
+    "Thermoforming": 0.65,
+    "Vacuum_Assisted_RTM": 0.244
+   }
+  },
+  "continuous_fiber_required": {
+   "has_reads": true,
+   "best_process": "Overmolding",
+   "best_auc": 0.308,
+   "per_process_auc": {
+    "Blow_Molding": 0.497,
+    "Bulk_Molding_Compound": 0.375,
+    "Compression_Molding": 0.524,
+    "Filament_Winding": 0.617,
+    "Fused_Filament_Fabrication": 0.502,
+    "Hand_Lay_up": 0.621,
+    "Injection_Molding": 0.473,
+    "Laminated_Object_Manufacturing": 0.52,
+    "Overmolding": 0.308,
+    "Pultrusion": 0.617,
+    "Resin_Transfer_Molding": 0.558,
+    "Selective_Laser_Sintering": 0.502,
+    "Sheet_Molding_Compound": 0.392,
+    "Stereolithography": 0.502,
+    "Structural_Reaction_Injection_Molding": 0.419,
+    "Thermoforming": 0.517,
+    "Vacuum_Assisted_RTM": 0.621
+   }
+  },
+  "sig_ejector_pin_marks": {
+   "has_reads": false
+  },
+  "sig_gate_vestige": {
+   "has_reads": false
+  },
+  "sig_parting_line": {
+   "has_reads": false
+  },
+  "sig_pinch_off_seam": {
+   "has_reads": false
+  },
+  "sig_neck_or_spout": {
+   "has_reads": false
+  },
+  "sig_woven_fabric_visible": {
+   "has_reads": false
+  },
+  "sig_random_chopped_fiber": {
+   "has_reads": false
+  },
+  "sig_helical_winding_pattern": {
+   "has_reads": false
+  },
+  "sig_longitudinal_fiber_streaks": {
+   "has_reads": false
+  },
+  "sig_layer_lines": {
+   "has_reads": false
+  },
+  "sig_extruded_bead_texture": {
+   "has_reads": false
+  },
+  "sig_powdery_grainy_surface": {
+   "has_reads": false
+  },
+  "sig_support_nubs": {
+   "has_reads": false
+  },
+  "sig_translucent_resin": {
+   "has_reads": false
+  },
+  "sig_paper_wood_laminate": {
+   "has_reads": false
+  },
+  "sig_thinned_corners_sheet": {
+   "has_reads": false
+  },
+  "sig_trimmed_sheet_edge": {
+   "has_reads": false
+  },
+  "sig_one_sided_finish": {
+   "has_reads": false
+  },
+  "sig_both_sides_tooled": {
+   "has_reads": false
+  },
+  "sig_two_materials_bonded": {
+   "has_reads": false
+  },
+  "sig_sink_marks": {
+   "has_reads": false
+  },
+  "sig_knit_lines": {
+   "has_reads": false
+  },
+  "sig_molded_bosses_clips": {
+   "has_reads": false
+  },
+  "sig_flash": {
+   "has_reads": false
+  },
+  "sig_class_a_painted_panel": {
+   "has_reads": false
+  },
+  "sig_sandwich_core_visible": {
+   "has_reads": false
+  },
+  "sig_gelcoat_finish": {
+   "has_reads": false
+  },
+  "sig_metal_inserts": {
+   "has_reads": false
+  }
+ },
+ "rules": [
+  {
+   "id": "V2-001",
+   "process": "Injection_Molding",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 219,
+   "auc": 0.3806,
+   "validated": false
+  },
+  {
+   "id": "V2-002",
+   "process": "Injection_Molding",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "V2-003",
+   "process": "Injection_Molding",
+   "kind": "forbid",
+   "features": [
+    "draft_angle_deg"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 25,
+   "auc": 0.5082,
+   "validated": false
+  },
+  {
+   "id": "V2-004",
+   "process": "Injection_Molding",
+   "kind": "forbid",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 2,
+   "auc": 0.4972,
+   "validated": false
+  },
+  {
+   "id": "V2-005",
+   "process": "Injection_Molding",
+   "kind": "forbid",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.4909,
+   "validated": false
+  },
+  {
+   "id": "V2-006",
+   "process": "Injection_Molding",
+   "kind": "forbid",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 41,
+   "auc": 0.511,
+   "validated": false
+  },
+  {
+   "id": "V2-007",
+   "process": "Thermoforming",
+   "kind": "forbid",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.64,
+   "validated": true
+  },
+  {
+   "id": "V2-008",
+   "process": "Thermoforming",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 219,
+   "auc": 0.4198,
+   "validated": false
+  },
+  {
+   "id": "V2-009",
+   "process": "Thermoforming",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "V2-010",
+   "process": "Thermoforming",
+   "kind": "forbid",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 298,
+   "auc": 0.5546,
+   "validated": true
+  },
+  {
+   "id": "V2-011",
+   "process": "Thermoforming",
+   "kind": "forbid",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.4099,
+   "validated": false
+  },
+  {
+   "id": "V2-012",
+   "process": "Thermoforming",
+   "kind": "forbid",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 4,
+   "auc": 0.5038,
+   "validated": false
+  },
+  {
+   "id": "V2-013",
+   "process": "Compression_Molding",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 4,
+   "auc": 0.5048,
+   "validated": false
+  },
+  {
+   "id": "V2-014",
+   "process": "Compression_Molding",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 39,
+   "auc": 0.497,
+   "validated": false
+  },
+  {
+   "id": "V2-015",
+   "process": "Compression_Molding",
+   "kind": "forbid",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 2,
+   "auc": 0.4968,
+   "validated": false
+  },
+  {
+   "id": "V2-016",
+   "process": "Compression_Molding",
+   "kind": "forbid",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.4575,
+   "validated": false
+  },
+  {
+   "id": "V2-017",
+   "process": "Compression_Molding",
+   "kind": "forbid",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.6284,
+   "validated": true
+  },
+  {
+   "id": "V2-018",
+   "process": "Compression_Molding",
+   "kind": "forbid",
+   "features": [
+    "draft_angle_deg"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 25,
+   "auc": 0.5128,
+   "validated": false
+  },
+  {
+   "id": "V2-019",
+   "process": "Compression_Molding",
+   "kind": "forbid",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 41,
+   "auc": 0.4035,
+   "validated": false
+  },
+  {
+   "id": "V2-020",
+   "process": "Resin_Transfer_Molding",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 4,
+   "auc": 0.5048,
+   "validated": false
+  },
+  {
+   "id": "V2-021",
+   "process": "Resin_Transfer_Molding",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 47,
+   "auc": 0.5031,
+   "validated": false
+  },
+  {
+   "id": "V2-022",
+   "process": "Resin_Transfer_Molding",
+   "kind": "forbid",
+   "features": [
+    "draft_angle_deg"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 25,
+   "auc": 0.5137,
+   "validated": false
+  },
+  {
+   "id": "V2-023",
+   "process": "Resin_Transfer_Molding",
+   "kind": "forbid",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.4975,
+   "validated": false
+  },
+  {
+   "id": "V2-024",
+   "process": "Resin_Transfer_Molding",
+   "kind": "forbid",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "V2-025",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 101,
+   "auc": 0.5836,
+   "validated": true
+  },
+  {
+   "id": "V2-026",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "forbid",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.4527,
+   "validated": false
+  },
+  {
+   "id": "V2-027",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "forbid",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.5739,
+   "validated": true
+  },
+  {
+   "id": "V2-028",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "forbid",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.7703,
+   "validated": true
+  },
+  {
+   "id": "V2-029",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 106,
+   "auc": 0.5409,
+   "validated": false
+  },
+  {
+   "id": "V2-030",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 68,
+   "auc": 0.5645,
+   "validated": true
+  },
+  {
+   "id": "V2-031",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "forbid",
+   "features": [
+    "draft_angle_deg"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 25,
+   "auc": 0.5237,
+   "validated": false
+  },
+  {
+   "id": "V2-032",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "forbid",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.7285,
+   "validated": true
+  },
+  {
+   "id": "V2-033",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "forbid",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 2,
+   "auc": 0.5019,
+   "validated": false
+  },
+  {
+   "id": "V2-034",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "forbid",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 43,
+   "auc": 0.5408,
+   "validated": false
+  },
+  {
+   "id": "V2-035",
+   "process": "Sheet_Molding_Compound",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 101,
+   "auc": 0.3924,
+   "validated": false
+  },
+  {
+   "id": "V2-036",
+   "process": "Sheet_Molding_Compound",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 109,
+   "auc": 0.5254,
+   "validated": false
+  },
+  {
+   "id": "V2-037",
+   "process": "Sheet_Molding_Compound",
+   "kind": "forbid",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 115,
+   "auc": 0.4627,
+   "validated": false
+  },
+  {
+   "id": "V2-038",
+   "process": "Sheet_Molding_Compound",
+   "kind": "forbid",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 2,
+   "auc": 0.5022,
+   "validated": false
+  },
+  {
+   "id": "V2-039",
+   "process": "Sheet_Molding_Compound",
+   "kind": "forbid",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.5298,
+   "validated": false
+  },
+  {
+   "id": "V2-040",
+   "process": "Sheet_Molding_Compound",
+   "kind": "forbid",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.6085,
+   "validated": true
+  },
+  {
+   "id": "V2-041",
+   "process": "Sheet_Molding_Compound",
+   "kind": "forbid",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 41,
+   "auc": 0.4757,
+   "validated": false
+  },
+  {
+   "id": "V2-042",
+   "process": "Bulk_Molding_Compound",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 4,
+   "auc": 0.5041,
+   "validated": false
+  },
+  {
+   "id": "V2-043",
+   "process": "Bulk_Molding_Compound",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 107,
+   "auc": 0.5593,
+   "validated": true
+  },
+  {
+   "id": "V2-044",
+   "process": "Bulk_Molding_Compound",
+   "kind": "forbid",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 56,
+   "auc": 0.5349,
+   "validated": false
+  },
+  {
+   "id": "V2-045",
+   "process": "Bulk_Molding_Compound",
+   "kind": "forbid",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.2828,
+   "validated": false
+  },
+  {
+   "id": "V2-046",
+   "process": "Bulk_Molding_Compound",
+   "kind": "forbid",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.5979,
+   "validated": true
+  },
+  {
+   "id": "V2-047",
+   "process": "Bulk_Molding_Compound",
+   "kind": "forbid",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 51,
+   "auc": 0.5177,
+   "validated": false
+  },
+  {
+   "id": "V2-048",
+   "process": "Hand_Lay_up",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 101,
+   "auc": 0.5836,
+   "validated": true
+  },
+  {
+   "id": "V2-049",
+   "process": "Hand_Lay_up",
+   "kind": "forbid",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.4527,
+   "validated": false
+  },
+  {
+   "id": "V2-050",
+   "process": "Hand_Lay_up",
+   "kind": "forbid",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.5739,
+   "validated": true
+  },
+  {
+   "id": "V2-051",
+   "process": "Hand_Lay_up",
+   "kind": "forbid",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 354,
+   "auc": 0.6516,
+   "validated": true
+  },
+  {
+   "id": "V2-052",
+   "process": "Hand_Lay_up",
+   "kind": "forbid",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.7703,
+   "validated": true
+  },
+  {
+   "id": "V2-053",
+   "process": "Blow_Molding",
+   "kind": "forbid",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 289,
+   "auc": 0.7233,
+   "validated": true
+  },
+  {
+   "id": "V2-054",
+   "process": "Blow_Molding",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 109,
+   "auc": 0.5755,
+   "validated": true
+  },
+  {
+   "id": "V2-055",
+   "process": "Blow_Molding",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "V2-056",
+   "process": "Blow_Molding",
+   "kind": "forbid",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 446,
+   "auc": 0.3507,
+   "validated": false
+  },
+  {
+   "id": "V2-057",
+   "process": "Blow_Molding",
+   "kind": "forbid",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.3879,
+   "validated": false
+  },
+  {
+   "id": "V2-058",
+   "process": "Blow_Molding",
+   "kind": "forbid",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.4374,
+   "validated": false
+  },
+  {
+   "id": "V2-059",
+   "process": "Blow_Molding",
+   "kind": "forbid",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 41,
+   "auc": 0.5396,
+   "validated": false
+  },
+  {
+   "id": "V2-060",
+   "process": "Pultrusion",
+   "kind": "forbid",
+   "features": [
+    "constant_cross_section"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 513,
+   "auc": 0.5993,
+   "validated": true
+  },
+  {
+   "id": "V2-061",
+   "process": "Pultrusion",
+   "kind": "forbid",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.7514,
+   "validated": true
+  },
+  {
+   "id": "V2-062",
+   "process": "Pultrusion",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 101,
+   "auc": 0.421,
+   "validated": false
+  },
+  {
+   "id": "V2-063",
+   "process": "Pultrusion",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 47,
+   "auc": 0.5449,
+   "validated": false
+  },
+  {
+   "id": "V2-064",
+   "process": "Pultrusion",
+   "kind": "forbid",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 446,
+   "auc": 0.6061,
+   "validated": true
+  },
+  {
+   "id": "V2-065",
+   "process": "Filament_Winding",
+   "kind": "forbid",
+   "features": [
+    "axisymmetric"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 441,
+   "auc": 0.5827,
+   "validated": true
+  },
+  {
+   "id": "V2-066",
+   "process": "Filament_Winding",
+   "kind": "forbid",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 289,
+   "auc": 0.5572,
+   "validated": true
+  },
+  {
+   "id": "V2-067",
+   "process": "Filament_Winding",
+   "kind": "forbid",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.7951,
+   "validated": true
+  },
+  {
+   "id": "V2-068",
+   "process": "Filament_Winding",
+   "kind": "forbid",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 446,
+   "auc": 0.6332,
+   "validated": true
+  },
+  {
+   "id": "V2-069",
+   "process": "Filament_Winding",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 2,
+   "auc": 0.5019,
+   "validated": false
+  },
+  {
+   "id": "V2-070",
+   "process": "Overmolding",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 220,
+   "auc": 0.5693,
+   "validated": true
+  },
+  {
+   "id": "V2-071",
+   "process": "Overmolding",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "V2-072",
+   "process": "Overmolding",
+   "kind": "forbid",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.6728,
+   "validated": true
+  },
+  {
+   "id": "V2-073",
+   "process": "Overmolding",
+   "kind": "forbid",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 5,
+   "auc": 0.5051,
+   "validated": false
+  },
+  {
+   "id": "V2-074",
+   "process": "Overmolding",
+   "kind": "forbid",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 43,
+   "auc": 0.5436,
+   "validated": false
+  },
+  {
+   "id": "V2-075",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 4,
+   "auc": 0.4556,
+   "validated": false
+  },
+  {
+   "id": "V2-076",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "forbid",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 41,
+   "auc": 0.5418,
+   "validated": false
+  },
+  {
+   "id": "V2-077",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "forbid",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 49,
+   "auc": 0.55,
+   "validated": true
+  },
+  {
+   "id": "V2-078",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "forbid",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.8716,
+   "validated": true
+  },
+  {
+   "id": "V2-079",
+   "process": "Stereolithography",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "V2-080",
+   "process": "Stereolithography",
+   "kind": "forbid",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 13,
+   "auc": 0.5133,
+   "validated": false
+  },
+  {
+   "id": "V2-081",
+   "process": "Stereolithography",
+   "kind": "forbid",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.5996,
+   "validated": true
+  },
+  {
+   "id": "V2-082",
+   "process": "Stereolithography",
+   "kind": "forbid",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 51,
+   "auc": 0.552,
+   "validated": true
+  },
+  {
+   "id": "V2-083",
+   "process": "Selective_Laser_Sintering",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 4,
+   "auc": 0.4556,
+   "validated": false
+  },
+  {
+   "id": "V2-084",
+   "process": "Selective_Laser_Sintering",
+   "kind": "forbid",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 41,
+   "auc": 0.5418,
+   "validated": false
+  },
+  {
+   "id": "V2-085",
+   "process": "Selective_Laser_Sintering",
+   "kind": "forbid",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.5996,
+   "validated": true
+  },
+  {
+   "id": "V2-086",
+   "process": "Selective_Laser_Sintering",
+   "kind": "forbid",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 119,
+   "auc": 0.6214,
+   "validated": true
+  },
+  {
+   "id": "V2-087",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "forbid",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.6679,
+   "validated": true
+  },
+  {
+   "id": "V2-088",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "forbid",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 4,
+   "auc": 0.4813,
+   "validated": false
+  },
+  {
+   "id": "V2-089",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "forbid",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 49,
+   "auc": 0.5479,
+   "validated": false
+  },
+  {
+   "id": "V2-090",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "forbid",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 354,
+   "auc": 0.5159,
+   "validated": false
+  },
+  {
+   "id": "V2-091",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "forbid",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 123,
+   "auc": 0.6012,
+   "validated": true
+  },
+  {
+   "id": "V2-092",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "forbid",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.8642,
+   "validated": true
+  },
+  {
+   "id": "G2-001",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 324,
+   "auc": 0.3663,
+   "validated": false
+  },
+  {
+   "id": "G2-002",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 220,
+   "auc": 0.382,
+   "validated": false
+  },
+  {
+   "id": "G2-003",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 324,
+   "auc": 0.5279,
+   "validated": false
+  },
+  {
+   "id": "G2-004",
+   "process": "Blow_Molding",
+   "kind": "favor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 359,
+   "auc": 0.7296,
+   "validated": true
+  },
+  {
+   "id": "G2-005",
+   "process": "Thermoforming",
+   "kind": "favor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 359,
+   "auc": 0.3848,
+   "validated": false
+  },
+  {
+   "id": "G2-006",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 389,
+   "auc": 0.3874,
+   "validated": false
+  },
+  {
+   "id": "G2-007",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 282,
+   "auc": 0.4464,
+   "validated": false
+  },
+  {
+   "id": "G2-008",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 357,
+   "auc": 0.6197,
+   "validated": true
+  },
+  {
+   "id": "G2-009",
+   "process": "Resin_Transfer_Molding",
+   "kind": "favor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 389,
+   "auc": 0.3769,
+   "validated": false
+  },
+  {
+   "id": "G2-010",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 402,
+   "auc": 0.5743,
+   "validated": true
+  },
+  {
+   "id": "G2-011",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 389,
+   "auc": 0.5119,
+   "validated": false
+  },
+  {
+   "id": "G2-012",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 399,
+   "auc": 0.5384,
+   "validated": false
+  },
+  {
+   "id": "G2-013",
+   "process": "Pultrusion",
+   "kind": "favor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 399,
+   "auc": 0.4801,
+   "validated": false
+  },
+  {
+   "id": "G2-014",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 109,
+   "auc": 0.5973,
+   "validated": true
+  },
+  {
+   "id": "G2-015",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 109,
+   "auc": 0.5973,
+   "validated": true
+  },
+  {
+   "id": "G2-016",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 109,
+   "auc": 0.5973,
+   "validated": true
+  },
+  {
+   "id": "G2-017",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 109,
+   "auc": 0.5803,
+   "validated": true
+  },
+  {
+   "id": "G2-018",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 354,
+   "auc": 0.5503,
+   "validated": true
+  },
+  {
+   "id": "G2-019",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 436,
+   "auc": 0.5695,
+   "validated": true
+  },
+  {
+   "id": "G2-020",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 446,
+   "auc": 0.4351,
+   "validated": false
+  },
+  {
+   "id": "G2-021",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 446,
+   "auc": 0.4446,
+   "validated": false
+  },
+  {
+   "id": "G2-022",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "disfavor",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 354,
+   "auc": 0.6516,
+   "validated": true
+  },
+  {
+   "id": "G2-023",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 354,
+   "auc": 0.6516,
+   "validated": true
+  },
+  {
+   "id": "G2-024",
+   "process": "Thermoforming",
+   "kind": "favor",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 109,
+   "auc": 0.6021,
+   "validated": true
+  },
+  {
+   "id": "G2-025",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 109,
+   "auc": 0.5395,
+   "validated": false
+  },
+  {
+   "id": "G2-026",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 109,
+   "auc": 0.5395,
+   "validated": false
+  },
+  {
+   "id": "G2-027",
+   "process": "Filament_Winding",
+   "kind": "favor",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 109,
+   "auc": 0.6365,
+   "validated": true
+  },
+  {
+   "id": "G2-028",
+   "process": "Pultrusion",
+   "kind": "favor",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 109,
+   "auc": 0.6167,
+   "validated": true
+  },
+  {
+   "id": "G2-029",
+   "process": "Blow_Molding",
+   "kind": "favor",
+   "features": [
+    "rib_count"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 109,
+   "auc": 0.3948,
+   "validated": false
+  },
+  {
+   "id": "G2-030",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.5217,
+   "validated": false
+  },
+  {
+   "id": "G2-031",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.6711,
+   "validated": true
+  },
+  {
+   "id": "G2-032",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "favor",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.6464,
+   "validated": true
+  },
+  {
+   "id": "G2-033",
+   "process": "Stereolithography",
+   "kind": "favor",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.6464,
+   "validated": true
+  },
+  {
+   "id": "G2-034",
+   "process": "Selective_Laser_Sintering",
+   "kind": "favor",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.6464,
+   "validated": true
+  },
+  {
+   "id": "G2-035",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "favor",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.5835,
+   "validated": true
+  },
+  {
+   "id": "G2-036",
+   "process": "Resin_Transfer_Molding",
+   "kind": "disfavor",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.6164,
+   "validated": true
+  },
+  {
+   "id": "G2-037",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 387,
+   "auc": 0.4846,
+   "validated": false
+  },
+  {
+   "id": "G2-038",
+   "process": "Blow_Molding",
+   "kind": "favor",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.7513,
+   "validated": true
+  },
+  {
+   "id": "G2-039",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.4346,
+   "validated": false
+  },
+  {
+   "id": "G2-040",
+   "process": "Filament_Winding",
+   "kind": "favor",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.5885,
+   "validated": true
+  },
+  {
+   "id": "G2-041",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.6504,
+   "validated": true
+  },
+  {
+   "id": "G2-042",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.6504,
+   "validated": true
+  },
+  {
+   "id": "G2-043",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 395,
+   "auc": 0.6504,
+   "validated": true
+  },
+  {
+   "id": "G2-044",
+   "process": "Pultrusion",
+   "kind": "favor",
+   "features": [
+    "constant_cross_section"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 21,
+   "auc": 0.5658,
+   "validated": true
+  },
+  {
+   "id": "G2-045",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "constant_cross_section"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 21,
+   "auc": 0.5095,
+   "validated": false
+  },
+  {
+   "id": "G2-046",
+   "process": "Compression_Molding",
+   "kind": "disfavor",
+   "features": [
+    "constant_cross_section"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 21,
+   "auc": 0.525,
+   "validated": false
+  },
+  {
+   "id": "G2-047",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "constant_cross_section"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 21,
+   "auc": 0.4748,
+   "validated": false
+  },
+  {
+   "id": "G2-048",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "constant_cross_section"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 21,
+   "auc": 0.4284,
+   "validated": false
+  },
+  {
+   "id": "G2-049",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "constant_cross_section"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 21,
+   "auc": 0.4733,
+   "validated": false
+  },
+  {
+   "id": "G2-050",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "constant_cross_section"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 21,
+   "auc": 0.5024,
+   "validated": false
+  },
+  {
+   "id": "G2-051",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "constant_cross_section"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 21,
+   "auc": 0.4897,
+   "validated": false
+  },
+  {
+   "id": "G2-052",
+   "process": "Filament_Winding",
+   "kind": "favor",
+   "features": [
+    "axisymmetric"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 98,
+   "auc": 0.5863,
+   "validated": true
+  },
+  {
+   "id": "G2-053",
+   "process": "Blow_Molding",
+   "kind": "favor",
+   "features": [
+    "axisymmetric"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 98,
+   "auc": 0.5851,
+   "validated": true
+  },
+  {
+   "id": "G2-054",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "axisymmetric"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 98,
+   "auc": 0.526,
+   "validated": false
+  },
+  {
+   "id": "G2-055",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "axisymmetric"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 98,
+   "auc": 0.5598,
+   "validated": true
+  },
+  {
+   "id": "G2-056",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "disfavor",
+   "features": [
+    "axisymmetric"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 98,
+   "auc": 0.5598,
+   "validated": true
+  },
+  {
+   "id": "G2-057",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "axisymmetric"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 98,
+   "auc": 0.5464,
+   "validated": false
+  },
+  {
+   "id": "G2-058",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 219,
+   "auc": 0.4512,
+   "validated": false
+  },
+  {
+   "id": "G2-059",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 219,
+   "auc": 0.8443,
+   "validated": true
+  },
+  {
+   "id": "G2-060",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 219,
+   "auc": 0.6013,
+   "validated": true
+  },
+  {
+   "id": "G2-061",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 307,
+   "auc": 0.7626,
+   "validated": true
+  },
+  {
+   "id": "G2-062",
+   "process": "Stereolithography",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 307,
+   "auc": 0.7626,
+   "validated": true
+  },
+  {
+   "id": "G2-063",
+   "process": "Selective_Laser_Sintering",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 307,
+   "auc": 0.7626,
+   "validated": true
+  },
+  {
+   "id": "G2-064",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 307,
+   "auc": 0.708,
+   "validated": true
+  },
+  {
+   "id": "G2-065",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 119,
+   "auc": 0.6214,
+   "validated": true
+  },
+  {
+   "id": "G2-066",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 119,
+   "auc": 0.6214,
+   "validated": true
+  },
+  {
+   "id": "G2-067",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 119,
+   "auc": 0.6214,
+   "validated": true
+  },
+  {
+   "id": "G2-068",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 119,
+   "auc": 0.5975,
+   "validated": true
+  },
+  {
+   "id": "G2-069",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 51,
+   "auc": 0.5268,
+   "validated": false
+  },
+  {
+   "id": "G2-070",
+   "process": "Overmolding",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 51,
+   "auc": 0.5517,
+   "validated": true
+  },
+  {
+   "id": "G2-071",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 83,
+   "auc": 0.6205,
+   "validated": true
+  },
+  {
+   "id": "G2-072",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 83,
+   "auc": 0.6205,
+   "validated": true
+  },
+  {
+   "id": "G2-073",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 156,
+   "auc": 0.6022,
+   "validated": true
+  },
+  {
+   "id": "G2-074",
+   "process": "Thermoforming",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 156,
+   "auc": 0.5385,
+   "validated": false
+  },
+  {
+   "id": "G2-075",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 437,
+   "auc": 0.4525,
+   "validated": false
+  },
+  {
+   "id": "G2-076",
+   "process": "Resin_Transfer_Molding",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 301,
+   "auc": 0.5133,
+   "validated": false
+  },
+  {
+   "id": "G2-077",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 301,
+   "auc": 0.4875,
+   "validated": false
+  },
+  {
+   "id": "G2-078",
+   "process": "Pultrusion",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 177,
+   "auc": 0.5475,
+   "validated": false
+  },
+  {
+   "id": "G2-079",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 123,
+   "auc": 0.5563,
+   "validated": true
+  },
+  {
+   "id": "G2-080",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 229,
+   "auc": 0.5226,
+   "validated": false
+  },
+  {
+   "id": "G2-081",
+   "process": "Thermoforming",
+   "kind": "favor",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 206,
+   "auc": 0.5312,
+   "validated": false
+  },
+  {
+   "id": "G2-082",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 395,
+   "auc": 0.4756,
+   "validated": false
+  },
+  {
+   "id": "G2-083",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 395,
+   "auc": 0.6758,
+   "validated": true
+  },
+  {
+   "id": "G2-084",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 395,
+   "auc": 0.657,
+   "validated": true
+  },
+  {
+   "id": "G2-085",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "projected_area_cm2"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 41,
+   "auc": 0.588,
+   "validated": true
+  },
+  {
+   "id": "G2-086",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.6682,
+   "validated": true
+  },
+  {
+   "id": "G2-087",
+   "process": "Blow_Molding",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.5079,
+   "validated": false
+  },
+  {
+   "id": "G2-088",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.5727,
+   "validated": true
+  },
+  {
+   "id": "G2-089",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.5413,
+   "validated": false
+  },
+  {
+   "id": "G2-090",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.6193,
+   "validated": true
+  },
+  {
+   "id": "G2-091",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.5523,
+   "validated": true
+  },
+  {
+   "id": "G2-092",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.6613,
+   "validated": true
+  },
+  {
+   "id": "G2-093",
+   "process": "Pultrusion",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.3693,
+   "validated": false
+  },
+  {
+   "id": "G2-094",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 36,
+   "auc": 0.5401,
+   "validated": false
+  },
+  {
+   "id": "G2-095",
+   "process": "Overmolding",
+   "kind": "disfavor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 36,
+   "auc": 0.5365,
+   "validated": false
+  },
+  {
+   "id": "G2-096",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 36,
+   "auc": 0.5035,
+   "validated": false
+  },
+  {
+   "id": "G2-097",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 36,
+   "auc": 0.5265,
+   "validated": false
+  },
+  {
+   "id": "G2-098",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 36,
+   "auc": 0.5019,
+   "validated": false
+  },
+  {
+   "id": "G2-099",
+   "process": "Compression_Molding",
+   "kind": "disfavor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 36,
+   "auc": 0.5318,
+   "validated": false
+  },
+  {
+   "id": "G2-100",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 36,
+   "auc": 0.6575,
+   "validated": true
+  },
+  {
+   "id": "G2-101",
+   "process": "Stereolithography",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 36,
+   "auc": 0.6575,
+   "validated": true
+  },
+  {
+   "id": "G2-102",
+   "process": "Selective_Laser_Sintering",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 36,
+   "auc": 0.6575,
+   "validated": true
+  },
+  {
+   "id": "G2-103",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 36,
+   "auc": 0.6233,
+   "validated": true
+  },
+  {
+   "id": "G2-104",
+   "process": "Selective_Laser_Sintering",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 141,
+   "auc": 0.7623,
+   "validated": true
+  },
+  {
+   "id": "G2-105",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.8716,
+   "validated": true
+  },
+  {
+   "id": "G2-106",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.8642,
+   "validated": true
+  },
+  {
+   "id": "G2-107",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 380,
+   "auc": 0.8716,
+   "validated": true
+  },
+  {
+   "id": "G2-108",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 164,
+   "auc": 0.7619,
+   "validated": true
+  },
+  {
+   "id": "G2-109",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 164,
+   "auc": 0.7619,
+   "validated": true
+  },
+  {
+   "id": "G2-110",
+   "process": "Resin_Transfer_Molding",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 141,
+   "auc": 0.5726,
+   "validated": true
+  },
+  {
+   "id": "G2-111",
+   "process": "Thermoforming",
+   "kind": "favor",
+   "features": [
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 141,
+   "auc": 0.3655,
+   "validated": false
+  },
+  {
+   "id": "G2-112",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "draft_angle_deg"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 488,
+   "auc": 0.5162,
+   "validated": false
+  },
+  {
+   "id": "G2-113",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "draft_angle_deg"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 488,
+   "auc": 0.4865,
+   "validated": false
+  },
+  {
+   "id": "G2-114",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "draft_angle_deg"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 488,
+   "auc": 0.5612,
+   "validated": true
+  },
+  {
+   "id": "G2-115",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "draft_angle_deg"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 488,
+   "auc": 0.4928,
+   "validated": false
+  },
+  {
+   "id": "G2-116",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "draft_angle_deg"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 488,
+   "auc": 0.4414,
+   "validated": false
+  },
+  {
+   "id": "G2-117",
+   "process": "Resin_Transfer_Molding",
+   "kind": "favor",
+   "features": [
+    "draft_angle_deg"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 488,
+   "auc": 0.5423,
+   "validated": false
+  },
+  {
+   "id": "G2-118",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "draft_angle_deg"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 488,
+   "auc": 0.5202,
+   "validated": false
+  },
+  {
+   "id": "G5-001",
+   "process": "Resin_Transfer_Molding",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.5477,
+   "validated": false
+  },
+  {
+   "id": "G5-002",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.6328,
+   "validated": true
+  },
+  {
+   "id": "G5-003",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.6328,
+   "validated": true
+  },
+  {
+   "id": "G5-004",
+   "process": "Filament_Winding",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.6353,
+   "validated": true
+  },
+  {
+   "id": "G5-005",
+   "process": "Pultrusion",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.6874,
+   "validated": true
+  },
+  {
+   "id": "G5-006",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.4886,
+   "validated": false
+  },
+  {
+   "id": "G5-007",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.2619,
+   "validated": false
+  },
+  {
+   "id": "G5-008",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.6232,
+   "validated": true
+  },
+  {
+   "id": "G5-009",
+   "process": "Overmolding",
+   "kind": "disfavor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.6045,
+   "validated": true
+  },
+  {
+   "id": "G5-010",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.6153,
+   "validated": true
+  },
+  {
+   "id": "G5-011",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.5996,
+   "validated": true
+  },
+  {
+   "id": "G5-012",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 400,
+   "auc": 0.5238,
+   "validated": false
+  },
+  {
+   "id": "G5-013",
+   "process": "Filament_Winding",
+   "kind": "disfavor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 78,
+   "auc": 0.5744,
+   "validated": true
+  },
+  {
+   "id": "G5-014",
+   "process": "Pultrusion",
+   "kind": "disfavor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 78,
+   "auc": 0.5746,
+   "validated": true
+  },
+  {
+   "id": "G5-015",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "disfavor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 78,
+   "auc": 0.5771,
+   "validated": true
+  },
+  {
+   "id": "G5-016",
+   "process": "Resin_Transfer_Molding",
+   "kind": "disfavor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 78,
+   "auc": 0.5278,
+   "validated": false
+  },
+  {
+   "id": "G5-017",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 78,
+   "auc": 0.5771,
+   "validated": true
+  },
+  {
+   "id": "G5-018",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 78,
+   "auc": 0.5096,
+   "validated": false
+  },
+  {
+   "id": "G5-019",
+   "process": "Blow_Molding",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 78,
+   "auc": 0.5104,
+   "validated": false
+  },
+  {
+   "id": "G5-020",
+   "process": "Thermoforming",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 78,
+   "auc": 0.4763,
+   "validated": false
+  },
+  {
+   "id": "G5-021",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 78,
+   "auc": 0.5777,
+   "validated": true
+  },
+  {
+   "id": "G5-022",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 78,
+   "auc": 0.5751,
+   "validated": true
+  },
+  {
+   "id": "G5-023",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 78,
+   "auc": 0.4929,
+   "validated": false
+  },
+  {
+   "id": "G5-024",
+   "process": "Stereolithography",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 78,
+   "auc": 0.4929,
+   "validated": false
+  },
+  {
+   "id": "G5-025",
+   "process": "Selective_Laser_Sintering",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 78,
+   "auc": 0.4929,
+   "validated": false
+  },
+  {
+   "id": "G3-001",
+   "process": "Blow_Molding",
+   "kind": "favor",
+   "features": [
+    "axisymmetric",
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 67,
+   "auc": 0.6257,
+   "validated": true
+  },
+  {
+   "id": "G3-002",
+   "process": "Filament_Winding",
+   "kind": "favor",
+   "features": [
+    "axisymmetric",
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 67,
+   "auc": 0.6243,
+   "validated": true
+  },
+  {
+   "id": "G3-003",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "axisymmetric",
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 67,
+   "auc": 0.4851,
+   "validated": false
+  },
+  {
+   "id": "G3-004",
+   "process": "Compression_Molding",
+   "kind": "disfavor",
+   "features": [
+    "axisymmetric",
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 67,
+   "auc": 0.5685,
+   "validated": true
+  },
+  {
+   "id": "G3-005",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "axisymmetric",
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 67,
+   "auc": 0.5193,
+   "validated": false
+  },
+  {
+   "id": "G3-006",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "axisymmetric",
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 67,
+   "auc": 0.3548,
+   "validated": false
+  },
+  {
+   "id": "G3-007",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "axisymmetric",
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 67,
+   "auc": 0.5639,
+   "validated": true
+  },
+  {
+   "id": "G3-008",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "axisymmetric",
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 67,
+   "auc": 0.549,
+   "validated": false
+  },
+  {
+   "id": "G3-009",
+   "process": "Blow_Molding",
+   "kind": "favor",
+   "features": [
+    "axisymmetric",
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 333,
+   "auc": 0.5658,
+   "validated": true
+  },
+  {
+   "id": "G3-010",
+   "process": "Filament_Winding",
+   "kind": "disfavor",
+   "features": [
+    "axisymmetric",
+    "hollow"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 333,
+   "auc": 0.5569,
+   "validated": true
+  },
+  {
+   "id": "G3-011",
+   "process": "Pultrusion",
+   "kind": "favor",
+   "features": [
+    "constant_cross_section",
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 2,
+   "auc": 0.4981,
+   "validated": false
+  },
+  {
+   "id": "G3-012",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "constant_cross_section",
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 2,
+   "auc": 0.5015,
+   "validated": false
+  },
+  {
+   "id": "G3-013",
+   "process": "Compression_Molding",
+   "kind": "disfavor",
+   "features": [
+    "constant_cross_section",
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 2,
+   "auc": 0.5024,
+   "validated": false
+  },
+  {
+   "id": "G3-014",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "constant_cross_section",
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 2,
+   "auc": 0.4953,
+   "validated": false
+  },
+  {
+   "id": "G3-015",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "constant_cross_section",
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 2,
+   "auc": 0.4904,
+   "validated": false
+  },
+  {
+   "id": "G3-016",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "constant_cross_section",
+    "max_dimension_mm"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 2,
+   "auc": 0.5019,
+   "validated": false
+  },
+  {
+   "id": "G3-017",
+   "process": "Pultrusion",
+   "kind": "favor",
+   "features": [
+    "axisymmetric",
+    "constant_cross_section"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 11,
+   "auc": 0.575,
+   "validated": true
+  },
+  {
+   "id": "G3-018",
+   "process": "Filament_Winding",
+   "kind": "favor",
+   "features": [
+    "axisymmetric",
+    "constant_cross_section"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 11,
+   "auc": 0.6293,
+   "validated": true
+  },
+  {
+   "id": "G3-019",
+   "process": "Pultrusion",
+   "kind": "favor",
+   "features": [
+    "constant_cross_section",
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 9,
+   "auc": 0.5773,
+   "validated": true
+  },
+  {
+   "id": "G3-020",
+   "process": "Filament_Winding",
+   "kind": "favor",
+   "features": [
+    "axisymmetric",
+    "continuous_fiber_required"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 70,
+   "auc": 0.5748,
+   "validated": true
+  },
+  {
+   "id": "G3-021",
+   "process": "Filament_Winding",
+   "kind": "favor",
+   "features": [
+    "axisymmetric",
+    "continuous_fiber_required",
+    "hollow"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 49,
+   "auc": 0.5933,
+   "validated": true
+  },
+  {
+   "id": "G3-022",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 21,
+   "auc": 0.6057,
+   "validated": true
+  },
+  {
+   "id": "G3-023",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 21,
+   "auc": 0.6057,
+   "validated": true
+  },
+  {
+   "id": "G3-024",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required",
+    "max_dimension_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 54,
+   "auc": 0.6498,
+   "validated": true
+  },
+  {
+   "id": "G3-025",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required",
+    "max_dimension_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 54,
+   "auc": 0.6498,
+   "validated": true
+  },
+  {
+   "id": "G3-026",
+   "process": "Resin_Transfer_Molding",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 288,
+   "auc": 0.4341,
+   "validated": false
+  },
+  {
+   "id": "G3-027",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 288,
+   "auc": 0.4992,
+   "validated": false
+  },
+  {
+   "id": "G3-028",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 384,
+   "auc": 0.2787,
+   "validated": false
+  },
+  {
+   "id": "G3-029",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 24,
+   "auc": 0.5307,
+   "validated": false
+  },
+  {
+   "id": "G3-030",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 24,
+   "auc": 0.5307,
+   "validated": false
+  },
+  {
+   "id": "G3-031",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 4,
+   "auc": 0.5203,
+   "validated": false
+  },
+  {
+   "id": "G3-032",
+   "process": "Stereolithography",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 4,
+   "auc": 0.5203,
+   "validated": false
+  },
+  {
+   "id": "G3-033",
+   "process": "Selective_Laser_Sintering",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 4,
+   "auc": 0.5203,
+   "validated": false
+  },
+  {
+   "id": "G3-034",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 10,
+   "auc": 0.5992,
+   "validated": true
+  },
+  {
+   "id": "G3-035",
+   "process": "Stereolithography",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 10,
+   "auc": 0.5992,
+   "validated": true
+  },
+  {
+   "id": "G3-036",
+   "process": "Selective_Laser_Sintering",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 10,
+   "auc": 0.5992,
+   "validated": true
+  },
+  {
+   "id": "G3-037",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 86,
+   "auc": 0.5421,
+   "validated": false
+  },
+  {
+   "id": "G3-038",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 86,
+   "auc": 0.555,
+   "validated": true
+  },
+  {
+   "id": "G3-039",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 86,
+   "auc": 0.782,
+   "validated": true
+  },
+  {
+   "id": "G3-040",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "rib_count",
+    "undercut_present"
+   ],
+   "observability": "visible",
+   "fires_on_dev": 270,
+   "auc": 0.5318,
+   "validated": false
+  },
+  {
+   "id": "G3-041",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm",
+    "rib_count"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 255,
+   "auc": 0.5662,
+   "validated": true
+  },
+  {
+   "id": "G3-042",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm",
+    "rib_count"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 255,
+   "auc": 0.6267,
+   "validated": true
+  },
+  {
+   "id": "G3-043",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm",
+    "rib_count"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 97,
+   "auc": 0.5387,
+   "validated": false
+  },
+  {
+   "id": "G3-044",
+   "process": "Thermoforming",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm",
+    "rib_count",
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 23,
+   "auc": 0.4781,
+   "validated": false
+  },
+  {
+   "id": "G3-045",
+   "process": "Thermoforming",
+   "kind": "favor",
+   "features": [
+    "projected_area_cm2",
+    "rib_count",
+    "undercut_present"
+   ],
+   "observability": "estimable",
+   "fires_on_dev": 16,
+   "auc": 0.4847,
+   "validated": false
+  },
+  {
+   "id": "G3-046",
+   "process": "Blow_Molding",
+   "kind": "favor",
+   "features": [
+    "hollow",
+    "production_volume",
+    "wall_thickness_mm"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 170,
+   "auc": 0.6903,
+   "validated": true
+  },
+  {
+   "id": "G3-047",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "continuous_fiber_required",
+    "production_volume",
+    "projected_area_cm2"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 1,
+   "auc": 0.5058,
+   "validated": false
+  },
+  {
+   "id": "G3-048",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "favor",
+   "features": [
+    "production_volume",
+    "undercut_present"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 23,
+   "auc": 0.6467,
+   "validated": true
+  },
+  {
+   "id": "G3-049",
+   "process": "Stereolithography",
+   "kind": "favor",
+   "features": [
+    "production_volume",
+    "undercut_present"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 23,
+   "auc": 0.6467,
+   "validated": true
+  },
+  {
+   "id": "G3-050",
+   "process": "Selective_Laser_Sintering",
+   "kind": "favor",
+   "features": [
+    "production_volume",
+    "undercut_present"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 23,
+   "auc": 0.6467,
+   "validated": true
+  },
+  {
+   "id": "G3-051",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 43,
+   "auc": 0.5075,
+   "validated": false
+  },
+  {
+   "id": "G3-052",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 43,
+   "auc": 0.5075,
+   "validated": false
+  },
+  {
+   "id": "G3-053",
+   "process": "Pultrusion",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 43,
+   "auc": 0.5411,
+   "validated": false
+  },
+  {
+   "id": "G3-054",
+   "process": "Filament_Winding",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 43,
+   "auc": 0.541,
+   "validated": false
+  },
+  {
+   "id": "G3-055",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 6,
+   "auc": 0.496,
+   "validated": false
+  },
+  {
+   "id": "G3-056",
+   "process": "Overmolding",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 6,
+   "auc": 0.5061,
+   "validated": false
+  },
+  {
+   "id": "G3-057",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 6,
+   "auc": 0.4997,
+   "validated": false
+  },
+  {
+   "id": "G3-058",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 6,
+   "auc": 0.4944,
+   "validated": false
+  },
+  {
+   "id": "G3-059",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "max_dimension_mm",
+    "production_volume",
+    "undercut_present"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 175,
+   "auc": 0.8173,
+   "validated": true
+  },
+  {
+   "id": "G3-060",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "favor",
+   "features": [
+    "hollow",
+    "max_dimension_mm",
+    "production_volume"
+   ],
+   "observability": "not_visible",
+   "fires_on_dev": 17,
+   "auc": 0.5967,
+   "validated": true
+  },
+  {
+   "id": "G4-001",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_ejector_pin_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-002",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "sig_ejector_pin_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-003",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_ejector_pin_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-004",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_ejector_pin_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-005",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "sig_ejector_pin_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-006",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "disfavor",
+   "features": [
+    "sig_ejector_pin_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-007",
+   "process": "Filament_Winding",
+   "kind": "disfavor",
+   "features": [
+    "sig_ejector_pin_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-008",
+   "process": "Pultrusion",
+   "kind": "disfavor",
+   "features": [
+    "sig_ejector_pin_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-009",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "sig_ejector_pin_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-010",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_ejector_pin_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-011",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_ejector_pin_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-012",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "sig_ejector_pin_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-013",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_ejector_pin_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-014",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-015",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-016",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-017",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-018",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-019",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "disfavor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-020",
+   "process": "Filament_Winding",
+   "kind": "disfavor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-021",
+   "process": "Pultrusion",
+   "kind": "disfavor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-022",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-023",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-024",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-025",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-026",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-027",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_gate_vestige"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-028",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-029",
+   "process": "Blow_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-030",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-031",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-032",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-033",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-034",
+   "process": "Resin_Transfer_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-035",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-036",
+   "process": "Filament_Winding",
+   "kind": "disfavor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-037",
+   "process": "Pultrusion",
+   "kind": "disfavor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-038",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-039",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "disfavor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-040",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-041",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-042",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-043",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "sig_parting_line"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-044",
+   "process": "Blow_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_pinch_off_seam"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-045",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_pinch_off_seam"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-046",
+   "process": "Compression_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_pinch_off_seam"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-047",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_pinch_off_seam"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-048",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_pinch_off_seam"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-049",
+   "process": "Resin_Transfer_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_pinch_off_seam"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-050",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "disfavor",
+   "features": [
+    "sig_pinch_off_seam"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-051",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "sig_pinch_off_seam"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-052",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_pinch_off_seam"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-053",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "sig_pinch_off_seam"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-054",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_pinch_off_seam"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-055",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_pinch_off_seam"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-056",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "sig_pinch_off_seam"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-057",
+   "process": "Blow_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_neck_or_spout"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-058",
+   "process": "Filament_Winding",
+   "kind": "favor",
+   "features": [
+    "sig_neck_or_spout"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-059",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-060",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-061",
+   "process": "Resin_Transfer_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-062",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-063",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-064",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-065",
+   "process": "Overmolding",
+   "kind": "disfavor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-066",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-067",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-068",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-069",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-070",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-071",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-072",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-073",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "sig_woven_fabric_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-074",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_random_chopped_fiber"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-075",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_random_chopped_fiber"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-076",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_random_chopped_fiber"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-077",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_random_chopped_fiber"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-078",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "sig_random_chopped_fiber"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-079",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "sig_random_chopped_fiber"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-080",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_random_chopped_fiber"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-081",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_random_chopped_fiber"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-082",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "sig_random_chopped_fiber"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-083",
+   "process": "Filament_Winding",
+   "kind": "disfavor",
+   "features": [
+    "sig_random_chopped_fiber"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-084",
+   "process": "Pultrusion",
+   "kind": "disfavor",
+   "features": [
+    "sig_random_chopped_fiber"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-085",
+   "process": "Filament_Winding",
+   "kind": "favor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-086",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-087",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-088",
+   "process": "Compression_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-089",
+   "process": "Resin_Transfer_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-090",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-091",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-092",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-093",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-094",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-095",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-096",
+   "process": "Pultrusion",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-097",
+   "process": "Overmolding",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-098",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-099",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-100",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-101",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "sig_helical_winding_pattern"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-102",
+   "process": "Pultrusion",
+   "kind": "favor",
+   "features": [
+    "sig_longitudinal_fiber_streaks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-103",
+   "process": "Filament_Winding",
+   "kind": "favor",
+   "features": [
+    "sig_longitudinal_fiber_streaks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-104",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_longitudinal_fiber_streaks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-105",
+   "process": "Overmolding",
+   "kind": "disfavor",
+   "features": [
+    "sig_longitudinal_fiber_streaks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-106",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_longitudinal_fiber_streaks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-107",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_longitudinal_fiber_streaks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-108",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "sig_longitudinal_fiber_streaks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-109",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_longitudinal_fiber_streaks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-110",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_longitudinal_fiber_streaks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-111",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "favor",
+   "features": [
+    "sig_layer_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-112",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "favor",
+   "features": [
+    "sig_layer_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-113",
+   "process": "Stereolithography",
+   "kind": "favor",
+   "features": [
+    "sig_layer_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-114",
+   "process": "Selective_Laser_Sintering",
+   "kind": "favor",
+   "features": [
+    "sig_layer_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-115",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_layer_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-116",
+   "process": "Overmolding",
+   "kind": "disfavor",
+   "features": [
+    "sig_layer_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-117",
+   "process": "Compression_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_layer_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-118",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_layer_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-119",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_layer_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-120",
+   "process": "Resin_Transfer_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_layer_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-121",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_layer_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-122",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_layer_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-123",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_layer_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-124",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "favor",
+   "features": [
+    "sig_extruded_bead_texture"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-125",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_extruded_bead_texture"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-126",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_extruded_bead_texture"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-127",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "sig_extruded_bead_texture"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-128",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_extruded_bead_texture"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-129",
+   "process": "Overmolding",
+   "kind": "disfavor",
+   "features": [
+    "sig_extruded_bead_texture"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-130",
+   "process": "Compression_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_extruded_bead_texture"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-131",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_extruded_bead_texture"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-132",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_extruded_bead_texture"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-133",
+   "process": "Resin_Transfer_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_extruded_bead_texture"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-134",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_extruded_bead_texture"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-135",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_extruded_bead_texture"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-136",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_extruded_bead_texture"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-137",
+   "process": "Selective_Laser_Sintering",
+   "kind": "favor",
+   "features": [
+    "sig_powdery_grainy_surface"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-138",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_powdery_grainy_surface"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-139",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_powdery_grainy_surface"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-140",
+   "process": "Overmolding",
+   "kind": "disfavor",
+   "features": [
+    "sig_powdery_grainy_surface"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-141",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_powdery_grainy_surface"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-142",
+   "process": "Stereolithography",
+   "kind": "favor",
+   "features": [
+    "sig_support_nubs"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-143",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "favor",
+   "features": [
+    "sig_support_nubs"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-144",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_support_nubs"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-145",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_support_nubs"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-146",
+   "process": "Overmolding",
+   "kind": "disfavor",
+   "features": [
+    "sig_support_nubs"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-147",
+   "process": "Compression_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_support_nubs"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-148",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_support_nubs"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-149",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_support_nubs"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-150",
+   "process": "Resin_Transfer_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_support_nubs"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-151",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_support_nubs"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-152",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_support_nubs"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-153",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_support_nubs"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-154",
+   "process": "Stereolithography",
+   "kind": "favor",
+   "features": [
+    "sig_translucent_resin"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-155",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_translucent_resin"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-156",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "favor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-157",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-158",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-159",
+   "process": "Compression_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-160",
+   "process": "Resin_Transfer_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-161",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-162",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-163",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-164",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-165",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-166",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-167",
+   "process": "Pultrusion",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-168",
+   "process": "Filament_Winding",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-169",
+   "process": "Overmolding",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-170",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-171",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-172",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_paper_wood_laminate"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-173",
+   "process": "Thermoforming",
+   "kind": "favor",
+   "features": [
+    "sig_thinned_corners_sheet"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-174",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_thinned_corners_sheet"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-175",
+   "process": "Compression_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_thinned_corners_sheet"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-176",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_thinned_corners_sheet"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-177",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_thinned_corners_sheet"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-178",
+   "process": "Thermoforming",
+   "kind": "favor",
+   "features": [
+    "sig_trimmed_sheet_edge"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-179",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "sig_trimmed_sheet_edge"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-180",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "sig_trimmed_sheet_edge"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-181",
+   "process": "Pultrusion",
+   "kind": "favor",
+   "features": [
+    "sig_trimmed_sheet_edge"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-182",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "sig_one_sided_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-183",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "sig_one_sided_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-184",
+   "process": "Thermoforming",
+   "kind": "favor",
+   "features": [
+    "sig_one_sided_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-185",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_one_sided_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-186",
+   "process": "Compression_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_one_sided_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-187",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_one_sided_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-188",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_one_sided_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-189",
+   "process": "Resin_Transfer_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_one_sided_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-190",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_both_sides_tooled"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-191",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_both_sides_tooled"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-192",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_both_sides_tooled"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-193",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_both_sides_tooled"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-194",
+   "process": "Resin_Transfer_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_both_sides_tooled"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-195",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "sig_both_sides_tooled"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-196",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_both_sides_tooled"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-197",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "sig_both_sides_tooled"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-198",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "disfavor",
+   "features": [
+    "sig_both_sides_tooled"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-199",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_both_sides_tooled"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-200",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-201",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-202",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-203",
+   "process": "Compression_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-204",
+   "process": "Resin_Transfer_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-205",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-206",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-207",
+   "process": "Sheet_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-208",
+   "process": "Bulk_Molding_Compound",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-209",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-210",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-211",
+   "process": "Pultrusion",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-212",
+   "process": "Filament_Winding",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-213",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-214",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-215",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-216",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "sig_two_materials_bonded"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-217",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_sink_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-218",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_sink_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-219",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "sig_sink_marks"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-220",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_knit_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-221",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "sig_knit_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-222",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_knit_lines"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-223",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_molded_bosses_clips"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-224",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "sig_molded_bosses_clips"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-225",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_molded_bosses_clips"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-226",
+   "process": "Hand_Lay_up",
+   "kind": "disfavor",
+   "features": [
+    "sig_molded_bosses_clips"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-227",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "disfavor",
+   "features": [
+    "sig_molded_bosses_clips"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-228",
+   "process": "Filament_Winding",
+   "kind": "disfavor",
+   "features": [
+    "sig_molded_bosses_clips"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-229",
+   "process": "Pultrusion",
+   "kind": "disfavor",
+   "features": [
+    "sig_molded_bosses_clips"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-230",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_molded_bosses_clips"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-231",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_flash"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-232",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_flash"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-233",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_flash"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-234",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_flash"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-235",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_flash"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-236",
+   "process": "Sheet_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_class_a_painted_panel"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-237",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_class_a_painted_panel"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-238",
+   "process": "Resin_Transfer_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_class_a_painted_panel"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-239",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_class_a_painted_panel"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-240",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "sig_class_a_painted_panel"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-241",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_class_a_painted_panel"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-242",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_class_a_painted_panel"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-243",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "sig_class_a_painted_panel"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-244",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "sig_sandwich_core_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-245",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "sig_sandwich_core_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-246",
+   "process": "Resin_Transfer_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_sandwich_core_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-247",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_sandwich_core_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-248",
+   "process": "Structural_Reaction_Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_sandwich_core_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-249",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_sandwich_core_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-250",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_sandwich_core_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-251",
+   "process": "Overmolding",
+   "kind": "disfavor",
+   "features": [
+    "sig_sandwich_core_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-252",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "sig_sandwich_core_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-253",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_sandwich_core_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-254",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_sandwich_core_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-255",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "sig_sandwich_core_visible"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-256",
+   "process": "Hand_Lay_up",
+   "kind": "favor",
+   "features": [
+    "sig_gelcoat_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-257",
+   "process": "Vacuum_Assisted_RTM",
+   "kind": "favor",
+   "features": [
+    "sig_gelcoat_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-258",
+   "process": "Resin_Transfer_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_gelcoat_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-259",
+   "process": "Injection_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_gelcoat_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-260",
+   "process": "Blow_Molding",
+   "kind": "disfavor",
+   "features": [
+    "sig_gelcoat_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-261",
+   "process": "Thermoforming",
+   "kind": "disfavor",
+   "features": [
+    "sig_gelcoat_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-262",
+   "process": "Fused_Filament_Fabrication",
+   "kind": "disfavor",
+   "features": [
+    "sig_gelcoat_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-263",
+   "process": "Stereolithography",
+   "kind": "disfavor",
+   "features": [
+    "sig_gelcoat_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-264",
+   "process": "Selective_Laser_Sintering",
+   "kind": "disfavor",
+   "features": [
+    "sig_gelcoat_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-265",
+   "process": "Laminated_Object_Manufacturing",
+   "kind": "disfavor",
+   "features": [
+    "sig_gelcoat_finish"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-266",
+   "process": "Injection_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_metal_inserts"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-267",
+   "process": "Overmolding",
+   "kind": "favor",
+   "features": [
+    "sig_metal_inserts"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-268",
+   "process": "Bulk_Molding_Compound",
+   "kind": "favor",
+   "features": [
+    "sig_metal_inserts"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  },
+  {
+   "id": "G4-269",
+   "process": "Compression_Molding",
+   "kind": "favor",
+   "features": [
+    "sig_metal_inserts"
+   ],
+   "observability": "signature",
+   "fires_on_dev": 0,
+   "auc": null,
+   "validated": false
+  }
+ ]
+}

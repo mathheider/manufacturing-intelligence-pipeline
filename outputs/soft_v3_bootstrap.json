@@ -1,0 +1,66 @@
+{
+ "dev:ALL:soft v3 (expanded) | rules + VLM prior": {
+  "delta_AUC_vs_VLM": 0.007,
+  "ci95": [
+   0.0009,
+   0.0133
+  ],
+  "n": 535
+ },
+ "dev:ALL:soft v3 validated (142) | rules + VLM prior": {
+  "delta_AUC_vs_VLM": 0.0262,
+  "ci95": [
+   0.015,
+   0.0381
+  ],
+  "n": 535
+ },
+ "dev:HARD:soft v3 (expanded) | rules + VLM prior": {
+  "delta_AUC_vs_VLM": 0.0153,
+  "ci95": [
+   0.0052,
+   0.0253
+  ],
+  "n": 311
+ },
+ "dev:HARD:soft v3 validated (142) | rules + VLM prior": {
+  "delta_AUC_vs_VLM": 0.0414,
+  "ci95": [
+   0.0221,
+   0.0607
+  ],
+  "n": 311
+ },
+ "test:ALL:soft v3 (expanded) | rules + VLM prior": {
+  "delta_AUC_vs_VLM": 0.015,
+  "ci95": [
+   -0.0025,
+   0.0325
+  ],
+  "n": 100
+ },
+ "test:ALL:soft v3 validated (142) | rules + VLM prior": {
+  "delta_AUC_vs_VLM": 0.0075,
+  "ci95": [
+   -0.0187,
+   0.0338
+  ],
+  "n": 100
+ },
+ "test:HARD:soft v3 (expanded) | rules + VLM prior": {
+  "delta_AUC_vs_VLM": 0.0197,
+  "ci95": [
+   -0.0033,
+   0.0411
+  ],
+  "n": 76
+ },
+ "test:HARD:soft v3 validated (142) | rules + VLM prior": {
+  "delta_AUC_vs_VLM": 0.0115,
+  "ci95": [
+   -0.023,
+   0.0444
+  ],
+  "n": 76
+ }
+}

@@ -1,0 +1,22 @@
+{
+  "source": {
+    "pairing": "per-instance, benchmark_real run (150 photos)",
+    "direct": "run cache top-8 responses (local-only)",
+    "hybrid": "outputs/hybrid_graphs.json survivors",
+    "generator": "scripts/make_survey_figures.py"
+  },
+  "n": 150,
+  "containment": {
+    "direct_at_8": 133,
+    "hybrid": 6
+  },
+  "paired_cells": {
+    "both": 5,
+    "direct_only": 128,
+    "hybrid_only": 1,
+    "neither": 16
+  },
+  "mcnemar_exact_p": 3.820356640172434e-37,
+  "metric_note": "Binary full-set containment (expert subseteq decision set) per instance, sample-00 responses of the archived run. This is stricter than the benchmark's fractional containment metric (real Direct@8 .835), so the two numbers coexist and must not be conflated.",
+  "claim_supported": "On the same 150 photos the decision-moving component is the rule engine, not the ranker: 128 paired flips against containment vs 1 for. With v1 (pre-bench-v2) perception the rules eliminate true expert processes, which is the measured collapse (Hybrid HARD F1 .086) and the case for calibrated perception first. No retrieval arm exists in the repo; the old with/without-retrieval agreement chart was assertion-only and is replaced by this paired comparison."
+}

@@ -1,0 +1,370 @@
+{
+ "_meta": {
+  "what": "dev-only cross-validation; Gold-100 not read",
+  "n_dev": 535,
+  "tau": 0.5,
+  "lambdas": [
+   0.3,
+   1.0,
+   3.0,
+   10.0,
+   30.0
+  ],
+  "rules_v3_sha256": "13f7ef36c9475db4220dfb228a0be94b3e4237881664c591dcd3d802d43f496b",
+  "evidence_sha256": "1514b9b6ce0f90591da3c9e40f06f4b4af9c1a8bf60317bdf66241300023240d",
+  "models": {
+   "M0": "VLM alone (its own ranking)",
+   "MV": "VLM signals only, learned (no rules)",
+   "M4": "trust per rule, stated direction (no base rates)",
+   "M5": "trust per feature (frozen model)"
+  }
+ },
+ "schemes": {
+  "random 5-fold (new photos, part types seen in training)": {
+   "percent": {
+    "M0": {
+     "top pick correct": 77.0,
+     "right family": 83.7,
+     "all correct in top 3": 55.1,
+     "all correct in top 8": 88.2
+    },
+    "MV": {
+     "top pick correct": 77.4,
+     "right family": 84.5,
+     "all correct in top 3": 55.5,
+     "all correct in top 8": 89.0
+    },
+    "M4": {
+     "top pick correct": 78.3,
+     "right family": 84.5,
+     "all correct in top 3": 60.7,
+     "all correct in top 8": 93.5
+    },
+    "M5": {
+     "top pick correct": 77.6,
+     "right family": 84.5,
+     "all correct in top 3": 57.2,
+     "all correct in top 8": 91.2
+    }
+   },
+   "gains_vs": {
+    "M5 vs M0": {
+     "top pick correct": {
+      "gain_points": 0.6,
+      "range95": [
+       -1.5,
+       2.6
+      ]
+     },
+     "right family": {
+      "gain_points": 0.7,
+      "range95": [
+       -0.9,
+       2.4
+      ]
+     },
+     "all correct in top 3": {
+      "gain_points": 2.1,
+      "range95": [
+       -0.2,
+       4.3
+      ]
+     },
+     "all correct in top 8": {
+      "gain_points": 3.0,
+      "range95": [
+       1.1,
+       4.9
+      ]
+     }
+    },
+    "M5 vs MV": {
+     "top pick correct": {
+      "gain_points": 0.2,
+      "range95": [
+       -0.9,
+       1.3
+      ]
+     },
+     "right family": {
+      "gain_points": 0.0,
+      "range95": [
+       -0.9,
+       0.9
+      ]
+     },
+     "all correct in top 3": {
+      "gain_points": 1.7,
+      "range95": [
+       -0.6,
+       3.9
+      ]
+     },
+     "all correct in top 8": {
+      "gain_points": 2.2,
+      "range95": [
+       0.6,
+       4.1
+      ]
+     }
+    },
+    "M4 vs M0": {
+     "top pick correct": {
+      "gain_points": 1.3,
+      "range95": [
+       -0.7,
+       3.6
+      ]
+     },
+     "right family": {
+      "gain_points": 0.7,
+      "range95": [
+       -0.9,
+       2.4
+      ]
+     },
+     "all correct in top 3": {
+      "gain_points": 5.6,
+      "range95": [
+       2.8,
+       8.8
+      ]
+     },
+     "all correct in top 8": {
+      "gain_points": 5.2,
+      "range95": [
+       2.8,
+       7.7
+      ]
+     }
+    },
+    "MV vs M0": {
+     "top pick correct": {
+      "gain_points": 0.4,
+      "range95": [
+       -1.9,
+       2.6
+      ]
+     },
+     "right family": {
+      "gain_points": 0.7,
+      "range95": [
+       -0.9,
+       2.4
+      ]
+     },
+     "all correct in top 3": {
+      "gain_points": 0.4,
+      "range95": [
+       -0.4,
+       1.1
+      ]
+     },
+     "all correct in top 8": {
+      "gain_points": 0.7,
+      "range95": [
+       0.2,
+       1.5
+      ]
+     }
+    }
+   },
+   "lambda_per_fold": {
+    "MV": [
+     10.0,
+     30.0,
+     10.0,
+     10.0,
+     3.0
+    ],
+    "M4": [
+     0.3,
+     0.3,
+     1.0,
+     0.3,
+     0.3
+    ],
+    "M5": [
+     1.0,
+     3.0,
+     10.0,
+     30.0,
+     10.0
+    ]
+   }
+  },
+  "leave-part-type-out 5-fold (part types never seen in training)": {
+   "percent": {
+    "M0": {
+     "top pick correct": 77.0,
+     "right family": 83.7,
+     "all correct in top 3": 55.1,
+     "all correct in top 8": 88.2
+    },
+    "MV": {
+     "top pick correct": 77.4,
+     "right family": 84.7,
+     "all correct in top 3": 55.7,
+     "all correct in top 8": 89.0
+    },
+    "M4": {
+     "top pick correct": 76.4,
+     "right family": 84.1,
+     "all correct in top 3": 51.0,
+     "all correct in top 8": 84.7
+    },
+    "M5": {
+     "top pick correct": 77.4,
+     "right family": 84.3,
+     "all correct in top 3": 57.0,
+     "all correct in top 8": 90.8
+    }
+   },
+   "gains_vs": {
+    "M5 vs M0": {
+     "top pick correct": {
+      "gain_points": 0.4,
+      "range95": [
+       -1.7,
+       2.4
+      ]
+     },
+     "right family": {
+      "gain_points": 0.6,
+      "range95": [
+       -1.1,
+       2.2
+      ]
+     },
+     "all correct in top 3": {
+      "gain_points": 1.9,
+      "range95": [
+       -0.6,
+       4.5
+      ]
+     },
+     "all correct in top 8": {
+      "gain_points": 2.6,
+      "range95": [
+       0.9,
+       4.5
+      ]
+     }
+    },
+    "M5 vs MV": {
+     "top pick correct": {
+      "gain_points": 0.0,
+      "range95": [
+       -1.1,
+       1.1
+      ]
+     },
+     "right family": {
+      "gain_points": -0.4,
+      "range95": [
+       -1.5,
+       0.7
+      ]
+     },
+     "all correct in top 3": {
+      "gain_points": 1.3,
+      "range95": [
+       -0.9,
+       3.6
+      ]
+     },
+     "all correct in top 8": {
+      "gain_points": 1.9,
+      "range95": [
+       0.2,
+       3.6
+      ]
+     }
+    },
+    "M4 vs M0": {
+     "top pick correct": {
+      "gain_points": -0.6,
+      "range95": [
+       -2.8,
+       1.7
+      ]
+     },
+     "right family": {
+      "gain_points": 0.4,
+      "range95": [
+       -1.3,
+       2.1
+      ]
+     },
+     "all correct in top 3": {
+      "gain_points": -4.1,
+      "range95": [
+       -7.1,
+       -1.3
+      ]
+     },
+     "all correct in top 8": {
+      "gain_points": -3.6,
+      "range95": [
+       -6.0,
+       -1.1
+      ]
+     }
+    },
+    "MV vs M0": {
+     "top pick correct": {
+      "gain_points": 0.4,
+      "range95": [
+       -1.9,
+       2.6
+      ]
+     },
+     "right family": {
+      "gain_points": 0.9,
+      "range95": [
+       -0.7,
+       2.6
+      ]
+     },
+     "all correct in top 3": {
+      "gain_points": 0.6,
+      "range95": [
+       -0.2,
+       1.3
+      ]
+     },
+     "all correct in top 8": {
+      "gain_points": 0.7,
+      "range95": [
+       0.2,
+       1.5
+      ]
+     }
+    }
+   },
+   "lambda_per_fold": {
+    "MV": [
+     3.0,
+     10.0,
+     30.0,
+     30.0,
+     10.0
+    ],
+    "M4": [
+     0.3,
+     0.3,
+     0.3,
+     1.0,
+     0.3
+    ],
+    "M5": [
+     10.0,
+     3.0,
+     10.0,
+     10.0,
+     10.0
+    ]
+   }
+  }
+ }
+}

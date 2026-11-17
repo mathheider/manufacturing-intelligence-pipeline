@@ -1,0 +1,37 @@
+{
+  "n_scored": 635,
+  "n_hard": 387,
+  "false_elims_all": 923,
+  "false_elims_hard": 722,
+  "by_feature_all": {
+    "hollow": 354,
+    "undercut_present": 72,
+    "continuous_fiber_required": 323,
+    "rib_count": 18,
+    "wall_thickness_mm": 97,
+    "max_dimension_mm": 26,
+    "draft_angle_deg": 9,
+    "production_volume": 14,
+    "constant_cross_section": 6,
+    "axisymmetric": 2,
+    "projected_area_cm2": 2
+  },
+  "by_feature_hard": {
+    "hollow": 354,
+    "undercut_present": 72,
+    "rib_count": 18,
+    "continuous_fiber_required": 164,
+    "wall_thickness_mm": 63,
+    "max_dimension_mm": 21,
+    "draft_angle_deg": 6,
+    "production_volume": 14,
+    "constant_cross_section": 6,
+    "axisymmetric": 2,
+    "projected_area_cm2": 2
+  },
+  "hollow_count": 354,
+  "hollow_per_part": 0.5575,
+  "v1_hollow_per_part": 1.0867,
+  "reduction": 0.487,
+  "h1_pass": false
+}

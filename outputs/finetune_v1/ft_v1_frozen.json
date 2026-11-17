@@ -1,1 +1,28 @@
-placeholder
+{
+ "model": "MIP fine-tune v1: SmolVLM-256M-Instruct + LoRA",
+ "base": "HuggingFaceTB/SmolVLM-256M-Instruct",
+ "base_weights_sha256": "74dea5904032e5ae99a2e0eef5179e6ac0f1dedc3ab0c7c2a5d4d387c843203e",
+ "frozen_utc": "2026-10-28T03:15:51Z",
+ "fit_on": "all 535 dev photos (Gold-100 not read)",
+ "recipe": {
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "lr": 0.0002,
+  "epochs": 3,
+  "batch": 8,
+  "warmup_frac": 0.05,
+  "weight_decay": 0.0,
+  "seed": 0,
+  "targets": ".*text_model.*\\.(q_proj|k_proj|v_proj|o_proj|gate_proj|up_proj|down_proj)$|.*connector\\.modality_projection\\.proj$"
+ },
+ "prompt": "Which manufacturing process was used to make this part?",
+ "loss_per_epoch": [
+  1.3967,
+  0.3731,
+  0.3096
+ ],
+ "adapter_sha256": "abc8f3df4ed5df0575c448b17f549dc1741ac2c0aab6c487b0f86eb51c978e5c",
+ "labels_sha256": "b051c50335353eecbf187fe80dc0fb9c2aa589be979fd7fbe6925a9bb5be2079",
+ "protocol": "score Gold-100 once with `run.py test`; per-photo scores saved so they can be re-scored against per-photo labels later without re-running the model"
+}

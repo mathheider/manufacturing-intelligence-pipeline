@@ -1,0 +1,313 @@
+{
+ "_meta": {
+  "measures": [
+   "top pick correct",
+   "right family",
+   "all correct in top 3",
+   "all correct in top 8"
+  ],
+  "units": "% of photos; gains in percentage points, 95% range from resampling photos (4000 draws, seed 20261012)",
+  "methods": {
+   "FT": "SmolVLM-256M + LoRA (fine-tuned)",
+   "ZS": "SmolVLM-256M prompting (same model, no fine-tuning)",
+   "M0": "Gemini 2.5 Flash-Lite alone (its own top-8, bench-v2 archive)",
+   "PREV": "Guess the most common processes (ignores the photo)"
+  }
+ },
+ "lopo": {
+  "n": 535,
+  "percent": {
+   "FT": {
+    "top pick correct": 66.2,
+    "right family": 71.8,
+    "all correct in top 3": 46.0,
+    "all correct in top 8": 66.7
+   },
+   "ZS": {
+    "top pick correct": 67.1,
+    "right family": 72.3,
+    "all correct in top 3": 44.9,
+    "all correct in top 8": 52.9
+   },
+   "M0": {
+    "top pick correct": 77.0,
+    "right family": 83.7,
+    "all correct in top 3": 55.1,
+    "all correct in top 8": 88.2
+   },
+   "PREV": {
+    "top pick correct": 67.7,
+    "right family": 72.5,
+    "all correct in top 3": 44.9,
+    "all correct in top 8": 67.7
+   }
+  },
+  "percent_hard": {
+   "FT": {
+    "top pick correct": 43.1,
+    "right family": 52.7,
+    "all correct in top 3": 7.1,
+    "all correct in top 8": 42.8
+   },
+   "ZS": {
+    "top pick correct": 43.7,
+    "right family": 52.4,
+    "all correct in top 3": 5.1,
+    "all correct in top 8": 19.0
+   },
+   "M0": {
+    "top pick correct": 63.0,
+    "right family": 74.6,
+    "all correct in top 3": 24.8,
+    "all correct in top 8": 80.1
+   },
+   "PREV": {
+    "top pick correct": 44.4,
+    "right family": 52.7,
+    "all correct in top 3": 5.1,
+    "all correct in top 8": 44.4
+   }
+  },
+  "n_hard": 311,
+  "gains": {
+   "FT vs M0": {
+    "top pick correct": {
+     "gain_points": -10.8,
+     "range95": [
+      -14.6,
+      -7.5
+     ]
+    },
+    "right family": {
+     "gain_points": -12.0,
+     "range95": [
+      -15.3,
+      -8.6
+     ]
+    },
+    "all correct in top 3": {
+     "gain_points": -9.2,
+     "range95": [
+      -12.5,
+      -5.8
+     ]
+    },
+    "all correct in top 8": {
+     "gain_points": -21.5,
+     "range95": [
+      -25.8,
+      -17.6
+     ]
+    }
+   },
+   "FT vs ZS": {
+    "top pick correct": {
+     "gain_points": -0.9,
+     "range95": [
+      -2.2,
+      0.4
+     ]
+    },
+    "right family": {
+     "gain_points": -0.6,
+     "range95": [
+      -1.7,
+      0.6
+     ]
+    },
+    "all correct in top 3": {
+     "gain_points": 1.1,
+     "range95": [
+      -0.7,
+      3.0
+     ]
+    },
+    "all correct in top 8": {
+     "gain_points": 13.8,
+     "range95": [
+      9.9,
+      17.8
+     ]
+    }
+   },
+   "FT vs PREV": {
+    "top pick correct": {
+     "gain_points": -1.5,
+     "range95": [
+      -2.6,
+      -0.4
+     ]
+    },
+    "right family": {
+     "gain_points": -0.7,
+     "range95": [
+      -1.9,
+      0.2
+     ]
+    },
+    "all correct in top 3": {
+     "gain_points": 1.1,
+     "range95": [
+      -0.4,
+      2.6
+     ]
+    },
+    "all correct in top 8": {
+     "gain_points": -0.9,
+     "range95": [
+      -3.9,
+      1.9
+     ]
+    }
+   }
+  }
+ },
+ "test": {
+  "n": 100,
+  "percent": {
+   "FT": {
+    "top pick correct": 56.0,
+    "right family": 68.0,
+    "all correct in top 3": 43.0,
+    "all correct in top 8": 73.0
+   },
+   "ZS": {
+    "top pick correct": 59.0,
+    "right family": 68.0,
+    "all correct in top 3": 29.0,
+    "all correct in top 8": 40.0
+   },
+   "M0": {
+    "top pick correct": 74.0,
+    "right family": 83.0,
+    "all correct in top 3": 47.0,
+    "all correct in top 8": 88.0
+   },
+   "PREV": {
+    "top pick correct": 58.0,
+    "right family": 68.0,
+    "all correct in top 3": 28.0,
+    "all correct in top 8": 56.0
+   }
+  },
+  "percent_hard": {
+   "FT": {
+    "top pick correct": 44.7,
+    "right family": 60.5,
+    "all correct in top 3": 25.0,
+    "all correct in top 8": 64.5
+   },
+   "ZS": {
+    "top pick correct": 46.1,
+    "right family": 57.9,
+    "all correct in top 3": 6.6,
+    "all correct in top 8": 21.1
+   },
+   "M0": {
+    "top pick correct": 65.8,
+    "right family": 77.6,
+    "all correct in top 3": 30.3,
+    "all correct in top 8": 84.2
+   },
+   "PREV": {
+    "top pick correct": 44.7,
+    "right family": 57.9,
+    "all correct in top 3": 5.3,
+    "all correct in top 8": 42.1
+   }
+  },
+  "n_hard": 76,
+  "gains": {
+   "FT vs M0": {
+    "top pick correct": {
+     "gain_points": -18.0,
+     "range95": [
+      -27.0,
+      -10.0
+     ]
+    },
+    "right family": {
+     "gain_points": -15.0,
+     "range95": [
+      -22.0,
+      -9.0
+     ]
+    },
+    "all correct in top 3": {
+     "gain_points": -4.0,
+     "range95": [
+      -13.0,
+      4.0
+     ]
+    },
+    "all correct in top 8": {
+     "gain_points": -15.0,
+     "range95": [
+      -24.0,
+      -7.0
+     ]
+    }
+   },
+   "FT vs ZS": {
+    "top pick correct": {
+     "gain_points": -3.0,
+     "range95": [
+      -8.0,
+      2.0
+     ]
+    },
+    "right family": {
+     "gain_points": 0.0,
+     "range95": [
+      -4.0,
+      4.0
+     ]
+    },
+    "all correct in top 3": {
+     "gain_points": 14.0,
+     "range95": [
+      5.0,
+      23.0
+     ]
+    },
+    "all correct in top 8": {
+     "gain_points": 33.0,
+     "range95": [
+      22.0,
+      44.0
+     ]
+    }
+   },
+   "FT vs PREV": {
+    "top pick correct": {
+     "gain_points": -2.0,
+     "range95": [
+      -7.0,
+      3.0
+     ]
+    },
+    "right family": {
+     "gain_points": 0.0,
+     "range95": [
+      -4.0,
+      4.0
+     ]
+    },
+    "all correct in top 3": {
+     "gain_points": 15.0,
+     "range95": [
+      6.0,
+      24.0
+     ]
+    },
+    "all correct in top 8": {
+     "gain_points": 17.0,
+     "range95": [
+      8.0,
+      26.0
+     ]
+    }
+   }
+  }
+ }
+}
